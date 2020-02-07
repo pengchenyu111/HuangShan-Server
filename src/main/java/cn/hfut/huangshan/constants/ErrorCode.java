@@ -10,22 +10,30 @@ public class ErrorCode {
     public static final int OK = 800;
     public static final String OK_MSG = "成功";
 
-    public static final int LOGIN_DATA_WRONG= 801;
+    public static final int QUERY_NULL= 801;
+    public static final String QUERY_NULL_MSG= "查询结果为空";
+
+    public static final int ADD_FAIL= 802;
+    public static final String ADD_FAIL_MSG= "添加失败";
+
+    public static final int UPDATE_FAIL= 803;
+    public static final String UPDATE_FAIL_MSG= "修改失败";
+
+    public static final int DELETE_FAIL= 804;
+    public static final String DELETE_FAIL_MSG= "删除失败";
+
+    public static final int LOGIN_DATA_WRONG= 805;
     public static final String LOGIN_DATA_WRONG_MSG= "账号或密码错误";
 
-    public static final int LOGIN_DATA_NULL= 802;
+    public static final int LOGIN_DATA_NULL= 806;
     public static final String LOGIN_DATA_NULL_MSG= "账号或密码不能为空";
 
-    public static final int LOGIN_ACCOUNT_ILLEGAL= 803;
+    public static final int LOGIN_ACCOUNT_ILLEGAL= 807;
     public static final String LOGIN_ACCOUNT_ILLEGAL_MSG= "账号含有非法字符";
 
-    public static final int LOGIN_PASSWORD_ILLEGAL= 804;
+    public static final int LOGIN_PASSWORD_ILLEGAL= 808;
     public static final String LOGIN_PASSWORD_ILLEGAL_MSG= "密码含有非法字符";
 
-    public static final int DELETE_ADMIN_FAIL= 805;
-    public static final String DELETE_ADMIN_FAIL_MSG= "该管理员删除失败";
 
-    public static final int ADD_NOTIFICATION_FAIL= 806;
-    public static final String ADD_NOTIFICATION_FAIL_MSG= "添加通知失败";
 
 }

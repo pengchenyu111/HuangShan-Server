@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.AdminMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="adminMap" type="admin">
+        <id column="id" property="id"/>
+        <result column="account" property="account"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="role_name" property="roleName"/>
+        <result column="phone" property="phone"/>
+        <result column="work_year" property="workYear"/>
+        <result column="birth" property="birth"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <result column="introduction" property="introduction"/>
+        <result column="head_icon" property="headIcon"/>
+    </resultMap>
+    
+    <select id="getAllAdmins" resultMap="adminMap">
+        select * from huangshan.v_admin_basic_info
+    </select>
+</mapper>

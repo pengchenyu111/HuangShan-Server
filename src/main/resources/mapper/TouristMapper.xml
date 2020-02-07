@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.TouristMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="touristMap" type="tourist">
+        <id column="id" property="id"/>
+        <result column="account" property="account"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="role_name" property="roleName"/>
+        <result column="phone" property="phone"/>
+        <result column="birth" property="birth"/>
+        <result column="age" property="age"/>
+        <result column="sex" property="sex"/>
+        <result column="head_icon" property="headIcon"/>
+    </resultMap>
+
+    <select id="getAllTourists" resultMap="touristMap">
+        select * from huangshan.v_tourist_basic_info
+    </select>
+</mapper>

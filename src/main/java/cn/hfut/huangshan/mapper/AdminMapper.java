@@ -2,6 +2,7 @@ package cn.hfut.huangshan.mapper;
 
 import cn.hfut.huangshan.pojo.Admin;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,4 +18,7 @@ public interface AdminMapper {
 
     //查询所有管理员
     List<Admin> getAllAdmins();
+
+    //根据账号密码查询管理员
+    Admin adminLogin(@Param("account") String account, @Param("password") String password);
 }

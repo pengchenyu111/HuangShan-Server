@@ -24,7 +24,13 @@
         <result column="head_icon" property="headIcon"/>
     </resultMap>
 
+    <!--全查询-->
     <select id="getAllTourists" resultMap="touristMap">
         select * from huangshan.v_tourist_basic_info
+    </select>
+
+    <!--登录-->
+    <select id="touristLogin" parameterType="String" resultMap="touristMap">
+        select * from huangshan.v_tourist_basic_info where account = #{account} and password = #{password}
     </select>
 </mapper>

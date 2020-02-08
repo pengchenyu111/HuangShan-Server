@@ -6,7 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
-
+/**
+ * 配置拦截器
+ * @author pcy
+ */
 @Configuration
 public class WebAppConfig extends WebMvcConfigurationSupport {
 

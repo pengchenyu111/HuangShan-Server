@@ -17,6 +17,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Date;
 
+/**
+ * 拦截器
+ * @author pcy
+ */
 @Component
 public class MyInterceptor implements HandlerInterceptor {
 

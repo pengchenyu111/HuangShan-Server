@@ -25,15 +25,6 @@ public class ErrorCode {
     public static final int LOGIN_DATA_WRONG= 805;
     public static final String LOGIN_DATA_WRONG_MSG= "账号或密码错误";
 
-    public static final int LOGIN_DATA_NULL= 806;
-    public static final String LOGIN_DATA_NULL_MSG= "账号或密码不能为空";
-
-    public static final int LOGIN_ACCOUNT_ILLEGAL= 807;
-    public static final String LOGIN_ACCOUNT_ILLEGAL_MSG= "账号含有非法字符";
-
-    public static final int LOGIN_PASSWORD_ILLEGAL= 808;
-    public static final String LOGIN_PASSWORD_ILLEGAL_MSG= "密码含有非法字符";
-
 
 
 }

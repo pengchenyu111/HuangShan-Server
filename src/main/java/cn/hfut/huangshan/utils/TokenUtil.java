@@ -17,19 +17,19 @@ import java.util.Date;
 public class TokenUtil {
     /**
      * 生成token
-     * @param jobNumber
+     * @param account
      * @param projectID
      * @return
      */
-    public String createToken(String jobNumber, String projectID){
+    public String createToken(String account, String projectID){
         Algorithm algorithm = Algorithm.HMAC256("huangshan");
-        Instant instant = LocalDateTime.now().plusMinutes(30).atZone(ZoneId.systemDefault()).toInstant();
+        Instant instant = LocalDateTime.now().plusMinutes(120).atZone(ZoneId.systemDefault()).toInstant();
         Date expire = Date.from(instant);
 
         String Token = JWT.create()
-                .withIssuer("pivot")
+                .withIssuer("huangshan")
                 .withSubject("userInfo")
-                .withClaim("jobNumber",jobNumber)
+                .withClaim("account",account)
                 .withClaim("projectID",projectID)
                 .withExpiresAt(expire)
                 .sign(algorithm);
@@ -39,7 +39,7 @@ public class TokenUtil {
     public String parseToken(String token){
         String code;
         try{
-            Algorithm algorithm = Algorithm.HMAC256("yzyx");
+            Algorithm algorithm = Algorithm.HMAC256("huangshan");
             JWTVerifier jwtVerifier = JWT.require(algorithm).build();
             DecodedJWT jwt = jwtVerifier.verify(token);
             if(jwt.getExpiresAt().before(new Date())){

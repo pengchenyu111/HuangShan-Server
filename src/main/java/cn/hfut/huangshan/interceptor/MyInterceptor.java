@@ -1,9 +1,8 @@
 //package cn.hfut.huangshan.interceptor;
 //
+//import cn.hfut.huangshan.utils.TokenUtil;
 //import com.alibaba.fastjson.JSON;
 //import com.auth0.jwt.JWT;
-//import com.pivot.server.util.ResultUtils;
-//import com.pivot.server.util.Token;
 //import org.springframework.stereotype.Component;
 //import org.springframework.web.servlet.HandlerInterceptor;
 //import org.springframework.web.servlet.ModelAndView;
@@ -15,11 +14,13 @@
 //
 //@Component
 //public class MyInterceptor implements HandlerInterceptor {
-//    private Token token = new Token();
+//
+//    private TokenUtil tokenUtil = new TokenUtil();
 //    String tokens;
 //
 //    @Override
 //    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
+//        //先放行登录和注册路径
 //        if(String.valueOf(request.getRequestURL()).equals("http://localhost:6776/user/login")) return true;
 //        if(new Date().getTime() - request.getSession().getLastAccessedTime() > request.getSession().getMaxInactiveInterval()) {
 //            response.getWriter().print(JSON.toJSON(ResultUtils.error("4000","身份认证出错，请重新登录")));

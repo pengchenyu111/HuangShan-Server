@@ -6,6 +6,7 @@ package cn.hfut.huangshan.constants;
  */
 public class DefaultSetting {
 
+    //默认的密码
     public static final String DEFAULT_PASSWORD = "hs123456";
 
 }

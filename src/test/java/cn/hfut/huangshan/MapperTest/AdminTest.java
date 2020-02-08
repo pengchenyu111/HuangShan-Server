@@ -24,4 +24,13 @@ public class AdminTest {
             System.out.println(admin);
         }
     }
+
+    @Test
+    void testLogin(){
+        Admin admin = adminMapper.adminLogin("2017211241", "pcy90321");
+        System.out.println(admin);
+        Admin admin1 = adminMapper.adminLogin("2017211241","123456");
+        System.out.println(admin1);
+
+    }
 }

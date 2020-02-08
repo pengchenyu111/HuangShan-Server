@@ -198,3 +198,111 @@
 [DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} commited
 [DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} setAutoCommit true
 [DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10001,procId-278} connected
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10002,procId-279} connected
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10003,procId-280} connected
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10004,procId-281} connected
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10005,procId-282} connected
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-07][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_tourist_basic_info
+[DEBUG][2020-02-07][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-07][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-07][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 48.8214 millis. select * from huangshan.v_tourist_basic_info
+[DEBUG][2020-02-07][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-07][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
+[DEBUG][2020-02-07][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 18224464804, hs123456, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-07][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 18224464805, hs123456, 张航, 游客, 18224464805, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-07][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-07][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-07][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10001,procId-295} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10002,procId-296} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10003,procId-297} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10004,procId-298} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005,procId-299} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 43.293 millis. select * from huangshan.v_admin_basic_info
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [9, 2017211238, pyg5488, 彭玉国, 系统管理员, 15982295274, 5, 1977-03-21, 42, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 2017211241, pcy90321, 彭陈宇, 系统管理员, 18224464804, 3, 1999-03-21, 20, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, 2017211242, hs123456, 李立, 基础数据管理员, 18246587634, 2, 1999-10-21, 20, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 2017211230, 13546d, 白案, 业务管理员, 13449878956, 5, 1979-03-21, 40, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 2017211231, 123456, 刘风, 业务管理员, 13578568799, 4, 1989-03-21, 30, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [3, 2017211232, 6546asd, 苏丹, 业务管理员, 13846487645, 2, 1991-03-21, 28, 女, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, 2017211233, 123456,., 张良, 业务管理员, 13988865892, 1, 1996-03-21, 23, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [5, 2017211234, 123456, 张法, 业务管理员, 15648678965, 5, 1988-03-21, 31, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 2017211235, 123456, 黄辉冯, 业务管理员, 15678945648, 6, 1990-03-21, 29, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [7, 2017211236, 123456, 付苏, 业务管理员, 15687465647, 6, 1982-03-21, 37, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [8, 2017211237, 123456, 李志峰, 业务管理员, 15965464787, 2, 1978-03-21, 41, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 2017211239, 123456, 洛花, 业务管理员, 17826564654, 3, 1995-03-21, 24, 女, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 2017211240, 123456, 章邯, 业务管理员, 17891544684, 2, 1993-03-21, 26, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, 2017211242, 123456, 赵欢, 业务管理员, 18284516546, 3, 1984-03-21, 35, 女, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10001,procId-300} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10002,procId-301} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10003,procId-302} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10004,procId-303} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005,procId-304} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211241, pcy90321]
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 41.7037 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 2017211241, pcy90321, 彭陈宇, 系统管理员, 18224464804, 3, 1999-03-21, 20, 男, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211241, 123456]
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 40.4955 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} open
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10001,procId-305} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10002,procId-306} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10003,procId-307} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10004,procId-308} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005,procId-309} connected
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [18224464804, hs123456]
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 42.1959 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 18224464804, hs123456, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-08][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-02-08][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG][2020-02-08][druid.sql.Connection]{conn-10005} closed

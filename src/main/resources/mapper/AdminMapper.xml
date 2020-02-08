@@ -25,8 +25,14 @@
         <result column="introduction" property="introduction"/>
         <result column="head_icon" property="headIcon"/>
     </resultMap>
-    
+
+    <!--全查询-->
     <select id="getAllAdmins" resultMap="adminMap">
         select * from huangshan.v_admin_basic_info
+    </select>
+
+    <!--登录-->
+    <select id="adminLogin" parameterType="String" resultMap="adminMap">
+        select * from huangshan.v_admin_basic_info where account = #{account} and password = #{password}
     </select>
 </mapper>

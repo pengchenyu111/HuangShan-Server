@@ -21,4 +21,10 @@ public class TouristTest {
             System.out.println(tourist);
         }
     }
+
+    @Test
+    void testLogin(){
+        Tourist tourist = touristMapper.touristLogin("18224464804", "hs123456");
+        System.out.println(tourist);
+    }
 }

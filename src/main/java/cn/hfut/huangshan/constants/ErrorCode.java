@@ -22,8 +22,18 @@ public class ErrorCode {
     public static final int DELETE_FAIL= 804;
     public static final String DELETE_FAIL_MSG= "删除失败";
 
-    public static final int LOGIN_DATA_WRONG= 805;
-    public static final String LOGIN_DATA_WRONG_MSG= "账号或密码错误";
+    public static final int LOGIN_DATA_WRONG = 805;
+    public static final String LOGIN_DATA_WRONG_MSG = "账号或密码错误";
+
+    public static final int IDENTITY_INVALIDATION = 806;
+    public static final String IDENTITY_INVALIDATION_MSG = "身份失效，请重新登陆";
+
+    public static final int IDENTITY_WRONG = 807;
+    public static final String IDENTITY_WRONG_MSG = "身份错误，请重新登陆";
+
+    public static final int NO_LOGIN = 808;
+    public static final String NO_LOGIN_MSG= "未登录";
+
 
 
 

@@ -40,6 +40,9 @@ spring:
         max-idle: 10
         min-idle: 2
         max-wait: 10000
+  session:
+    store-type: redis
+    timeout: 3h
 
 mybatis:
   type-aliases-package: cn.hfut.huangshan.pojo

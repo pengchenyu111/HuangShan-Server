@@ -17,7 +17,13 @@ public class Scenic implements Serializable {
     private int id;
     private String code;
     private String name;
+    private String description;
+    private String openTime;
+    private double ticketPrice;
+    private int isClose;
     private double longitude;
     private double latitude;
-    private String description;
+    private String photoUrl;
+    private String videoUrl;
+    private String audioUrl;
 }

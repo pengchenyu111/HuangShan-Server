@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.ScenicMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="scenicMap" type="scenic">
+        <id column="id" property="id"/>
+        <result column="code" property="code"/>
+        <result column="name" property="name"/>
+        <result column="description" property="description"/>
+        <result column="open_time" property="openTime"/>
+        <result column="ticket_price" property="ticketPrice"/>
+        <result column="longitude" property="longitude"/>
+        <result column="latitude" property="latitude"/>
+        <result column="photo_url" property="photoUrl"/>
+        <result column="video_url" property="videoUrl"/>
+        <result column="audio_url" property="audioUrl"/>
+    </resultMap>
+
+    <!--全查询-->
+    <select id="getAllScenes" resultMap="scenicMap">
+        select * from huangshan.scenic
+    </select>
+
+</mapper>

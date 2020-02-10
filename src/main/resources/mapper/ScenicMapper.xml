@@ -18,6 +18,7 @@
         <result column="description" property="description"/>
         <result column="open_time" property="openTime"/>
         <result column="ticket_price" property="ticketPrice"/>
+        <result column="is_close" property="isClose"/>
         <result column="longitude" property="longitude"/>
         <result column="latitude" property="latitude"/>
         <result column="photo_url" property="photoUrl"/>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.ScenicManageMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="scenicManageMap" type="scenicManage">
+        <id column="id" property="id"/>
+        <result column="admin_id" property="adminId"/>
+        <result column="admin_head_icon" property="adminHeadIcon"/>
+        <result column="admin_name" property="adminName"/>
+        <result column="phone" property="phone"/>
+        <result column="sex" property="sex"/>
+        <result column="age" property="age"/>
+        <result column="work_year" property="workYear"/>
+        <result column="admin_work_day" property="adminWorkDay"/>
+        <result column="admin_work_time" property="adminWorkTime"/>
+        <result column="scenic_id" property="scenicId"/>
+        <result column="scenic_name" property="scenicName"/>
+        <result column="scenic_head_icon" property="scenicHeadIcon"/>
+        <result column="is_close" property="isClose"/>
+        <result column="longitude" property="longitude"/>
+        <result column="latitude" property="latitude"/>
+    </resultMap>
+
+    <!--全查询-->
+    <select id="getAllScenicManage" resultMap="scenicManageMap">
+        SELECT
+        scenic_manage.id,
+        scenic_manage.admin_id,
+        admin.head_icon AS admin_head_icon,
+        admin.`name` AS admin_name,
+        admin.phone,
+        admin.sex,
+        TIMESTAMPDIFF(YEAR, admin.birth, CURDATE()) AS age,
+        admin.work_year,
+        scenic_manage.admin_work_day,
+        scenic_manage.admin_work_time,
+        scenic_manage.scenic_id,
+        scenic.`name` AS scenic_name,
+        scenic.head_icon AS scenic_head_icon,
+        scenic.is_close,
+        scenic.longitude,
+        scenic.latitude
+        FROM scenic_manage,scenic,admin
+        WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
+    </select>
+
+</mapper>

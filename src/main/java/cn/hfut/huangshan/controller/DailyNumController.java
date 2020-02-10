@@ -16,7 +16,7 @@ import java.util.Map;
  * @author pcy
  */
 @RestController
-@RequestMapping("dailyNum")
+@RequestMapping("daily_nums")
 public class DailyNumController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class DailyNumController {
      * 限制性全查询：降序前1000条
      * @return
      */
-    @GetMapping("/limitAll")
+    @RequestMapping(value = "/limit_all",method = RequestMethod.GET)
     public ResultObj getLimitAllDailyNum(){
         List<DailyNum> dailyNums = dailyNumService.getLimitAllDailyNum();
         if (dailyNums.size() > 0) {
@@ -36,17 +36,17 @@ public class DailyNumController {
         }
     }
 
+
     /**
      * 按开始日期和结束日期查询
-     * @param map 开始日期和结束日期
+     * @param start 开始日期
+     * @param end 结束日期
      * @return
      */
-    @PostMapping("/period")
-    public ResultObj periodDailyNum(@RequestBody Map<String,String> map){
-        String startTime = map.get("startTime");
-        String endTime = map.get("endTime");
+    @RequestMapping(value = "/period/start/{start}/end/{end}",method = RequestMethod.GET)
+    public ResultObj periodDailyNum(@PathVariable("start")String start, @PathVariable("end")String end){
         //这里让前端来处理开始时间要写于结束时间的校验
-        List<DailyNum> dailyNums = dailyNumService.periodDailyNum(startTime, endTime);
+        List<DailyNum> dailyNums = dailyNumService.periodDailyNum(start, end);
         if (dailyNums.size() > 0) {
             return ResponseUtil.success(dailyNums);
         } else {

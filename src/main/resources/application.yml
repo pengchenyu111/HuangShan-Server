@@ -1,4 +1,5 @@
-
+server:
+  port: 8090
 spring:
   datasource:
     username: root
@@ -47,4 +48,3 @@ spring:
 mybatis:
   type-aliases-package: cn.hfut.huangshan.pojo
   mapper-locations: classpath:mapper/*.xml
-

@@ -16,7 +16,7 @@ import java.util.Map;
  * @author pcy
  */
 @RestController
-@RequestMapping("hourlyNum")
+@RequestMapping("hourly_nums")
 public class HourlyNumController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class HourlyNumController {
      * 限制性全查询：降序前2000条
      * @return
      */
-    @GetMapping("/limitAll")
+    @RequestMapping(value = "/limit_all", method = RequestMethod.GET)
     public ResultObj getLimitAllHourlyNum(){
         List<HourlyNum> hourlyNums = hourlyNumService.getLimitAllHourlyNum();
         if (hourlyNums.size() > 0){
@@ -37,15 +37,14 @@ public class HourlyNumController {
     }
 
     /**
-     * 按开始日期和结束日期来查询
-     * @param map 开始日期和结束日期
+     * 按开始日期和结束日期查询
+     * @param start 开始日期
+     * @param end 结束日期
      * @return
      */
-    @PostMapping("/period")
-    public ResultObj periodHourlyNum(@RequestBody Map<String,String> map){
-        String startTime = map.get("startTime");
-        String endTime = map.get("endTime");
-        List<HourlyNum> hourlyNums = hourlyNumService.periodHourlyNum(startTime, endTime);
+    @RequestMapping(value = "/period/start/{start}/end/{end}",method = RequestMethod.GET)
+    public ResultObj periodHourlyNum(@PathVariable("start")String start, @PathVariable("end")String end){
+        List<HourlyNum> hourlyNums = hourlyNumService.periodHourlyNum(start, start);
         if (hourlyNums.size() > 0){
             return ResponseUtil.success(hourlyNums);
         }else {

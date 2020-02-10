@@ -8,6 +8,7 @@ import cn.hfut.huangshan.utils.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.List;
  * @author pcy
  */
 @RestController
-@RequestMapping("admin")
+@RequestMapping("admins")
 public class AdminController {
 
     @Autowired
@@ -27,7 +28,7 @@ public class AdminController {
      * 查询所有管理员
      * @return
      */
-    @GetMapping("/all")
+    @RequestMapping(value = "/all",method = RequestMethod.GET)
     public ResultObj getAllAdmins(){
         List<Admin> allAdmins = adminService.getAllAdmins();
         if (allAdmins.size() > 0){

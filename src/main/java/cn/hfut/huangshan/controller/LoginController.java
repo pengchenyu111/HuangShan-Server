@@ -10,10 +10,7 @@ import cn.hfut.huangshan.service.TouristService;
 import cn.hfut.huangshan.utils.ResponseUtil;
 import cn.hfut.huangshan.utils.TokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
@@ -37,7 +34,7 @@ public class LoginController {
      * @param map 接收账号和密码
      * @return
      */
-    @PostMapping(value = "/login", produces = "application/json;charset=UTF-8")
+    @RequestMapping(value = "/login", method = RequestMethod.POST,produces = "application/json;charset=UTF-8")
     public ResultObj login(HttpServletRequest request, @RequestBody Map<String, String> map){
         String account = map.get("account");
         String password = map.get("password");
@@ -65,7 +62,7 @@ public class LoginController {
      * @param request
      * @return
      */
-    @PostMapping(value = "/loginOut", produces = "application/json;charset=UTF-8")
+    @RequestMapping(value = "/loginOut", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     public ResultObj loginOut(HttpServletRequest request){
         request.getSession().invalidate();
         return ResponseUtil.success(null);

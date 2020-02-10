@@ -32,7 +32,7 @@ spring:
     host: 101.37.173.73
     port: 6379
     password: PCY90321
-    timeout: 10000
+    timeout: 5000
     block-when-exhausted: true
     jedis:
       pool:

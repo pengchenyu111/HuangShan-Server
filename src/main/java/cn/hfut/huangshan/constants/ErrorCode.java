@@ -10,8 +10,8 @@ public class ErrorCode {
     public static final int OK = 800;
     public static final String OK_MSG = "成功";
 
-    public static final int QUERY_NULL= 801;
-    public static final String QUERY_NULL_MSG= "查询结果为空";
+    public static final int QUERY_FAIL = 801;
+    public static final String QUERY_FAIL_MSG = "查询失败";
 
     public static final int ADD_FAIL= 802;
     public static final String ADD_FAIL_MSG= "添加失败";

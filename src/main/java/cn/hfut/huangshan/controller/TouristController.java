@@ -33,7 +33,7 @@ public class TouristController {
         if (tourists.size() > 0){
             return ResponseUtil.success(tourists);
         }else {
-            return ResponseUtil.error(ErrorCode.QUERY_NULL,ErrorCode.QUERY_NULL_MSG,null);
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
         }
     }
 }

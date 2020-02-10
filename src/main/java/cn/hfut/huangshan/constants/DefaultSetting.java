@@ -6,8 +6,10 @@ package cn.hfut.huangshan.constants;
  */
 public class DefaultSetting {
 
-    //默认的密码
+    //默认的明文密码
     public static final String DEFAULT_PASSWORD = "hs123456";
+    //默认盐值
+    public static final String DEFAULT_PASSWORD_SALT = "hfuthuangshan";
 
     //登录路径
     public static final String LOGIN_URL = "http://localhost:8080/login";

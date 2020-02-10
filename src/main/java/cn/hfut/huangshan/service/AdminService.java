@@ -1,7 +1,9 @@
 package cn.hfut.huangshan.service;
 
+import cn.hfut.huangshan.constants.DefaultSetting;
 import cn.hfut.huangshan.mapper.AdminMapper;
 import cn.hfut.huangshan.pojo.Admin;
+import cn.hfut.huangshan.utils.EncryptionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,7 +38,9 @@ public class AdminService {
      */
     @Transactional
     public Admin adminLogin(String account,String password){
-        Admin admin = adminMapper.adminLogin(account, password);
+        //获取加密后的字符串
+        String encodePassword = EncryptionUtil.sha384HashWithSalt(password, DefaultSetting.DEFAULT_PASSWORD_SALT);
+        Admin admin = adminMapper.adminLogin(account, encodePassword);
         return admin;
     }
 }

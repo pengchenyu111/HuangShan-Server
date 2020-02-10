@@ -33,7 +33,7 @@ public class AdminController {
         if (allAdmins.size() > 0){
             return ResponseUtil.success(allAdmins);
         }else {
-            return ResponseUtil.error(ErrorCode.QUERY_NULL,ErrorCode.QUERY_NULL_MSG,null);
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
         }
     }
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.HourlyNumMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="hourlyNumMap" type="hourlyNum">
+        <result column="date_name" property="dateName"/>
+        <result column="hour" property="hour"/>
+        <result column="hour_num" property="hourNum"/>
+    </resultMap>
+
+    <!--限制性全查询：降序前2000条-->
+    <select id="getLimitAllHourlyNum" resultMap="hourlyNumMap">
+        SELECT * FROM hourlynum ORDER BY hourlynum.date_name DESC,hourlynum.`hour` ASC LIMIT 2000
+    </select>
+
+    <!--按开始日期和结束日期来查询-->
+    <select id="periodHourlyNum" parameterType="String" resultMap="hourlyNumMap">
+        select * from hourlynum where date_name <![CDATA[ >= ]]> #{startTime} and date_name <![CDATA[ <= ]]> #{endTime}
+    </select>
+</mapper>

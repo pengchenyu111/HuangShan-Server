@@ -1,0 +1,21 @@
+package cn.hfut.huangshan.pojo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+/**
+ * 角色
+ * @author pcy
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Role implements Serializable {
+    private int id;
+    private String name;
+    private String description;
+    private int status;
+}

@@ -1,7 +1,7 @@
 package cn.hfut.huangshan.service;
 
-import cn.hfut.huangshan.mapper.ScenicMapper;
-import cn.hfut.huangshan.pojo.Scenic;
+import cn.hfut.huangshan.mapper.RoleMapper;
+import cn.hfut.huangshan.pojo.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,22 +9,22 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * 景点
+ * 角色
  * @author pcy
  */
 @Service
-public class ScenicService {
+public class RoleService {
 
     @Autowired
-    ScenicMapper scenicMapper;
+    RoleMapper roleMapper;
 
     /**
      * 全查询
      * @return
      */
     @Transactional
-    public List<Scenic> getAllScenes(){
-        List<Scenic> scenes = scenicMapper.getAllScenes();
-        return scenes;
+    public List<Role> getAllRoles(){
+        List<Role> roles = roleMapper.getAllRoles();
+        return roles;
     }
 }

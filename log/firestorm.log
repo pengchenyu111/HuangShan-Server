@@ -467,3 +467,67 @@
 [DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} commited
 [DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} setAutoCommit true
 [DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10001,procId-476} connected
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10002,procId-477} connected
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10003,procId-478} connected
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10004,procId-479} connected
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10005,procId-480} connected
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-10][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT
+        scenic_manage.id,
+        scenic_manage.admin_id,
+        admin.head_icon AS admin_head_icon,
+        admin.`name` AS admin_name,
+        admin.phone,
+        admin.sex,
+        TIMESTAMPDIFF(YEAR, admin.birth, CURDATE()) AS age,
+        admin.work_year,
+        scenic_manage.admin_work_day,
+        scenic_manage.admin_work_time,
+        scenic_manage.scenic_id,
+        scenic.`name` AS scenic_name,
+        scenic.head_icon AS scenic_head_icon,
+        scenic.is_close,
+        scenic.longitude,
+        scenic.latitude
+        FROM scenic_manage,scenic,admin
+        WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
+[DEBUG][2020-02-10][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-10][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-10][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 43.6759 millis. SELECT
+        scenic_manage.id,
+        scenic_manage.admin_id,
+        admin.head_icon AS admin_head_icon,
+        admin.`name` AS admin_name,
+        admin.phone,
+        admin.sex,
+        TIMESTAMPDIFF(YEAR, admin.birth, CURDATE()) AS age,
+        admin.work_year,
+        scenic_manage.admin_work_day,
+        scenic_manage.admin_work_time,
+        scenic_manage.scenic_id,
+        scenic.`name` AS scenic_name,
+        scenic.head_icon AS scenic_head_icon,
+        scenic.is_close,
+        scenic.longitude,
+        scenic.latitude
+        FROM scenic_manage,scenic,admin
+        WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, admin_id, head_icon, name, phone, sex, age, work_year, admin_work_day, admin_work_time, scenic_id, name, head_icon, is_close, longitude, latitude]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 1, http://101.37.173.73:8000/user/default-headicon.png, 白案, 13449878956, 男, 40, 5, 周一至周日, 8:00~19:00, 1, 黄山翡翠谷景区, null, 0, 118.224689, 30.107727]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 11, http://101.37.173.73:8000/user/default-headicon.png, 章邯, 17891544684, 男, 26, 2, 周一至周日, 8:00~19:00, 10, 黄山-书箱峰, null, 0, 118.164053, 30.163978]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [3, 2, http://101.37.173.73:8000/user/default-headicon.png, 刘风, 13578568799, 男, 30, 4, 周一至周三, 8:00~19:00, 2, 黄山-飞龙瀑, null, 0, 118.149804, 30.192089]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, 3, http://101.37.173.73:8000/user/default-headicon.png, 苏丹, 13846487645, 女, 28, 2, 周一至周日, 8:00~13:00, 3, 黄山野生猴谷景区, null, 0, 118.157245, 30.071459]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [5, 4, http://101.37.173.73:8000/user/default-headicon.png, 张良, 13988865892, 男, 23, 1, 周一至周日, 13:00~19:00, 4, 黄山-接引松, null, 0, 118.174909, 30.141391]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 5, http://101.37.173.73:8000/user/default-headicon.png, 张法, 15648678965, 男, 31, 5, 周一至周日, 8:00~19:00, 5, 黄山-连理松, null, 0, 118.174035, 30.140745]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [7, 6, http://101.37.173.73:8000/user/default-headicon.png, 黄辉冯, 15678945648, 男, 29, 6, 周一至周日, 8:00~19:00, 6, 黄山-人字瀑, null, 0, 118.172471, 30.102408]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [8, 7, http://101.37.173.73:8000/user/default-headicon.png, 付苏, 15687465647, 男, 37, 6, 周一至周三, 8:00~19:00, 7, 黄山-飞来石, null, 0, 118.163971, 30.135576]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [9, 8, http://101.37.173.73:8000/user/default-headicon.png, 李志峰, 15965464787, 男, 41, 2, 周四至周日, 8:00~19:00, 8, 黄山-扇子松, null, 0, 118.168981, 30.142666]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 10, http://101.37.173.73:8000/user/default-headicon.png, 洛花, 17826564654, 女, 24, 3, 周一至周日, 8:00~19:00, 9, 黄山-梦笔生花, null, 0, 118.172257, 30.141731]
+[DEBUG][2020-02-10][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-10][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-10][druid.sql.Connection]{conn-10005} pool-recycle

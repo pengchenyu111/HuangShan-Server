@@ -3,6 +3,7 @@ package cn.hfut.huangshan.utils;
 import cn.hfut.huangshan.constants.ErrorCode;
 import cn.hfut.huangshan.response.ResultObj;
 
+
 /**
  * 返回给前端的工具类
  * @author pcy
@@ -36,4 +37,20 @@ public class ResponseUtil {
         resultObj.setData(object);
         return resultObj;
     }
+
+    /**
+     * 登录
+     * @param code
+     * @param message
+     * @param object
+     * @return
+     */
+    public static ResultObj login(int code,String message,Object object){
+        ResultObj resultObj = new ResultObj();
+        resultObj.setCode(code);
+        resultObj.setMessage(message);
+        resultObj.setData(object);
+        return resultObj;
+    }
+
 }

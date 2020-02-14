@@ -43,16 +43,16 @@ public class LoginController {
             request.getSession().setAttribute("account",account);
             String token = tokenUtil.createToken(account);
             request.getSession().setAttribute("token",token);
-            return ResponseUtil.success(admin);
+            return ResponseUtil.login(ErrorCode.ADMIN_LOGIN,ErrorCode.ADMIN_LOGIN_MSG,admin);
         } else {
             Tourist tourist = touristService.touristLogin(account, password);
             if (tourist != null){
                 request.getSession().setAttribute("account",account);
                 String token = tokenUtil.createToken(account);
                 request.getSession().setAttribute("token",token);
-                return ResponseUtil.success(tourist);
+                return ResponseUtil.login(ErrorCode.TOURIST_LOGIN, ErrorCode.TOURIST_LOGIN_MSG, tourist);
             }else {
-                return ResponseUtil.error(ErrorCode.LOGIN_DATA_WRONG,ErrorCode.LOGIN_DATA_WRONG_MSG,null);
+                return ResponseUtil.error(ErrorCode.LOGIN_DATA_WRONG, ErrorCode.LOGIN_DATA_WRONG_MSG,null);
             }
         }
     }

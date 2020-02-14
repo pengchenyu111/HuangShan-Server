@@ -34,6 +34,12 @@ public class ErrorCode {
     public static final int NO_LOGIN = 808;
     public static final String NO_LOGIN_MSG= "未登录";
 
+    public static final int ADMIN_LOGIN = 809;
+    public static final String ADMIN_LOGIN_MSG= "管理员登录";
+
+    public static final int TOURIST_LOGIN = 810;
+    public static final String TOURIST_LOGIN_MSG= "游客登录";
+
 
 
 

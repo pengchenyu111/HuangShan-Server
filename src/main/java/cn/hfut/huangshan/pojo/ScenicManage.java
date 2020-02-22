@@ -22,6 +22,7 @@ public class ScenicManage implements Serializable {
     private String sex;
     private int age;
     private int workYear;
+    private String introduction;
     private String adminWorkDay;
     private String adminWorkTime;
     private int scenicId;

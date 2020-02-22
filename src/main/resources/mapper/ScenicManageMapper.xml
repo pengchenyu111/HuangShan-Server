@@ -20,6 +20,7 @@
         <result column="sex" property="sex"/>
         <result column="age" property="age"/>
         <result column="work_year" property="workYear"/>
+        <result column="introduction" property="introduction"/>
         <result column="admin_work_day" property="adminWorkDay"/>
         <result column="admin_work_time" property="adminWorkTime"/>
         <result column="scenic_id" property="scenicId"/>
@@ -41,6 +42,7 @@
         admin.sex,
         TIMESTAMPDIFF(YEAR, admin.birth, CURDATE()) AS age,
         admin.work_year,
+        admin.introduction,
         scenic_manage.admin_work_day,
         scenic_manage.admin_work_time,
         scenic_manage.scenic_id,

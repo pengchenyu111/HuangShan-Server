@@ -31,6 +31,13 @@
         <result column="latitude" property="latitude"/>
     </resultMap>
 
+    <resultMap id="adminScenicManageMap" type="adminScenicManage">
+        <id column="id" property="id"/>
+        <result column="name" property="scenicName"/>
+        <result column="admin_work_day" property="adminWorkDay"/>
+        <result column="admin_work_time" property="adminWorkTime"/>
+    </resultMap>
+
     <!--全查询-->
     <select id="getAllScenicManage" resultMap="scenicManageMap">
         SELECT
@@ -53,6 +60,17 @@
         scenic.latitude
         FROM scenic_manage,scenic,admin
         WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
+    </select>
+
+    <select id="getOnesManages" parameterType="int" resultMap="adminScenicManageMap">
+        SELECT
+        scenic_manage.id,
+        scenic.`name`,
+        scenic_manage.admin_work_day,
+        scenic_manage.admin_work_time
+        FROM scenic_manage,scenic
+		WHERE scenic_manage.scenic_id = scenic.id
+		AND scenic_manage.admin_id = #{adminId};
     </select>
 
 </mapper>

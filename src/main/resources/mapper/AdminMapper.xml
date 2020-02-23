@@ -35,4 +35,24 @@
     <select id="adminLogin" parameterType="String" resultMap="adminMap">
         select * from huangshan.v_admin_basic_info where account = #{account} and password = #{password}
     </select>
+
+    <!--更新头像-->
+    <update id="changeAdminHeadIcon" parameterType="String">
+        update admin
+        set head_icon = #{headIconUrl}
+        where account = #{account}
+    </update>
+
+    <!--只更新联系电话-->
+    <update id="changePhone" parameterType="String">
+        update admin
+        set phone = #{phone}
+        where account = #{account}
+    </update>
+    <!--只更新个人简介-->
+    <update id="changeIntroduction" parameterType="String">
+        update admin
+        set introduction = #{introduction}
+        where account = #{account}
+    </update>
 </mapper>

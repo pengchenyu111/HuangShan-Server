@@ -43,4 +43,19 @@ public class AdminService {
         Admin admin = adminMapper.adminLogin(account, encodePassword);
         return admin;
     }
+
+    /**
+     * 更换头像
+     * @param headIconUrl 头像地址
+     * @param account 账号
+     * @return
+     */
+    @Transactional
+    public boolean changeHeadIcon(String headIconUrl, String account){
+        Integer rows = adminMapper.changeAdminHeadIcon(headIconUrl, account);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
 }

@@ -42,4 +42,17 @@
         set head_icon = #{headIconUrl}
         where account = #{account}
     </update>
+
+    <!--只更新联系电话-->
+    <update id="changePhone" parameterType="String">
+        update admin
+        set phone = #{phone}
+        where account = #{account}
+    </update>
+    <!--只更新个人简介-->
+    <update id="changeIntroduction" parameterType="String">
+        update admin
+        set introduction = #{introduction}
+        where account = #{account}
+    </update>
 </mapper>

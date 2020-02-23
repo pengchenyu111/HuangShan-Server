@@ -58,4 +58,34 @@ public class AdminService {
         }
         return false;
     }
+
+    /**
+     * 更新联系电话
+     * @param account 账号
+     * @param phone 电话
+     * @return
+     */
+    @Transactional
+    public boolean changePhone(String account, String phone){
+        Integer rows = adminMapper.changePhone(account, phone);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 更新联系电话
+     * @param account 账号
+     * @param introduction 简介
+     * @return
+     */
+    @Transactional
+    public boolean changeIntroduction(String account, String introduction){
+        Integer rows = adminMapper.changeIntroduction(account, introduction);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
 }

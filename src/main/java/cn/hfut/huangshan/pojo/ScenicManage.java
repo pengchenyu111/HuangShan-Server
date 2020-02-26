@@ -14,8 +14,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ScenicManage implements Serializable {
-    private int id;
-    private int adminId;
+    private long id;
+    private long adminId;
     private String adminHeadIcon;
     private String adminName;
     private String phone;
@@ -25,7 +25,7 @@ public class ScenicManage implements Serializable {
     private String introduction;
     private String adminWorkDay;
     private String adminWorkTime;
-    private int scenicId;
+    private long scenicId;
     private String scenicName;
     private String scenicHeadIcon;
     private int isClose;

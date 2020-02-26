@@ -35,7 +35,7 @@ public class ScenicManageService {
      * @return
      */
     @Transactional
-    public List<AdminScenicManage> getOnesManages(int adminId){
+    public List<AdminScenicManage> getOnesManages(long adminId){
         List<AdminScenicManage> adminScenicManages = scenicManageMapper.getOnesManages(adminId);
         return adminScenicManages;
     }

@@ -14,7 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Role implements Serializable {
-    private int id;
+    private long id;
     private String name;
     private String description;
     private int status;

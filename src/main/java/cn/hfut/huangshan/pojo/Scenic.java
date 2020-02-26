@@ -14,7 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Scenic implements Serializable {
-    private int id;
+    private long id;
     private String code;
     private String name;
     private String description;

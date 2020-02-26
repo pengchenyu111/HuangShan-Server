@@ -15,7 +15,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class AdminScenicManage implements Serializable {
 
-    private int id;
+    private long id;
     private String scenicName;
     private String adminWorkDay;
     private String adminWorkTime;

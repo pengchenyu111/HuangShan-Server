@@ -45,7 +45,7 @@ public class ScenicManageController {
      * @return
      */
     @RequestMapping(value = "/ones/{adminId}",method = RequestMethod.GET)
-    public ResultObj getOnesManages(@PathVariable("adminId") int adminId){
+    public ResultObj getOnesManages(@PathVariable("adminId") long adminId){
         List<AdminScenicManage> onesManages = scenicManageService.getOnesManages(adminId);
         if (onesManages.size() > 0){
             return ResponseUtil.success(onesManages);

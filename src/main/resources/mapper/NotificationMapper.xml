@@ -18,11 +18,47 @@
         <result column="title" property="title"/>
         <result column="content" property="content"/>
         <result column="type" property="type"/>
+        <result column="is_close" property="isClose"/>
     </resultMap>
 
     <!--全查询-->
     <select id="getAllNotification" resultMap="notificationMap">
-        SELECT * from huangshan.notification
+        SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
     </select>
+
+    <!--只查询近期的7个通知，用于轮播-->
+    <select id="getRecentNotification" resultMap="notificationMap">
+        SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+    </select>
+
+    <!--根据id查询-->
+    <select id="getById" parameterType="long" resultMap="notificationMap">
+        SELECT * from huangshan.notification where id = #{id}
+    </select>
+
+    <!--新增一个-->
+    <insert id="add" parameterType="notification">
+        insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
+        value (#{id},#{sendTime},#{sendAdminName},#{title},#{content},#{type},#{isClose})
+    </insert>
+
+    <!--更新一个-->
+    <update id="updateOne" parameterType="notification">
+        update huangshan.notification
+        set
+        send_time = #{sendTime},
+        send_admin_name = #{sendAdminName},
+        title = #{title},
+        content = #{content},
+        type = #{type},
+        is_close = #{isClose}
+        where id = #{id}
+    </update>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.notification
+        where id = #{id}
+    </delete>
 
 </mapper>

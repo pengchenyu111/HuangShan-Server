@@ -2,6 +2,7 @@ package cn.hfut.huangshan.service;
 
 import cn.hfut.huangshan.mapper.NotificationMapper;
 import cn.hfut.huangshan.pojo.Notification;
+import cn.hfut.huangshan.utils.IdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,5 +27,71 @@ public class NotificationService {
     public List<Notification> getAllNotification(){
         List<Notification> notifications = notificationMapper.getAllNotification();
         return notifications;
+    }
+
+    /**
+     * 只查询近期的7个通知，用于轮播
+     * @return
+     */
+    public List<Notification> getRecentNotification() {
+        List<Notification> notifications = notificationMapper.getRecentNotification();
+        return notifications;
+    }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    @Transactional
+    public Notification getById(long id) {
+        Notification notification = notificationMapper.getById(id);
+        return notification;
+    }
+
+    /**
+     * 新增一个
+     * @param notification 通知实体
+     * @return
+     */
+    @Transactional
+    public Notification add(Notification notification) {
+        //插入数据库
+        IdWorker idWorker = new IdWorker(0,0);
+        long id = idWorker.nextId();
+        notification.setId(id);
+        Integer rows = notificationMapper.add(notification);
+        if (rows > 0){
+            return notificationMapper.getById(id);
+        }
+        return new Notification();
+    }
+
+
+
+    /**
+     * 更新
+     * @param notification
+     * @return
+     */
+    public Notification updateOne(Notification notification) {
+        Integer rows = notificationMapper.updateOne(notification);
+        if (rows > 0){
+            return notificationMapper.getById(notification.getId());
+        }
+        return new Notification();
+    }
+
+    /**
+     * 删除一个
+     * @param id
+     * @return
+     */
+    public boolean deleteOne(long id) {
+        Integer rows = notificationMapper.deleteOne(id);
+        if (rows > 0){
+            return true;
+        }
+        return false;
     }
 }

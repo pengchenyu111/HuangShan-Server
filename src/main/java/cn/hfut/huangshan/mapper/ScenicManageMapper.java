@@ -20,5 +20,5 @@ public interface ScenicManageMapper {
     List<ScenicManage> getAllScenicManage();
 
     //查询某一个管理员管理的景点
-    List<AdminScenicManage> getOnesManages(@Param("adminId") int adminId);
+    List<AdminScenicManage> getOnesManages(@Param("adminId") long adminId);
 }

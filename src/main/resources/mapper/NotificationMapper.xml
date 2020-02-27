@@ -61,4 +61,11 @@
         where id = #{id}
     </delete>
 
+    <!--关闭一个-->
+    <update id="closeOne" parameterType="long">
+        update huangshan.notification
+        set is_close = 1
+        where id = #{id}
+    </update>
+
 </mapper>

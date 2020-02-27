@@ -74,6 +74,7 @@ public class NotificationService {
      * @param notification
      * @return
      */
+    @Transactional
     public Notification updateOne(Notification notification) {
         Integer rows = notificationMapper.updateOne(notification);
         if (rows > 0){
@@ -87,8 +88,23 @@ public class NotificationService {
      * @param id
      * @return
      */
+    @Transactional
     public boolean deleteOne(long id) {
         Integer rows = notificationMapper.deleteOne(id);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 关闭一条通知
+     * @param id
+     * @return
+     */
+    @Transactional
+    public boolean closeOne(long id) {
+        Integer rows = notificationMapper.closeOne(id);
         if (rows > 0){
             return true;
         }

@@ -96,6 +96,21 @@ public class NotificationController {
     }
 
     /**
+     * 关闭一条通知
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/closes/{id}", method = RequestMethod.PUT)
+    public ResultObj closeOne(@PathVariable("id") long id){
+        boolean isSuccess = notificationService.closeOne(id);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        } else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+    }
+
+    /**
      * 删除一个
      * @param id
      * @return

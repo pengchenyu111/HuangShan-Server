@@ -1,901 +1,113 @@
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} closed
-[DEBUG][2020-02-23][druid.sql.Connection]{conn 10005} rollback
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10001,procId-3330} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10002,procId-3331} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10003,procId-3332} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10004,procId-3333} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005,procId-3334} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} created. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [18224464804, 2017211230]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 85.0329 millis. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006,procId-3337} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10006, pstmt-20001} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10006, pstmt-20001} Parameters : [1]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10006, pstmt-20001} Types : [INTEGER]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10006, pstmt-20001} executed. 47.1703 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50000} open
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50000} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50000} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50000} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50000} closed
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10006, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007,procId-3338} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10007} closed
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10006} closed
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10008,procId-3339} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10008} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10008} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10008, pstmt-20002} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10008, pstmt-20002} Parameters : [1]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10008, pstmt-20002} Types : [INTEGER]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10008, pstmt-20002} executed. 42.7854 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10008, pstmt-20002, rs-50001} open
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10008, pstmt-20002, rs-50001} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10008, pstmt-20002, rs-50001} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10008, pstmt-20002, rs-50001} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10008, pstmt-20002, rs-50001} closed
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10008, pstmt-20002} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10008} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10008} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10008} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009,procId-3340} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10009, pstmt-20003} created. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10009, pstmt-20003} Parameters : [13449878956, 2017211230]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10009, pstmt-20003} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10009, pstmt-20003} executed. 88.7229 millis. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10009, pstmt-20003} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10009} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010,procId-3343} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20004} created. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20004} Parameters : [18224464499, 2017211230]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20004} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20004} executed. 92.7337 millis. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20004} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20005} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20005} Parameters : [1]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20005} Types : [INTEGER]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20005} executed. 47.2257 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10010, pstmt-20005, rs-50002} open
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10010, pstmt-20005, rs-50002} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10010, pstmt-20005, rs-50002} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10010, pstmt-20005, rs-50002} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10010, pstmt-20005, rs-50002} closed
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10010, pstmt-20005} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011,procId-3344} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10011, pstmt-20006} created. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10011, pstmt-20006} Parameters : [18224464499, 2017211230]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10011, pstmt-20006} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10011, pstmt-20006} executed. 84.0221 millis. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10011, pstmt-20006} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10012,procId-3345} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10012} closed
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10011} closed
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10010} closed
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013,procId-3346} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20007} created. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20007} Parameters : [18224464498, 2017211230]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20007} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20007} executed. 93.1421 millis. update admin
-        set phone = ?
-        where account = ?
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20007} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20008} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20008} Parameters : [1]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20008} Types : [INTEGER]
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20008} executed. 46.653 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10013, pstmt-20008, rs-50003} open
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10013, pstmt-20008, rs-50003} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10013, pstmt-20008, rs-50003} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10013, pstmt-20008, rs-50003} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-23][druid.sql.ResultSet]{conn-10013, pstmt-20008, rs-50003} closed
-[DEBUG][2020-02-23][druid.sql.Statement]{conn-10013, pstmt-20008} clearParameters. 
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} pool-recycle
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10014,procId-3347} connected
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} pool-connect
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} setAutoCommit false
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} commited
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} setAutoCommit true
-[DEBUG][2020-02-23][druid.sql.Connection]{conn-10013} pool-recycle
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10001,procId-3352} connected
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10002,procId-3353} connected
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10003,procId-3354} connected
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10004,procId-3355} connected
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005,procId-3356} connected
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [1]
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [INTEGER]
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 49.8316 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20001} created. update admin
-        set introduction = ?
-        where account = ?
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [我是一个尽职尽责的管理员！, 2017211230]
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 92.5228 millis. update admin
-        set introduction = ?
-        where account = ?
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10005} closed
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10004} closed
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10003} closed
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10002} closed
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10001} closed
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10006,procId-3359} connected
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10006} pool-connect
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10006} setAutoCommit false
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10006, pstmt-20002} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10006, pstmt-20002} Parameters : [1]
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10006, pstmt-20002} Types : [INTEGER]
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10006, pstmt-20002} executed. 46.1917 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50001} open
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50001} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50001} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50001} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-24][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50001} closed
-[DEBUG][2020-02-24][druid.sql.Statement]{conn-10006, pstmt-20002} clearParameters. 
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10006} commited
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10006} setAutoCommit true
-[DEBUG][2020-02-24][druid.sql.Connection]{conn-10006} pool-recycle
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10001,procId-3402} connected
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10002,procId-3403} connected
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10003,procId-3404} connected
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10004,procId-3405} connected
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005,procId-3406} connected
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 46.1045 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 0, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 1, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 2, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 43.2106 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} open
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 0, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 1, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 2, 0]
-[DEBUG][2020-02-25][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} closed
-[DEBUG][2020-02-25][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-25][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3416} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3417} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3418} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3419} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3420} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10021} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10021} pool-connect
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10021, pstmt-20033} Parameters : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10021, pstmt-20033} Types : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10021, pstmt-20033} executed. 46.9005 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} open
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [1233010078332747776, 2020-02-28 04:44:39.0, 彭陈宇, 彭陈宇20200227测试, 哈哈哈哈哈, 2, 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 3, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10021, pstmt-20033, rs-50029} closed
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10021, pstmt-20033} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10021} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022,procId-3554} connected
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} pool-connect
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} setAutoCommit false
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20034} created. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
         value (?,?,?,?,?,?,?)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [0, 2019-11-26 09:40:35, 彭陈宇, 20200226测试1, 20200226测试1, 0, 0]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 87.9602 millis. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20034} Parameters : [1233012317126393856, 2020-02-27 20:53:32, 彭陈宇, 彭陈宇测试2, 等你记得记得几点结束, , 0]
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20034} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20034} executed. 103.8096 millis. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
         value (?,?,?,?,?,?,?)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3427} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3428} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3429} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3430} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3431} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 57.1738 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 白案, 业务管理员, 18224464498, 5, 1979-03-21, 40, 男, 我是一个尽职尽责的管理员！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10006,procId-3432} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10006} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10006} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10006, pstmt-20002} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10006} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10006, pstmt-20002} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10006} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10006} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007,procId-3433} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} executed. 44.3401 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50001} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50001} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50001} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20004} created. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20004} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20004} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20004} executed. 46.3579 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20004, rs-50002} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20004, rs-50002} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20004, rs-50002} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20004, rs-50002} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20004} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} Parameters : [2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} executed. 49.2481 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50003} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50003} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50003} Result: [1, 2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 白案, 业务管理员, 18224464498, 5, 1979-03-21, 40, 男, 我是一个尽职尽责的管理员！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10007, pstmt-20003, rs-50003} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20003} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20005} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10007, pstmt-20005} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10007} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3434} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3435} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3436} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3437} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3438} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [1]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 48.0754 millis. SELECT
-        scenic_manage.id,
-        scenic.`name`,
-        scenic_manage.admin_work_day,
-        scenic_manage.admin_work_time
-        FROM scenic_manage,scenic
-		WHERE scenic_manage.scenic_id = scenic.id
-		AND scenic_manage.admin_id = ?;
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, name, admin_work_day, admin_work_time]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 黄山翡翠谷景区, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 黄山-飞龙瀑, 周一至周日, 8:00~19:00]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3442} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3443} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3444} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3445} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3446} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
-        value (?,?,?,?,?,?,?)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [1232669002849886208, 2019-11-26 09:40:35, 彭陈宇, 20200226测试2, 20200226测试2, 0, 0]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 96.6686 millis. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
-        value (?,?,?,?,?,?,?)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} created. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [1232669002849886208]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 44.5777 millis. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 0]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3447} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3448} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3449} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3450} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3451} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
-        value (?,?,?,?,?,?,?)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [1232669800052817920, 2019-11-26 09:40:35, 彭陈宇, 20200226测试3, 20200226测试3, 0, 0]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 96.992501 millis. insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
-        value (?,?,?,?,?,?,?)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} created. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 48.4137 millis. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Result: [1232669800052817920, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试3, 20200226测试3, 0, 0]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3455} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3456} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3457} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3458} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3459} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. update huangshan.notification
-        set
-        send_time = #(sendTime),
-        send_admin_name = ?,
-        title = ?,
-        content = ?,
-        type = ?,
-        is_close = ?
-        where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [彭陈宇, 20200226测试3的更新, 20200226测试3, 0, 0, 1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[ERROR][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} execute error. update huangshan.notification
-        set
-        send_time = #(sendTime),
-        send_admin_name = ?,
-        title = ?,
-        content = ?,
-        type = ?,
-        is_close = ?
-        where id = ?
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1' for column 'send_time' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
-	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
-	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
-	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
-	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at com.sun.proxy.$Proxy76.update(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
-	at com.sun.proxy.$Proxy85.updateOne(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy86.updateOne(Unknown Source)
-	at cn.hfut.huangshan.service.NotificationService.updateOne(NotificationService.java:78)
-	at cn.hfut.huangshan.service.NotificationService$$FastClassBySpringCGLIB$$a37ce5c4.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
-	at cn.hfut.huangshan.service.NotificationService$$EnhancerBySpringCGLIB$$5a139985.updateOne(<generated>)
-	at cn.hfut.huangshan.controller.NotificationController.updateOne(NotificationController.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at cn.hfut.huangshan.config.CorsFilterConfig.doFilter(CorsFilterConfig.java:43)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
-	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3460} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3461} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3462} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3463} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3464} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. update huangshan.notification
-        set
-        send_time = #(sendTime),
-        send_admin_name = ?,
-        title = ?,
-        content = ?,
-        type = ?,
-        is_close = ?
-        where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [彭陈宇, 20200226测试3的更新, 20200226测试3, 0, 0, 1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[ERROR][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} execute error. update huangshan.notification
-        set
-        send_time = #(sendTime),
-        send_admin_name = ?,
-        title = ?,
-        content = ?,
-        type = ?,
-        is_close = ?
-        where id = ?
-com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '1' for column 'send_time' at row 1
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
-	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
-	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
-	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
-	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
-	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
-	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
-	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
-	at com.sun.proxy.$Proxy76.update(Unknown Source)
-	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
-	at com.sun.proxy.$Proxy85.updateOne(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy86.updateOne(Unknown Source)
-	at cn.hfut.huangshan.service.NotificationService.updateOne(NotificationService.java:78)
-	at cn.hfut.huangshan.service.NotificationService$$FastClassBySpringCGLIB$$a37ce5c4.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:685)
-	at cn.hfut.huangshan.service.NotificationService$$EnhancerBySpringCGLIB$$699001d3.updateOne(<generated>)
-	at cn.hfut.huangshan.controller.NotificationController.updateOne(NotificationController.java:91)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at cn.hfut.huangshan.config.CorsFilterConfig.doFilter(CorsFilterConfig.java:43)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:141)
-	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} closed
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10001,procId-3465} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10002,procId-3466} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10003,procId-3467} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10004,procId-3468} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005,procId-3469} connected
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} created. update huangshan.notification
-        set
-        send_time = ?,
-        send_admin_name = ?,
-        title = ?,
-        content = ?,
-        type = ?,
-        is_close = ?
-        where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2020-02-26 09:40:35, 彭陈宇, 20200226测试3的更新, 20200226测试3, 0, 0, 1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 85.7212 millis. update huangshan.notification
-        set
-        send_time = ?,
-        send_admin_name = ?,
-        title = ?,
-        content = ?,
-        type = ?,
-        is_close = ?
-        where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} created. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 40.2302 millis. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Result: [1232669800052817920, 2020-02-26 17:40:35.0, 彭陈宇, 20200226测试3的更新, 20200226测试3, 0, 0]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20002} created. delete from huangshan.notification
-        where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20002} Parameters : [1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20002} Types : [BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20002} executed. 86.643 millis. delete from huangshan.notification
-        where id = ?
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20002} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-connect
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit false
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [1232669800052817920]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 40.3715 millis. SELECT * from huangshan.notification where id = ?
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} open
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-02-26][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} closed
-[DEBUG][2020-02-26][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} commited
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} setAutoCommit true
-[DEBUG][2020-02-26][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20034} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20035} created. SELECT * from huangshan.notification where id = ?
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20035} Parameters : [1233012317126393856]
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20035} Types : [BIGINT]
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20035} executed. 51.8779 millis. SELECT * from huangshan.notification where id = ?
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20035, rs-50030} open
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20035, rs-50030} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20035, rs-50030} Result: [1233012317126393856, 2020-02-28 04:53:32.0, 彭陈宇, 彭陈宇测试2, 等你记得记得几点结束, , 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20035, rs-50030} closed
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20035} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} commited
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} setAutoCommit true
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} pool-connect
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20036} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20036} Parameters : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20036} Types : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20036} executed. 52.653 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} open
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [1233012317126393856, 2020-02-28 04:53:32.0, 彭陈宇, 彭陈宇测试2, 等你记得记得几点结束, , 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [1233010078332747776, 2020-02-28 04:44:39.0, 彭陈宇, 彭陈宇20200227测试, 哈哈哈哈哈, 2, 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10022, pstmt-20036, rs-50031} closed
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10022, pstmt-20036} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10022} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10023,procId-3555} connected
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10023} pool-connect
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} Parameters : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} Types : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} executed. 50.6024 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} open
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [1233012317126393856, 2020-02-28 04:53:32.0, 彭陈宇, 彭陈宇测试2, 等你记得记得几点结束, , 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [1233010078332747776, 2020-02-28 04:44:39.0, 彭陈宇, 彭陈宇20200227测试, 哈哈哈哈哈, 2, 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50032} closed
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10023} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10023} pool-connect
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} Parameters : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} Types : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} executed. 44.983599 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} open
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [1233012317126393856, 2020-02-28 04:53:32.0, 彭陈宇, 彭陈宇测试2, 等你记得记得几点结束, , 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [1233010078332747776, 2020-02-28 04:44:39.0, 彭陈宇, 彭陈宇20200227测试, 哈哈哈哈哈, 2, 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10023, pstmt-20037, rs-50033} closed
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10023, pstmt-20037} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10023} pool-recycle
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10024,procId-3556} connected
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} pool-connect
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} setAutoCommit false
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10024, pstmt-20038} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10024, pstmt-20038} Parameters : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10024, pstmt-20038} Types : []
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10024, pstmt-20038} executed. 45.6536 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} open
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [1233012317126393856, 2020-02-28 04:53:32.0, 彭陈宇, 彭陈宇测试2, 等你记得记得几点结束, , 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [1233010078332747776, 2020-02-28 04:44:39.0, 彭陈宇, 彭陈宇20200227测试, 哈哈哈哈哈, 2, 0]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 3, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} Result: [33, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试1, 20200226测试1, 0, 1]
+[DEBUG][2020-02-27][druid.sql.ResultSet]{conn-10024, pstmt-20038, rs-50034} closed
+[DEBUG][2020-02-27][druid.sql.Statement]{conn-10024, pstmt-20038} clearParameters. 
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} commited
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} setAutoCommit true
+[DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} pool-recycle

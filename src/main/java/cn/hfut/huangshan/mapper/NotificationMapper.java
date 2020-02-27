@@ -32,4 +32,7 @@ public interface NotificationMapper {
 
     //删除一个
     Integer deleteOne(@Param("id") long id);
+
+    //关闭一个
+    Integer closeOne(@Param("id") long id);
 }

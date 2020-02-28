@@ -45,6 +45,24 @@ public class AdminService {
     }
 
     /**
+     * 系统管理员网页端登录
+     * @param account 账号
+     * @param password 密码
+     * @return
+     */
+    @Transactional
+    public Admin systemAdminLogin(String account, String password) {
+        String encodePassword = EncryptionUtil.sha384HashWithSalt(password, DefaultSetting.DEFAULT_PASSWORD_SALT);
+        try {
+            Admin systemAdmin = adminMapper.systemAdminLogin(account, encodePassword);
+            return systemAdmin;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new Admin();
+    }
+
+    /**
      * 更换头像
      * @param headIconUrl 头像地址
      * @param account 账号

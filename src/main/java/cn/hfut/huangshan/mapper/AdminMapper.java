@@ -22,6 +22,9 @@ public interface AdminMapper {
     //根据账号密码查询管理员
     Admin adminLogin(@Param("account") String account, @Param("password") String password);
 
+    //根据账号密码查询系统管理员
+    Admin systemAdminLogin(String account, String encodePassword);
+
     //更新头像
     Integer changeAdminHeadIcon(@Param("headIconUrl") String headIconUrl, @Param("account") String account);
 

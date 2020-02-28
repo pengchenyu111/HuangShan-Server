@@ -36,11 +36,6 @@
         select * from huangshan.v_admin_basic_info where account = #{account} and password = #{password}
     </select>
 
-    <!--系统管理员登录-->
-    <select id="systemAdminLogin" parameterType="String" resultMap="adminMap">
-        select * from huangshan.v_admin_basic_info where account = #{account} and password = #{password}
-    </select>
-
     <!--更新头像-->
     <update id="changeAdminHeadIcon" parameterType="String">
         update admin

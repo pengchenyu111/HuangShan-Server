@@ -66,8 +66,8 @@ public class LoginController {
     public ResultObj systemAdminLogin(HttpServletRequest request, @RequestBody Map<String, String> map) {
         String account = map.get("account");
         String password = map.get("password");
-        Admin systemAdmin = adminService.systemAdminLogin(account, password);
-        if (systemAdmin != null){
+        Admin systemAdmin = adminService.adminLogin(account, password);
+        if (systemAdmin != null && systemAdmin.getRoleName().equals("系统管理员")){
             request.getSession().setAttribute("account",account);
             String token = tokenUtil.createToken(account);
             request.getSession().setAttribute("token",token);
@@ -75,7 +75,6 @@ public class LoginController {
         } else {
             return ResponseUtil.login(ErrorCode.LOGIN_DATA_WRONG, ErrorCode.LOGIN_DATA_WRONG_MSG, null);
         }
-
     }
 
     /**

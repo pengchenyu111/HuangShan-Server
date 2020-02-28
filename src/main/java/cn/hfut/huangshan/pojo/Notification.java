@@ -14,10 +14,11 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Notification implements Serializable {
-    private int id;
+    private long id;
     private String sendTime;
     private String sendAdminName;
     private String title;
     private String content;
     private String type;
+    private String isClose;
 }

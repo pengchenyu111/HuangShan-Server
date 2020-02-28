@@ -15,7 +15,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Admin implements Serializable {
 
-    private int id;
+    private long id;
     private String account;
     private String password;
     private String name;

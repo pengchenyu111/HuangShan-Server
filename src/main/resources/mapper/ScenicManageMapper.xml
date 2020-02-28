@@ -62,7 +62,7 @@
         WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
     </select>
 
-    <select id="getOnesManages" parameterType="int" resultMap="adminScenicManageMap">
+    <select id="getOnesManages" parameterType="long" resultMap="adminScenicManageMap">
         SELECT
         scenic_manage.id,
         scenic.`name`,

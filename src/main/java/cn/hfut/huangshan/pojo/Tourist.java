@@ -14,7 +14,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Tourist implements Serializable {
-    private int id;
+    private long id;
     private String account;
     private String password;
     private String name;

@@ -39,7 +39,7 @@
     <!--新增一个-->
     <insert id="add" parameterType="notification">
         insert into huangshan.notification(id,send_time,send_admin_name,title,content,type,is_close)
-        value (#{id},#{sendTime},#{sendAdminName},#{title},#{content},#{type},#{isClose})
+        values (#{id},#{sendTime},#{sendAdminName},#{title},#{content},#{type},#{isClose})
     </insert>
 
     <!--更新一个-->

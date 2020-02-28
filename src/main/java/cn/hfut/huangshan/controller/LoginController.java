@@ -58,6 +58,26 @@ public class LoginController {
     }
 
     /**
+     * 系统管理员网页端登录请求
+     * @param map 接收账号和密码
+     * @return
+     */
+    @RequestMapping(value = "/systemAdmin/login", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+    public ResultObj systemAdminLogin(HttpServletRequest request, @RequestBody Map<String, String> map) {
+        String account = map.get("account");
+        String password = map.get("password");
+        Admin systemAdmin = adminService.adminLogin(account, password);
+        if (systemAdmin != null && systemAdmin.getRoleName().equals("系统管理员")){
+            request.getSession().setAttribute("account",account);
+            String token = tokenUtil.createToken(account);
+            request.getSession().setAttribute("token",token);
+            return ResponseUtil.login(ErrorCode.ADMIN_LOGIN,ErrorCode.ADMIN_LOGIN_MSG,systemAdmin);
+        } else {
+            return ResponseUtil.login(ErrorCode.LOGIN_DATA_WRONG, ErrorCode.LOGIN_DATA_WRONG_MSG, null);
+        }
+    }
+
+    /**
      * 注销登陆
      * @param request
      * @return

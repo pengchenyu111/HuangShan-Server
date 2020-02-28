@@ -111,3 +111,215 @@
 [DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} commited
 [DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} setAutoCommit true
 [DEBUG][2020-02-27][druid.sql.Connection]{conn-10024} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3598} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3599} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3600} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3601} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3602} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3603} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3604} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3605} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3606} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3607} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 55.763477 millis. select * from huangshan.v_admin_basic_info
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [9, 2017211238, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÅíÓñ¹ú, ÏµÍ³¹ÜÀíÔ±, 15982295274, 5, 1977-03-21, 42, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, Åí³ÂÓî, ÏµÍ³¹ÜÀíÔ±, 18224464804, 3, 1999-03-21, 20, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, 2017211242,  228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÀîÁ¢, »ù´¡Êı¾İ¹ÜÀíÔ±, 18246587634, 2, 1999-10-21, 20, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, °×°¸, ÒµÎñ¹ÜÀíÔ±, 18224464498, 5, 1979-03-21, 40, ÄĞ, ÎÒÊÇÒ»¸ö¾¡Ö°¾¡ÔğµÄ¹ÜÀíÔ±£¡, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 2017211231, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, Áõ·ç, ÒµÎñ¹ÜÀíÔ±, 13578568799, 4, 1989-03-21, 30, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [3, 2017211232, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ËÕµ¤, ÒµÎñ¹ÜÀíÔ±, 13846487645, 2, 1991-03-21, 28, Å®, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, 2017211233, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÕÅÁ¼, ÒµÎñ¹ÜÀíÔ±, 13988865892, 1, 1996-03-21, 23, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [5, 2017211234, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÕÅ·¨, ÒµÎñ¹ÜÀíÔ±, 15648678965, 5, 1988-03-21, 31, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 2017211235, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, »Æ»Ô·ë, ÒµÎñ¹ÜÀíÔ±, 15678945648, 6, 1990-03-21, 29, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [7, 2017211236, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ¸¶ËÕ, ÒµÎñ¹ÜÀíÔ±, 15687465647, 6, 1982-03-21, 37, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [8, 2017211237, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÀîÖ¾·å, ÒµÎñ¹ÜÀíÔ±, 15965464787, 2, 1978-03-21, 41, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 2017211239, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, Âå»¨, ÒµÎñ¹ÜÀíÔ±, 17826564654, 3, 1995-03-21, 24, Å®, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 2017211240, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÕÂºª, ÒµÎñ¹ÜÀíÔ±, 17891544684, 2, 1993-03-21, 26, ÄĞ, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, 2017211242, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÕÔ»¶, ÒµÎñ¹ÜÀíÔ±, 18284516546, 3, 1984-03-21, 35, Å®, 2015Äê-2017Äê£¬ÔÚ»ÆÉ½¡ªÌì¶¼·åÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ£»2018Äê¡ª2019ÄêÈÎ»ÆÉ½¡ª¹âÃ÷¶¥ÈÎ¹ÜÀíÔ±£¬ÆÚ¼ä»ñµÃ¡°»ÆÉ½ÓÅĞã¹ÜÀíÔ±¡±³ÆºÅ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [2017211241, pcy90321]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 36.589519 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [2017211241, 123456]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 37.433036 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50002} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50002} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50002} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} created. select * from huangshan.v_tourist_basic_info
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} Parameters : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} Types : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} executed. 41.036295 millis. select * from huangshan.v_tourist_basic_info
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50003} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50003} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50003} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, Åí³ÂÓî, ÓÎ¿Í, 18224464804, 1999-03-21, 20, ÄĞ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50003} Result: [2, 17694285675, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ÕÅº½, ÓÎ¿Í, 18224464805, 1999-03-21, 20, ÄĞ, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50003} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} created. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} Parameters : [18224464804, hs123456]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} executed. 37.017696 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50004} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50004} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50004} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3608} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3609} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3610} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3611} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3612} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3615} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3616} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3617} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3618} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3619} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 65.487329 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3620} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3621} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3622} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3623} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3624} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 69.277491 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3625} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3626} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3627} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3628} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3629} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 49.145232 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211242, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 40.451044 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} Result: [13, 2017211242, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, èµµæ¬¢, ä¸šåŠ¡ç®¡ç†å‘˜, 18284516546, 3, 1984-03-21, 35, å¥³, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50001} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 37.094345 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50002} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50002} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50002} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50002} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10006,procId-3630} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10006} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10006} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10006, pstmt-20001} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10006, pstmt-20001} Parameters : [2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10006, pstmt-20001} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10006, pstmt-20001} executed. 42.34839 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50003} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50003} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50003} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10006, pstmt-20001, rs-50003} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10006, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10006} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10006} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10006} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10007,procId-3631} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10007} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10007} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10007, pstmt-20002} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10007, pstmt-20002} Parameters : [2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10007, pstmt-20002} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10007, pstmt-20002} executed. 36.113012 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10007, pstmt-20002, rs-50004} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10007, pstmt-20002, rs-50004} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10007, pstmt-20002, rs-50004} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10007, pstmt-20002, rs-50004} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10007, pstmt-20002} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10007} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10007} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10007} pool-recycle

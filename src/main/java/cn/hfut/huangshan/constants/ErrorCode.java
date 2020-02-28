@@ -41,6 +41,4 @@ public class ErrorCode {
     public static final String TOURIST_LOGIN_MSG= "游客登录";
 
 
-
-
 }

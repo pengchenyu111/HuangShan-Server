@@ -27,4 +27,5 @@ public class Admin implements Serializable {
     private String sex;
     private String introduction;
     private String headIcon;
+
 }

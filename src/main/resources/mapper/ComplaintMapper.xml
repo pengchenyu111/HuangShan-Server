@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.ComplaintMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="complaintMap" type="complaint">
+        <id column="id" property="id"/>
+        <result column="complaint_time" property="complaintTime"/>
+        <result column="complaint_object" property="complaintObject"/>
+        <result column="spot" property="spot"/>
+        <result column="complaint_type" property="complaintType"/>
+        <result column="complaint_reason" property="complaintReason"/>
+        <result column="evidence_photo" property="evidencePhoto"/>
+        <result column="complainant_name" property="complainantName"/>
+        <result column="complainant_phone" property="complainantPhone"/>
+        <result column="is_handle" property="isHandle"/>
+        <result column="handle_admin_name" property="handleAdminName"/>
+        <result column="handle_time" property="handleTime"/>
+        <result column="handle_message" property="handleMessage"/>
+    </resultMap>
+
+    <!--全查询-->
+    <select id="getAllComplaints" resultMap="complaintMap">
+        select * from huangshan.complaint order by complaint_time DESC
+    </select>
+
+    <!--查询最近的7个-->
+    <select id="getRecent" resultMap="complaintMap">
+        select * from huangshan.complaint order by complaint_time DESC limit 7
+    </select>
+
+    <!--根据id查询-->
+    <select id="getOneById" parameterType="long" resultMap="complaintMap">
+        select * from huangshan.complaint where id = #{id}
+    </select>
+
+    <!--新增一个-->
+    <insert id="addOne" parameterType="complaint">
+        insert into
+        huangshan.complaint(id,complaint_time,complaint_object,spot,complaint_type,complaint_reason,evidence_photo,complainant_name,complainant_phone,is_handle)
+        values (#{id},#{complaintTime},#{complaintObject},#{spot},#{complaintType},#{complaintReason},#{evidencePhoto},#{complainantName},#{complainantPhone},#{isHandle})
+    </insert>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.complaint
+        where id = #{id}
+    </delete>
+
+    <!--全更新一个-->
+    <update id="updateOne" parameterType="complaint">
+        update huangshan.complaint
+        set
+        complaint_time = #{complaintTime},
+        complaint_object = #{complaintObject},
+        spot = #{spot},
+        complaint_type = #{complaintType},
+        complaint_reason = #{complaintReason},
+        evidence_photo = #{evidencePhoto},
+        complainant_name = #{complainantName},
+        complainant_phone = #{complainantPhone},
+        is_handle = #{isHandle},
+        handle_admin_name = #{handleAdminName},
+        handle_time = #{handleTime},
+        handle_message = #{handleMessage}
+        where id = #{id}
+    </update>
+
+    <!--管理员处理一条投诉-->
+    <update id="handleOne" >
+        update huangshan.complaint
+        set
+        is_handle = 1,
+        handle_admin_name = #{handleAdminName},
+        handle_time = #{handleTime},
+        handle_message = #{handleMessage}
+        where id = #{id}
+    </update>
+</mapper>

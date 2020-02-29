@@ -3,11 +3,11 @@ package cn.hfut.huangshan.service;
 import cn.hfut.huangshan.mapper.ComplaintMapper;
 import cn.hfut.huangshan.pojo.Complaint;
 import cn.hfut.huangshan.utils.IdWorker;
-import com.sun.rowset.internal.Row;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -49,6 +49,34 @@ public class ComplaintService {
     public Complaint getOneById(long id) {
         Complaint complaint = complaintMapper.getOneById(id);
         return complaint;
+    }
+
+    /**
+     * 获取投诉分类排行榜
+     * @return
+     */
+    public List<String> getRanks() {
+        List<String> ranks =  complaintMapper.getRanks();
+        return ranks;
+    }
+
+
+    /**
+     * 根据日期查询
+     * @param date
+     * @return
+     */
+    public List<Complaint> getByDate(String date) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date temp = new Date();
+        try {
+            temp = simpleDateFormat.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        String formatDate = simpleDateFormat.format(temp);
+        List<Complaint> complaints = complaintMapper.getByDate(formatDate);
+        return complaints;
     }
 
     /**
@@ -101,7 +129,7 @@ public class ComplaintService {
     }
 
     /**
-     * 管理员处理宇哥
+     * 管理员处理一个
      * @param id
      * @param handleAdminName
      * @param handleMessage
@@ -116,4 +144,5 @@ public class ComplaintService {
         }
         return new Complaint();
     }
+
 }

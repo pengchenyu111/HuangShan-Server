@@ -68,6 +68,36 @@ public class ComplaintController {
     }
 
     /**
+     * 获取投诉分类排行榜
+     * @return
+     */
+    @RequestMapping(value = "/ranks", method = RequestMethod.GET)
+    public ResultObj getRanks(){
+        List<String> ranks = complaintService.getRanks();
+        if (ranks.size() > 0){
+            return ResponseUtil.success(ranks);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 根据日期查询
+     * 这里不能直接写/{date},因为要与/{id}混，报错
+     * @param date
+     * @return
+     */
+    @RequestMapping(value = "/dates/{date}", method = RequestMethod.GET)
+    public ResultObj getByDate(@PathVariable("date") String date){
+        List<Complaint> complaints = complaintService.getByDate(date);
+        if (complaints.size() > 0){
+            return ResponseUtil.success(complaints);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+    }
+
+    /**
      * 增加一个
      * @param complaint
      * @return

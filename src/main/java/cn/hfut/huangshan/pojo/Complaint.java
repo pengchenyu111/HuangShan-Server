@@ -20,7 +20,7 @@ public class Complaint implements Serializable {
     private String complaintTime;//投诉时间
     private String complaintObject;//投诉对象
     private String spot;//事发地
-    private String complaintType;//投诉类型，写死：景区管理、商家问题、旅行社问题、导游问题
+    private String complaintType;//投诉类型，写死：景区、住宿、餐饮、旅行社、导游
     private String complaintReason;//投诉原因
     private String evidencePhoto;//照片凭据
     private String complainantName;//投诉人

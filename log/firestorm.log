@@ -439,3 +439,279 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect dat
 [DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} closed
 [DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} clearParameters. 
 [DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10001,procId-3713} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10002,procId-3714} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10003,procId-3715} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10004,procId-3716} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005,procId-3717} connected
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} created. update huangshan.complaint
+        set
+        is_handle = 1,
+        handle_admin_name = ?,
+        handle_time = ?,
+        handle_message = ?
+        where id = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [彭陈宇, 2020-02-28 23:37:33, 已处理, 2]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR, BIGINT]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 93.1779 millis. update huangshan.complaint
+        set
+        is_handle = 1,
+        handle_admin_name = ?,
+        handle_time = ?,
+        handle_message = ?
+        where id = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} created. select * from huangshan.complaint where id = ?
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [2]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 44.2432 millis. select * from huangshan.complaint where id = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Result: [2, 2020-02-29 05:24:57.0, 6, 6, 6, 6, 6, 6, 6, 1, 彭陈宇, 2020-02-29 07:37:33.0, 已处理]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} created. insert into
+        huangshan.complaint(id,complaint_time,complaint_object,spot,complaint_type,complaint_reason,evidence_photo,complainant_name,complainant_phone,is_handle)
+        values (?,?,?,?,?,?,?,?,?,?)
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} Parameters : [1233416116420739072, 2020-02-28 23:38:12, 9, 29, 92, 2, 29, 2, 2, 0]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} executed. 89.51 millis. insert into
+        huangshan.complaint(id,complaint_time,complaint_object,spot,complaint_type,complaint_reason,evidence_photo,complainant_name,complainant_phone,is_handle)
+        values (?,?,?,?,?,?,?,?,?,?)
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20002} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [1233416116420739072]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 45.5052 millis. select * from huangshan.complaint where id = ?
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [1233416116420739072, 2020-02-29 07:38:12.0, 9, 29, 92, 2, 29, 2, 2, 0, null, null, null]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} created. select * from huangshan.complaint order by complaint_time DESC
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} Parameters : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} Types : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} executed. 45.3365 millis. select * from huangshan.complaint order by complaint_time DESC
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50002} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50002} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50002} Result: [1233416116420739072, 2020-02-29 07:38:12.0, 9, 29, 92, 2, 29, 2, 2, 0, null, null, null]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50002} Result: [1233398804942684160, 2020-02-29 06:29:20.0, 2, 2, 2, 2, 2, 2, 2, 0, pcy, 2020-02-29 07:26:47.0, ]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50002} Result: [2, 2020-02-29 05:24:57.0, 6, 6, 6, 6, 6, 6, 6, 1, 彭陈宇, 2020-02-29 07:37:33.0, 已处理]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20003, rs-50002} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20003} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20004} created. select * from huangshan.complaint order by complaint_time DESC limit 7
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20004} Parameters : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20004} Types : []
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20004} executed. 45.5573 millis. select * from huangshan.complaint order by complaint_time DESC limit 7
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20004, rs-50003} open
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20004, rs-50003} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20004, rs-50003} Result: [1233416116420739072, 2020-02-29 07:38:12.0, 9, 29, 92, 2, 29, 2, 2, 0, null, null, null]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20004, rs-50003} Result: [1233398804942684160, 2020-02-29 06:29:20.0, 2, 2, 2, 2, 2, 2, 2, 0, pcy, 2020-02-29 07:26:47.0, ]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20004, rs-50003} Result: [2, 2020-02-29 05:24:57.0, 6, 6, 6, 6, 6, 6, 6, 1, 彭陈宇, 2020-02-29 07:37:33.0, 已处理]
+[DEBUG][2020-02-28][druid.sql.ResultSet]{conn-10005, pstmt-20004, rs-50003} closed
+[DEBUG][2020-02-28][druid.sql.Statement]{conn-10005, pstmt-20004} clearParameters. 
+[DEBUG][2020-02-28][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10001,procId-3731} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10002,procId-3732} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10003,procId-3733} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10004,procId-3734} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005,procId-3735} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 50.8274 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1233397231659253760, 2020-02-28 07:40:35.0, 彭陈宇, 20200226测试1, 20200226测试1, 1, 0]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 0]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 3, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 48.3663 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC;
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [1233397231659253760, 2020-02-28 07:40:35.0, 彭陈宇, 20200226测试1, 20200226测试1, 1, 0]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 0]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 3, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} Result: [33, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试1, 20200226测试1, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50001} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10006,procId-3736} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10006} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10006, pstmt-20002} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10006, pstmt-20002} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10006, pstmt-20002} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10006, pstmt-20002} executed. 47.6934 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Header: [id, send_time, send_admin_name, title, content, type, is_close]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [1233397231659253760, 2020-02-28 07:40:35.0, 彭陈宇, 20200226测试1, 20200226测试1, 1, 0]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [1232707666443239424, 2020-02-27 07:40:35.0, 彭陈宇, 20200226测试4, 20200226测试4, 1, 0]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [4, 2019-12-02 22:07:55.0, 彭陈宇, 测试用例, 测试用例, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [3, 2019-11-29 01:15:28.0, 彭陈宇, 今日客流量很大！, 今日客流量很大！各单位注意！今日客流量很大！各单位注意！今日客流量很大！各单位注意！, 1, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [2, 2019-11-26 17:50:43.0, 彭陈宇, 今日降雨量大，注意安全, 今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！今日降雨量大，注意安全！, 2, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [1232669002849886208, 2019-11-26 17:40:35.0, 彭陈宇, 20200226测试2, 20200226测试2, 0, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} Result: [1, 2019-11-26 17:40:35.0, 彭陈宇, 国庆门票打折, 国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！国庆期间门票打8折！, 3, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10006, pstmt-20002, rs-50002} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10006, pstmt-20002} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10006} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10007,procId-3737} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10001,procId-3739} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10002,procId-3740} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10003,procId-3741} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10004,procId-3742} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005,procId-3743} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} created. insert into
+        huangshan.complaint(id,complaint_time,complaint_object,spot,complaint_type,complaint_reason,evidence_photo,complainant_name,complainant_phone,is_handle)
+        values (?,?,?,?,?,?,?,?,?,?)
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : [1233686350096498688, 2020-02-29 17:32:01, 9, 29, 29, 2, 29, 2, 2, 0]
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 102.0431 millis. insert into
+        huangshan.complaint(id,complaint_time,complaint_object,spot,complaint_type,complaint_reason,evidence_photo,complainant_name,complainant_phone,is_handle)
+        values (?,?,?,?,?,?,?,?,?,?)
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} created. select * from huangshan.complaint where id = ?
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} Parameters : [1233686350096498688]
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} executed. 47.4551 millis. select * from huangshan.complaint where id = ?
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} Result: [1233686350096498688, 2020-03-01 01:32:01.0, 9, 29, 29, 2, 29, 2, 2, 0, null, null, null]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20001, rs-50000} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20001} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} commited
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20002} created. select * from huangshan.complaint order by complaint_time DESC
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20002} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20002} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20002} executed. 49.5675 millis. select * from huangshan.complaint order by complaint_time DESC
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} Result: [1233686350096498688, 2020-03-01 01:32:01.0, 9, 29, 29, 2, 29, 2, 2, 0, null, null, null]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} Result: [1233416116420739072, 2020-02-29 07:38:12.0, 9, 29, 92, 2, 29, 2, 2, 0, null, null, null]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} Result: [1233398804942684160, 2020-02-29 06:29:20.0, 2, 2, 92, 2, 2, 2, 2, 0, pcy, 2020-02-29 07:26:47.0, ]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} Result: [2, 2020-02-29 05:24:57.0, 6, 6, 2, 6, 6, 6, 6, 1, 彭陈宇, 2020-02-29 07:37:33.0, 已处理]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20002, rs-50001} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20002} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10001,procId-3746} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10002,procId-3747} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10003,procId-3748} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10004,procId-3749} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005,procId-3750} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT complaint_type,COUNT(id) AS count_num FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY count_num DESC;
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 50.5842 millis. SELECT complaint_type,COUNT(id) AS count_num FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY count_num DESC;
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [complaint_type, count_num]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [92, 2]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [29, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10001,procId-3751} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10002,procId-3752} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10003,procId-3753} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10004,procId-3754} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005,procId-3755} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT complaint_type,COUNT(id) AS count_num FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY count_num DESC;
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 48.8693 millis. SELECT complaint_type,COUNT(id) AS count_num FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY count_num DESC;
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [complaint_type, count_num]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [92, 2]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [29, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10001,procId-3756} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10002,procId-3757} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10003,procId-3758} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10004,procId-3759} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005,procId-3760} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT complaint_type,COUNT(id) AS count_num FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY count_num DESC;
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 50.5577 millis. SELECT complaint_type,COUNT(id) AS count_num FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY count_num DESC;
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [complaint_type, count_num]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [92, 2]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [29, 1]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10001,procId-3762} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10002,procId-3763} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10003,procId-3764} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10004,procId-3765} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005,procId-3766} connected
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} created. SELECT complaint_type FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY COUNT(id) DESC
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 47.2135 millis. SELECT complaint_type FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY COUNT(id) DESC
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [complaint_type]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [92]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [29]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [2]
+[DEBUG][2020-02-29][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG][2020-02-29][druid.sql.Statement]{conn-10005, pstmt-20000} clearParameters. 
+[DEBUG][2020-02-29][druid.sql.Connection]{conn-10005} pool-recycle

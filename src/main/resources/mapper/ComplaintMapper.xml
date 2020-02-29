@@ -42,6 +42,18 @@
         select * from huangshan.complaint where id = #{id}
     </select>
 
+    <!--管理员获取投诉分类排行榜-->
+    <select id="getRanks" resultType="java.lang.String">
+        SELECT complaint_type FROM
+        (SELECT * FROM complaint ORDER BY complaint_time DESC LIMIT 1000) AS recent
+        GROUP BY complaint_type ORDER BY COUNT(id) DESC
+    </select>
+
+    <!--根据日期查询-->
+    <select id="getByDate" parameterType="String" resultMap="complaintMap">
+        SELECT * FROM complaint WHERE Date(complaint.complaint_time) LIKE #{date};
+    </select>
+
     <!--新增一个-->
     <insert id="addOne" parameterType="complaint">
         insert into

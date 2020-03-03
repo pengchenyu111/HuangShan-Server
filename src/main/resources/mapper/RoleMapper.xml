@@ -15,4 +15,24 @@
         select * from huangshan.role
     </select>
 
+    <!--根据id查询-->
+    <select id="getById" parameterType="long" resultType="role">
+        select * from huangshan.role where id = #{id}
+    </select>
+
+    <!--根据名字查询-->
+    <select id="getByName" parameterType="String" resultType="role">
+        select * from huangshan.role where name = #{name}
+    </select>
+
+    <!--修改一个-->
+    <update id="changeOne" parameterType="role">
+        update huangshan.role
+        set
+        name = #{name},
+        description = #{description},
+        status = #{status}
+        where id = #{id}
+    </update>
+
 </mapper>

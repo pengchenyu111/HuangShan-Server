@@ -91,6 +91,7 @@ public class ComplaintService {
         long id = idWorker.nextId();
         complaint.setId(id);
         complaint.setComplaintTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));//等价于new Date().toLocaleString()
+        complaint.setIsHandle("0");
         Integer rows = complaintMapper.addOne(complaint);
         if (rows > 0){
             return complaintMapper.getOneById(id);

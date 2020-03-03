@@ -6,10 +6,13 @@ package cn.hfut.huangshan.constants;
  */
 public class DefaultSetting {
 
-    //默认的明文密码
+    //测试用管理员默认的明文密码，之后应该是账号后六位，这样安全一点
     public static final String DEFAULT_PASSWORD = "hs123456";
     //默认盐值
     public static final String DEFAULT_PASSWORD_SALT = "hfuthuangshan";
+
+    //管理员默认头像路径
+    public static final  String DEFAULT_ADMIN_HEAD_ICON = "http://101.37.173.73:8000/user/default-headicon.png";
 
     //登录路径
     public static final String LOGIN_URL = "http://localhost:8080/login";

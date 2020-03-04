@@ -33,4 +33,51 @@
     <select id="touristLogin" parameterType="String" resultMap="touristMap">
         select * from huangshan.v_tourist_basic_info where account = #{account} and password = #{password}
     </select>
+
+    <!--根据id查询-->
+    <select id="getById" parameterType="long" resultMap="touristMap">
+        select * from huangshan.v_tourist_basic_info where id = #{id}
+    </select>
+
+    <!--增加一名-->
+    <insert id="addOne" parameterType="cn.hfut.huangshan.pojo.DB.DBTourist">
+        insert into
+        huangshan.tourist(id,account,password,name,role_id,phone,birth,sex,head_icon)
+        values (#{id},#{account},#{password},#{name},#{roleId},#{phone},#{birth},#{sex},#{headIcon})
+    </insert>
+
+    <!--更新一个-->
+    <update id="updateOne" parameterType="cn.hfut.huangshan.pojo.DB.DBTourist">
+        update huangshan.tourist
+        set
+        account = #{account},
+        password = #{password},
+        name = #{name},
+        role_id = #{roleId},
+        phone = #{phone},
+        birth = #{birth},
+        sex = #{sex},
+        head_icon = #{headIcon}
+        where id = #{id}
+    </update>
+
+    <!--修改密码-->
+    <update id="updatePassword">
+        update huangshan.tourist
+        set password = #{password}
+        where id = #{id}
+    </update>
+
+    <!--修改头像-->
+    <update id="changeHeadIcon" >
+        update huangshan.tourist
+        set head_icon = #{headIcon}
+        where id = #{id}
+    </update>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.tourist
+        where id = #{id}
+    </delete>
 </mapper>

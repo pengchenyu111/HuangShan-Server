@@ -1,5 +1,7 @@
 package cn.hfut.huangshan.pojo;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +16,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ScenicManage implements Serializable {
+    @JsonSerialize(using = ToStringSerializer.class)
     private long id;
+    @JsonSerialize(using = ToStringSerializer.class)
     private long adminId;
     private String adminHeadIcon;
     private String adminName;
@@ -25,6 +29,7 @@ public class ScenicManage implements Serializable {
     private String introduction;
     private String adminWorkDay;
     private String adminWorkTime;
+    @JsonSerialize(using = ToStringSerializer.class)
     private long scenicId;
     private String scenicName;
     private String scenicHeadIcon;

@@ -75,12 +75,12 @@ public class NotificationService {
      * @return
      */
     @Transactional
-    public Notification updateOne(Notification notification) {
+    public boolean updateOne(Notification notification) {
         Integer rows = notificationMapper.updateOne(notification);
         if (rows > 0){
-            return notificationMapper.getById(notification.getId());
+            return true;
         }
-        return new Notification();
+        return false;
     }
 
     /**

@@ -4,6 +4,7 @@ import cn.hfut.huangshan.constants.ErrorCode;
 import cn.hfut.huangshan.pojo.Complaint;
 import cn.hfut.huangshan.response.ResultObj;
 import cn.hfut.huangshan.service.ComplaintService;
+import cn.hfut.huangshan.utils.IdWorker;
 import cn.hfut.huangshan.utils.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -104,9 +105,14 @@ public class ComplaintController {
      */
     @RequestMapping(method = RequestMethod.POST)
     public ResultObj addOne(@RequestBody Complaint complaint){
-        Complaint insertComplaint = complaintService.addOne(complaint);
-        if (insertComplaint != null){
-            return ResponseUtil.success(insertComplaint);
+        //设置id
+        IdWorker idWorker = new IdWorker(0,0);
+        long id = idWorker.nextId();
+        complaint.setId(id);
+        boolean isSuccess = complaintService.addOne(complaint);
+        if (isSuccess){
+            Complaint insertedComplaint = complaintService.getOneById(id);
+            return ResponseUtil.success(insertedComplaint);
         }else {
             return ResponseUtil.error(ErrorCode.ADD_FAIL,ErrorCode.ADD_FAIL_MSG,null);
         }
@@ -136,8 +142,9 @@ public class ComplaintController {
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public ResultObj updateOne(@PathVariable("id") long id,@RequestBody Complaint complaint){
-        Complaint updatedComplaint = complaintService.updateOne(complaint);
-        if (updatedComplaint != null){
+        boolean isSuccess = complaintService.updateOne(complaint);
+        if (isSuccess){
+            Complaint updatedComplaint = complaintService.getOneById(id);
             return ResponseUtil.success(updatedComplaint);
         }else {
             return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
@@ -154,9 +161,10 @@ public class ComplaintController {
     public ResultObj handleOne(@PathVariable("id") long id, @RequestBody Map<String,String> map){
         String handleAdminName = map.get("handleAdminName");
         String handleMessage = map.get("handleMessage");
-        Complaint complaint = complaintService.handleOne(id,handleAdminName,handleMessage);
-        if (complaint != null){
-            return ResponseUtil.success(complaint);
+        boolean isSuccess = complaintService.handleOne(id,handleAdminName,handleMessage);
+        if (isSuccess){
+            Complaint handledComplaint = complaintService.getOneById(id);
+            return ResponseUtil.success(handledComplaint);
         }else {
             return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
         }

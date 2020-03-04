@@ -1,5 +1,7 @@
 package cn.hfut.huangshan.pojo;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +18,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class Complaint implements Serializable {
 
+    @JsonSerialize(using = ToStringSerializer.class)
     private long id;
     private String complaintTime;//投诉时间
     private String complaintObject;//投诉对象

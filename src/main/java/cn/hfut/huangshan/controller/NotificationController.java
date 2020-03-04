@@ -86,9 +86,9 @@ public class NotificationController {
      */
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
     public ResultObj updateOne(@PathVariable("id") long id, @RequestBody Notification notification){
-        notification.setId(id);//这里会有点小小的问题，可以任意植入id？
-        Notification updatedNotification = notificationService.updateOne(notification);
-        if (updatedNotification != null){
+        boolean isSuccess = notificationService.updateOne(notification);
+        if (isSuccess){
+            Notification updatedNotification = notificationService.getById(id);
             return ResponseUtil.success(updatedNotification);
         } else {
             return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);

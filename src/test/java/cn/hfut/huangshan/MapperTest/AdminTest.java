@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @SpringBootTest
@@ -31,6 +33,16 @@ public class AdminTest {
         System.out.println(admin);
         Admin admin1 = adminMapper.adminLogin("2017211241","123456");
         System.out.println(admin1);
+    }
 
+    @Test
+    void testMaxAccount(){
+        String maxAccount = adminMapper.getMaxAccount();
+        int account = Integer.parseInt(maxAccount.substring(4)) + 1;
+        System.out.println(account);
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy");
+        String newDate = format.format(date);
+        System.out.println(String.valueOf(account)+newDate);
     }
 }

@@ -1,17 +1,17 @@
 package cn.hfut.huangshan.controller;
 
 import cn.hfut.huangshan.constants.ErrorCode;
+import cn.hfut.huangshan.pojo.DB.DBTourist;
 import cn.hfut.huangshan.pojo.Tourist;
 import cn.hfut.huangshan.response.ResultObj;
 import cn.hfut.huangshan.service.TouristService;
+import cn.hfut.huangshan.utils.IdWorker;
 import cn.hfut.huangshan.utils.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 游客接口
@@ -35,6 +35,109 @@ public class TouristController {
             return ResponseUtil.success(tourists);
         }else {
             return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResultObj getById(@PathVariable("id") long id){
+        Tourist tourist = touristService.getById(id);
+        if (tourist != null){
+            return ResponseUtil.success(tourist);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 增加一个
+     * @param dbTourist
+     * @return
+     */
+    @RequestMapping(method = RequestMethod.POST)
+    public ResultObj addOne(@RequestBody DBTourist dbTourist){
+        IdWorker idWorker = new IdWorker();
+        long id = idWorker.nextId();
+        dbTourist.setId(id);
+        boolean isSuccess = touristService.addOne(dbTourist);
+        if (isSuccess){
+            Tourist tourist = touristService.getById(id);
+            return ResponseUtil.success(tourist);
+        }else {
+            return ResponseUtil.error(ErrorCode.ADD_FAIL,ErrorCode.ADD_FAIL_MSG,null);
+        }
+    }
+
+
+    /**
+     * 更新个人资料
+     * @param id
+     * @param tourist
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    public ResultObj updateOne(@PathVariable("id") long id, @RequestBody Tourist tourist){
+        boolean isSuccess = touristService.updateOne(tourist);
+        if (isSuccess){
+            Tourist updatedTourist = touristService.getById(id);
+            return ResponseUtil.success(updatedTourist);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 修改密码
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/passwords/{id}", method = RequestMethod.PUT)
+    public ResultObj changePassword(@PathVariable("id") long id, @RequestBody Map<String, String> map){
+        //两次输入不一致之类的在前端校验
+        String newPassword = map.get("password");
+        boolean isSuccess = touristService.changePassword(id,newPassword);
+        if (isSuccess){
+            Tourist updatedTourist = touristService.getById(id);
+            return ResponseUtil.success(updatedTourist);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+    }
+
+
+    /**
+     * 修改头像
+     * @param id
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/headicons/{id}", method = RequestMethod.PUT)
+    public ResultObj changeHeadIcon(@PathVariable("id") long id, @RequestBody Map<String, String> map){
+        String headIconUrl = map.get("headIcon");
+        boolean isSuccess = touristService.changeHeadIcon(id,headIconUrl);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        }else {
+            return ResponseUtil.error(ErrorCode.DELETE_FAIL,ErrorCode.DELETE_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 删除一个
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public ResultObj deleteOne(@PathVariable("id") long id){
+        boolean isSuccess = touristService.deleteOne(id);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        }else {
+            return ResponseUtil.error(ErrorCode.DELETE_FAIL,ErrorCode.DELETE_FAIL_MSG,null);
         }
     }
 }

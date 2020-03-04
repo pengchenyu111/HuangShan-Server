@@ -25,6 +25,19 @@
         <result column="introduction" property="introduction"/>
         <result column="head_icon" property="headIcon"/>
     </resultMap>
+    <resultMap id="dbAdminMap" type="cn.hfut.huangshan.pojo.DB.DBAdmin">
+        <id column="id" property="id"/>
+        <result column="account" property="account"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="role_id" property="roleId"/>
+        <result column="phone" property="phone"/>
+        <result column="work_year" property="workYear"/>
+        <result column="birth" property="birth"/>
+        <result column="sex" property="sex"/>
+        <result column="introduction" property="introduction"/>
+        <result column="head_icon" property="headIcon"/>
+    </resultMap>
 
     <!--全查询-->
     <select id="getAllAdmins" resultMap="adminMap">
@@ -34,6 +47,16 @@
     <!--登录-->
     <select id="adminLogin" parameterType="String" resultMap="adminMap">
         select * from huangshan.v_admin_basic_info where account = #{account} and password = #{password}
+    </select>
+
+    <!--根据id查询-->
+    <select id="getOneById" parameterType="long" resultMap="adminMap">
+        select * from huangshan.v_admin_basic_info where id = #{id}
+    </select>
+
+    <!--查询最大账号-->
+    <select id="getMaxAccount" resultType="String">
+        SELECT MAX(huangshan.admin.account) AS last FROM huangshan.admin;
     </select>
 
     <!--更新头像-->
@@ -49,10 +72,48 @@
         set phone = #{phone}
         where account = #{account}
     </update>
+
     <!--只更新个人简介-->
     <update id="changeIntroduction" parameterType="String">
         update admin
         set introduction = #{introduction}
         where account = #{account}
+    </update>
+
+    <!--修改密码-->
+    <update id="changePassword">
+        update huangshan.admin
+        set password = #{password}
+        where id = #{id}
+    </update>
+
+    <!--增加一名-->
+    <insert id="addOne" parameterType="cn.hfut.huangshan.pojo.DB.DBAdmin">
+        insert into
+        huangshan.admin(id,account,password,name,role_id,phone,work_year,birth,sex,introduction,head_icon)
+        values (#{id},#{account},#{password},#{name},#{roleId},#{phone},#{workYear},#{birth},#{sex},#{introduction},#{headIcon})
+    </insert>
+
+    <!--删除一名-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.admin
+        where id = #{id}
+    </delete>
+
+    <!--全更新一个-->
+    <update id="changeOne" parameterType="cn.hfut.huangshan.pojo.DB.DBAdmin">
+        update huangshan.admin
+        set
+        account = #{account},
+        password = #{password},
+        name = #{name},
+        role_id = #{roleId},
+        phone = #{phone},
+        work_year = #{workYear},
+        birth = #{birth},
+        sex = #{sex},
+        introduction = #{introduction},
+        head_icon = #{headIcon}
+        where id = #{id}
     </update>
 </mapper>

@@ -2,12 +2,17 @@ package cn.hfut.huangshan.service;
 
 import cn.hfut.huangshan.constants.DefaultSetting;
 import cn.hfut.huangshan.mapper.TouristMapper;
+import cn.hfut.huangshan.pojo.DB.DBTourist;
 import cn.hfut.huangshan.pojo.Tourist;
 import cn.hfut.huangshan.utils.EncryptionUtil;
+import org.omg.CORBA.INTERNAL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -42,5 +47,127 @@ public class TouristService {
         String encodePassword = EncryptionUtil.sha384HashWithSalt(password, DefaultSetting.DEFAULT_PASSWORD_SALT);
         Tourist tourist = touristMapper.touristLogin(account, encodePassword);
         return tourist;
+    }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    public Tourist getById(long id) {
+        Tourist tourist = touristMapper.getById(id);
+        return tourist;
+    }
+
+    /**
+     * 增加一个
+     * 这里是用户注册，没必要写全信息
+     * @param dbTourist
+     * @return
+     */
+    @Transactional
+    public boolean addOne(DBTourist dbTourist) {
+        //TODO  这里要加入阿里云的短信验证
+        //设置账户
+        dbTourist.setAccount(dbTourist.getPhone());
+        //设置默认名字
+        dbTourist.setName("游客" + dbTourist.getPhone());
+        //设置加密密码
+        String encode = EncryptionUtil.sha384HashWithSalt(dbTourist.getPassword(),DefaultSetting.DEFAULT_PASSWORD_SALT);
+        dbTourist.setPassword(encode);
+        //设置角色,游客：5，写死
+        dbTourist.setRoleId(5);
+        //设置默认头像
+        dbTourist.setHeadIcon(DefaultSetting.DEFAULT_ADMIN_HEAD_ICON);
+        Integer rows = touristMapper.addOne(dbTourist);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+
+    }
+
+    /**
+     * 更新个人资料
+     * @param tourist
+     * @return
+     */
+    @Transactional
+    public boolean updateOne(Tourist tourist) {
+        DBTourist dbTourist = new DBTourist();
+        //id传过来
+        dbTourist.setId(tourist.getId());
+        //账号随手机号变化
+        dbTourist.setAccount(tourist.getPhone());
+        //密码不变，会有单独的修改密码接口
+        //修改姓名
+        dbTourist.setName(tourist.getName());
+        //角色写死
+        dbTourist.setRoleId(5);
+        //修改手机号
+        dbTourist.setPhone(tourist.getPhone());
+        //设置生日格式，避免出错
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = null;
+        try {
+            date = format.parse(tourist.getBirth());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        dbTourist.setBirth(format.format(date));
+        //设置性别
+        dbTourist.setSex(tourist.getSex());
+        //设置头像
+        dbTourist.setHeadIcon(tourist.getHeadIcon());
+        Integer rows = touristMapper.updateOne(dbTourist);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 修改密码
+     * @param id
+     * @param newPassword
+     * @return
+     */
+    @Transactional
+    public boolean changePassword(long id, String newPassword) {
+        String encode = EncryptionUtil.sha384HashWithSalt(newPassword,DefaultSetting.DEFAULT_PASSWORD_SALT);
+        Integer rows = touristMapper.updatePassword(id, encode);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 删除一个
+     * @param id
+     * @return
+     */
+    @Transactional
+    public boolean deleteOne(long id) {
+        Integer rows = touristMapper.deleteOne(id);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 修改头像
+     * @param id
+     * @param headIconUrl
+     * @return
+     */
+    @Transactional
+    public boolean changeHeadIcon(long id, String headIconUrl) {
+        Integer rows = touristMapper.changeHeadIcon(id,headIconUrl);
+        if (rows > 0){
+            return true;
+        }
+        return false;
     }
 }

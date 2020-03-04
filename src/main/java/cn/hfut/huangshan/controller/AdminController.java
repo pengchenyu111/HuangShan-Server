@@ -2,11 +2,14 @@ package cn.hfut.huangshan.controller;
 
 import cn.hfut.huangshan.constants.ErrorCode;
 import cn.hfut.huangshan.pojo.Admin;
+import cn.hfut.huangshan.pojo.DB.DBAdmin;
 import cn.hfut.huangshan.response.ResultObj;
 import cn.hfut.huangshan.service.AdminService;
+import cn.hfut.huangshan.utils.IdWorker;
 import cn.hfut.huangshan.utils.ResponseUtil;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Id;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,6 +38,74 @@ public class AdminController {
         }else {
             return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
         }
+    }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public ResultObj getOneById(@PathVariable("id") long id){
+        Admin admin = adminService.getOneById(id);
+        if (admin != null){
+            return ResponseUtil.success(admin);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+
+    }
+
+    /**
+     * 增加一位管理员
+     * 注意输入和输出的类不一样
+     * @param dbAdmin
+     * @return
+     */
+    @RequestMapping(method = RequestMethod.POST)
+    public ResultObj addOne(@RequestBody DBAdmin dbAdmin){
+        IdWorker idWorker = new IdWorker(0,0);
+        long id = idWorker.nextId();
+        dbAdmin.setId(id);
+        boolean isSuccess = adminService.addOne(dbAdmin);
+        if (isSuccess){
+            Admin admin = adminService.getOneById(id);
+            return ResponseUtil.success(admin);
+        }else {
+            return ResponseUtil.error(ErrorCode.ADD_FAIL,ErrorCode.ADD_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 删除一名管理员
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public ResultObj deleteOne(@PathVariable("id") long id){
+        boolean isSuccess = adminService.deleteOne(id);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        }else {
+            return ResponseUtil.error(ErrorCode.DELETE_FAIL,ErrorCode.DELETE_FAIL_MSG,null);
+        }
+    }
+
+    /**
+     * 全更新一个
+     * @param admin
+     * @return
+     */
+    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
+    public ResultObj changeOne(@RequestBody Admin admin, @PathVariable long id){
+        boolean isSuccess = adminService.changeOne(admin);
+        if (isSuccess){
+            Admin updatedAdmin = adminService.getOneById(id);
+            return ResponseUtil.success(updatedAdmin);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+
     }
 
     /**
@@ -88,5 +159,23 @@ public class AdminController {
         }
     }
 
-
+    /**
+     * 修改密码
+     * @param id
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/passwords/{id}", method = RequestMethod.PUT)
+    public ResultObj changePassword(@PathVariable("id") long id,  @RequestBody Map<String,String> map){
+        //两次输入不一致等在前端校验
+        String password = map.get("password");
+        boolean isSuccess = adminService.changPassword(id,password);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+    }
 }
+
+

@@ -27,4 +27,38 @@ public class RoleService {
         List<Role> roles = roleMapper.getAllRoles();
         return roles;
     }
+
+    /**
+     * 根据id查询
+     * @param id
+     * @return
+     */
+    public Role getById(long id) {
+        Role role = roleMapper.getById(id);
+        return role;
+    }
+
+    /**
+     * 根据名字查询
+     * @param name
+     * @return
+     */
+    public Role getByName(String name) {
+        Role role = roleMapper.getByName(name);
+        return role;
+    }
+
+    /**
+     * 修改一个
+     * @param role
+     * @return
+     */
+    @Transactional
+    public boolean changeOne(Role role) {
+        Integer rows = roleMapper.changeOne(role);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
 }

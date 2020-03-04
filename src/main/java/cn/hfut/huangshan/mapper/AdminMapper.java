@@ -47,4 +47,6 @@ public interface AdminMapper {
     //更新个人简介
     Integer changeIntroduction(@Param("account")String account, @Param("introduction") String introduction);
 
+    //修改密码
+    Integer changePassword(@Param("id")long id, @Param("password")String encode);
 }

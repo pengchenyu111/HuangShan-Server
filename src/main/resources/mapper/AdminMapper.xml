@@ -80,6 +80,13 @@
         where account = #{account}
     </update>
 
+    <!--修改密码-->
+    <update id="changePassword">
+        update huangshan.admin
+        set password = #{password}
+        where id = #{id}
+    </update>
+
     <!--增加一名-->
     <insert id="addOne" parameterType="cn.hfut.huangshan.pojo.DB.DBAdmin">
         insert into

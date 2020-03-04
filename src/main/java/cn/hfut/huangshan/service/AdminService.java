@@ -185,4 +185,20 @@ public class AdminService {
         }
         return false;
     }
+
+    /**
+     * 修改密码
+     * @param id
+     * @param password
+     * @return
+     */
+    @Transactional
+    public boolean changPassword(long id, String password) {
+        String encode = EncryptionUtil.sha384HashWithSalt(password,DefaultSetting.DEFAULT_PASSWORD_SALT);
+        Integer rows = adminMapper.changePassword(id,encode);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
 }

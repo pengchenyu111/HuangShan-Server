@@ -159,5 +159,23 @@ public class AdminController {
         }
     }
 
-
+    /**
+     * 修改密码
+     * @param id
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/passwords/{id}", method = RequestMethod.PUT)
+    public ResultObj changePassword(@PathVariable("id") long id,  @RequestBody Map<String,String> map){
+        //两次输入不一致等在前端校验
+        String password = map.get("password");
+        boolean isSuccess = adminService.changPassword(id,password);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+    }
 }
+
+

@@ -53,6 +53,34 @@ public class TouristController {
         }
     }
 
+
+    /**
+     * 注册一个
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/registers", method = RequestMethod.POST)
+    public ResultObj registerOne(@RequestBody Map<String, String> map){
+        String phone = map.get("phone");
+        String password = map.get("password");
+        String verificationCode = map.get("verificationCode");
+        long id = new IdWorker().nextId();
+        String tag = touristService.registerOne(id,phone,password,verificationCode);
+        if (tag.equals("0")){
+            //注册成功
+            Tourist registeredTourist = touristService.getById(id);
+            return ResponseUtil.success(registeredTourist);
+        }else if (tag.equals("1")){
+            //验证码过期
+            return ResponseUtil.error(ErrorCode.VERIFICATION_CODE_OUT_DATE,ErrorCode.VERIFICATION_CODE_OUT_DATE_MSG,null);
+        }else if (tag.equals("2")){
+            //验证码错误
+            return ResponseUtil.error(ErrorCode.VERIFICATION_CODE_WRONG,ErrorCode.VERIFICATION_CODE_WRONG_MSG,null);
+        }else {
+            return ResponseUtil.error(ErrorCode.ADD_FAIL,ErrorCode.ADD_FAIL_MSG,null);
+        }
+    }
+
     /**
      * 增加一个
      * @param dbTourist

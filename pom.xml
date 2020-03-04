@@ -87,6 +87,13 @@
             <version>3.4.0</version>
         </dependency>
 
+        <!--阿里云服务-->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
         <!--单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

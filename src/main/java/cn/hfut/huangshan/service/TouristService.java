@@ -5,6 +5,7 @@ import cn.hfut.huangshan.mapper.TouristMapper;
 import cn.hfut.huangshan.pojo.DB.DBTourist;
 import cn.hfut.huangshan.pojo.Tourist;
 import cn.hfut.huangshan.utils.EncryptionUtil;
+import cn.hfut.huangshan.utils.RedisUtil;
 import org.omg.CORBA.INTERNAL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,8 @@ public class TouristService {
 
     @Autowired
     TouristMapper touristMapper;
+    @Autowired
+    RedisUtil redisUtil;
 
     /**
      * 全查询
@@ -61,13 +64,12 @@ public class TouristService {
 
     /**
      * 增加一个
-     * 这里是用户注册，没必要写全信息
+     * 这个可以给管理员添加游客，不用发验证码
      * @param dbTourist
      * @return
      */
     @Transactional
     public boolean addOne(DBTourist dbTourist) {
-        //TODO  这里要加入阿里云的短信验证
         //设置账户
         dbTourist.setAccount(dbTourist.getPhone());
         //设置默认名字
@@ -169,5 +171,50 @@ public class TouristService {
             return true;
         }
         return false;
+    }
+
+    /**
+     * 游客注册
+     * 注册前一定要发送验证码
+     * @param id
+     * @param phone
+     * @param password
+     * @param verificationCode 验证码
+     * @return
+     */
+    public String registerOne(long id, String phone, String password, String verificationCode) {
+        //先检查验证码有没有过期
+        String key = "vercode:" + phone;
+        Long ttl = redisUtil.ttl(key, 0);
+        if (ttl <= 0){
+            //过期
+            return "1";
+        }else {
+            //再看验证码对不对
+            String value = redisUtil.get(key, 0);
+            if (value.equals(verificationCode)){
+                DBTourist dbTourist = new DBTourist();
+                //设置id
+                dbTourist.setId(id);
+                //设置账户
+                dbTourist.setAccount(phone);
+                //设置默认名字
+                dbTourist.setName("游客" + phone);
+                //设置加密密码
+                String encode = EncryptionUtil.sha384HashWithSalt(password,DefaultSetting.DEFAULT_PASSWORD_SALT);
+                dbTourist.setPassword(encode);
+                //设置角色,游客：5，写死
+                dbTourist.setRoleId(5);
+                //设置默认头像
+                dbTourist.setHeadIcon(DefaultSetting.DEFAULT_ADMIN_HEAD_ICON);
+                Integer rows = touristMapper.addOne(dbTourist);
+                if (rows > 0){
+                    return "0";
+                }
+                return "3";
+            }else {
+                return "2";
+            }
+        }
     }
 }

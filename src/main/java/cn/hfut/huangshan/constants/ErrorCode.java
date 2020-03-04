@@ -40,5 +40,14 @@ public class ErrorCode {
     public static final int TOURIST_LOGIN = 810;
     public static final String TOURIST_LOGIN_MSG= "游客登录";
 
+    public static final int VERIFICATION_CODE_GET_FAIL = 811;
+    public static final String VERIFICATION_CODE_GET_FAIL_MSG= "验证码获取失败";
+
+    public static final int VERIFICATION_CODE_OUT_DATE = 812;
+    public static final String VERIFICATION_CODE_OUT_DATE_MSG= "验证码已过期";
+
+    public static final int VERIFICATION_CODE_WRONG = 812;
+    public static final String VERIFICATION_CODE_WRONG_MSG= "验证码错误";
+
 
 }

@@ -85,18 +85,14 @@ public class ComplaintService {
      * @return
      */
     @Transactional
-    public Complaint addOne(Complaint complaint) {
-        //设置id
-        IdWorker idWorker = new IdWorker(0,0);
-        long id = idWorker.nextId();
-        complaint.setId(id);
+    public boolean addOne(Complaint complaint) {
         complaint.setComplaintTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));//等价于new Date().toLocaleString()
         complaint.setIsHandle("0");
         Integer rows = complaintMapper.addOne(complaint);
         if (rows > 0){
-            return complaintMapper.getOneById(id);
+            return true;
         }
-        return new Complaint();
+        return false;
     }
 
     /**
@@ -119,14 +115,14 @@ public class ComplaintService {
      * @return
      */
     @Transactional
-    public Complaint updateOne(Complaint complaint) {
+    public boolean updateOne(Complaint complaint) {
         //这里有个问题，MySQL不允许你插入或更新一个为空的时间，所以这里逼不得已再全更新时设置了时间，反正都是管理员才能更新，没啥影响
         complaint.setHandleTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
         Integer rows = complaintMapper.updateOne(complaint);
         if (rows > 0){
-            return complaintMapper.getOneById(complaint.getId());
+            return true;
         }
-        return new Complaint();
+        return false;
     }
 
     /**
@@ -137,13 +133,13 @@ public class ComplaintService {
      * @return
      */
     @Transactional
-    public Complaint handleOne(long id, String handleAdminName, String handleMessage) {
+    public boolean handleOne(long id, String handleAdminName, String handleMessage) {
         String handleTime= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         Integer rows = complaintMapper.handleOne(id,handleAdminName,handleTime,handleMessage);
         if (rows > 0){
-            return complaintMapper.getOneById(id);
+            return true;
         }
-        return new Complaint();
+        return false;
     }
 
 }

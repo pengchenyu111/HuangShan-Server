@@ -51,4 +51,20 @@ public class HourlyNumController {
             return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
         }
     }
+
+    /**
+     * 查询某一天的
+     * @param date
+     * @return
+     */
+    @RequestMapping(value = "/{date}", method = RequestMethod.GET)
+    public ResultObj getOneDayNum(@PathVariable("date") String date){
+        List<HourlyNum> hourlyNums = hourlyNumService.getOneDayNum(date);
+        if (hourlyNums.size() > 0){
+            return ResponseUtil.success(hourlyNums);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+
+    }
 }

@@ -53,4 +53,19 @@ public class DailyNumController {
             return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
         }
     }
+
+    /**
+     * 根据日期查询某一天的
+     * @param date
+     * @return
+     */
+    @RequestMapping(value = "/{date}", method = RequestMethod.GET)
+    public ResultObj getOneByDate(@PathVariable("date") String date){
+        DailyNum dailyNum = dailyNumService.getOneByDate(date);
+        if (dailyNum != null) {
+            return ResponseUtil.success(dailyNum);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
+        }
+    }
 }

@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,7 +25,6 @@ public class HourlyNumService {
      * 限制性全查询：降序前2000条
      * @return
      */
-    @Transactional
     public List<HourlyNum> getLimitAllHourlyNum(){
         List<HourlyNum> hourlyNums = hourlyNumMapper.getLimitAllHourlyNum();
         return hourlyNums;
@@ -34,9 +36,26 @@ public class HourlyNumService {
      * @param endTime 结束日期
      * @return
      */
-    @Transactional
     public List<HourlyNum> periodHourlyNum(String startTime,String endTime){
         List<HourlyNum> hourlyNums = hourlyNumMapper.periodHourlyNum(startTime, endTime);
+        return hourlyNums;
+    }
+
+    /**
+     * 根据日期查询某一天的
+     * @param date
+     * @return
+     */
+    public List<HourlyNum> getOneDayNum(String date) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date1 = null;
+        try {
+            date1 = format.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        String formatDate = format.format(date1);
+        List<HourlyNum> hourlyNums = hourlyNumMapper.getOneDayNum(formatDate);
         return hourlyNums;
     }
 }

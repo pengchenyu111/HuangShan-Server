@@ -20,4 +20,7 @@ public interface HourlyNumMapper {
 
     //按开始日期和结束日期来查询
     List<HourlyNum> periodHourlyNum(@Param("startTime") String startTime, @Param("endTime") String endTime);
+
+    //根据日期查询某一天的
+    List<HourlyNum> getOneDayNum(@Param("date") String date);
 }

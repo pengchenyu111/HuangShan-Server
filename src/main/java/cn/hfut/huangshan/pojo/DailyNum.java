@@ -15,8 +15,14 @@ import java.io.Serializable;
 @NoArgsConstructor
 public class DailyNum implements Serializable {
     private String dateName;
-    private int dateWeek;
-    private int totalNum;
-    private int eightNum;
-    private int nineNum;
+    private String dateWeek;
+    private int predictNum;
+    private int todayEightNum;
+    private int todayNineNum;
+    private int todayTotalNum;
+    private double deviationRate;
+    private int orderNum;
+    private String weatherName;
+    private String moduleName;
+    private String description;
 }

@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -40,4 +43,21 @@ public class DailyNumService {
         return dailyNums;
     }
 
+    /**
+     * 根据日期查询某一天的
+     * @param date
+     * @return
+     */
+    public DailyNum getOneByDate(String date) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date1 = null;
+        try {
+            date1 = format.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        String formatDate = format.format(date1);
+        DailyNum dailyNum = dailyNumMapper.getOneByDate(formatDate);
+        return dailyNum;
+    }
 }

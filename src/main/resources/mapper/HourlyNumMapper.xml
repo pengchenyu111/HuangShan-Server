@@ -26,4 +26,9 @@
     <select id="periodHourlyNum" parameterType="String" resultMap="hourlyNumMap">
         select * from hourlynum where date_name <![CDATA[ >= ]]> #{startTime} and date_name <![CDATA[ <= ]]> #{endTime}
     </select>
+
+    <!--根据日期查询某一天的-->
+    <select id="getOneDayNum" parameterType="String" resultMap="hourlyNumMap">
+        select * from  huangshan.hourlynum where date_name = #{date}
+    </select>
 </mapper>

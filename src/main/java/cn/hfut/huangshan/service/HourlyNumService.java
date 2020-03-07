@@ -37,7 +37,18 @@ public class HourlyNumService {
      * @return
      */
     public List<HourlyNum> periodHourlyNum(String startTime,String endTime){
-        List<HourlyNum> hourlyNums = hourlyNumMapper.periodHourlyNum(startTime, endTime);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date1 = null;
+        Date date2 = null;
+        try {
+            date1 = format.parse(startTime);
+            date2 = format.parse(endTime);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        String formatStartTime = format.format(date1);
+        String formatEndTime = format.format(date2);
+        List<HourlyNum> hourlyNums = hourlyNumMapper.periodHourlyNum(formatStartTime, formatEndTime);
         return hourlyNums;
     }
 

@@ -44,7 +44,7 @@ public class HourlyNumController {
      */
     @RequestMapping(value = "/period/start/{start}/end/{end}",method = RequestMethod.GET)
     public ResultObj periodHourlyNum(@PathVariable("start")String start, @PathVariable("end")String end){
-        List<HourlyNum> hourlyNums = hourlyNumService.periodHourlyNum(start, start);
+        List<HourlyNum> hourlyNums = hourlyNumService.periodHourlyNum(start, end);
         if (hourlyNums.size() > 0){
             return ResponseUtil.success(hourlyNums);
         }else {

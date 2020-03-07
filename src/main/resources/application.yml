@@ -10,9 +10,9 @@ spring:
 
     #Spring Boot 默认是不注入这些属性值的，需要自己绑定
     #druid 数据源专有配置
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
+    initialSize: 20
+    minIdle: 10
+    maxActive: 50
     maxWait: 6000
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000

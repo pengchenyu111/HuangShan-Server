@@ -39,7 +39,18 @@ public class DailyNumService {
      */
     @Transactional
     public List<DailyNum> periodDailyNum(String startTime,String endTime){
-        List<DailyNum> dailyNums = dailyNumMapper.periodDailyNum(startTime,endTime);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date1 = null;
+        Date date2 = null;
+        try {
+            date1 = format.parse(startTime);
+            date2 = format.parse(endTime);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        String formatStartTime = format.format(date1);
+        String formatEndTime = format.format(date2);
+        List<DailyNum> dailyNums = dailyNumMapper.periodDailyNum(formatStartTime,formatEndTime);
         return dailyNums;
     }
 

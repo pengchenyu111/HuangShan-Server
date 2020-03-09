@@ -162,6 +162,7 @@ public class AdminService {
      * @param admin
      * @return
      */
+    @Transactional
     public boolean changeOne(Admin admin) {
         DBAdmin dbAdmin = new DBAdmin();
         dbAdmin.setId(admin.getId());
@@ -180,6 +181,30 @@ public class AdminService {
         dbAdmin.setIntroduction(admin.getIntroduction());
         dbAdmin.setHeadIcon(admin.getHeadIcon());
         Integer rows = adminMapper.changeOne(dbAdmin);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 局部更新一个管理员的信息
+     * @param admin
+     * @return
+     */
+    @Transactional
+    public boolean changeOnePart(Admin admin) {
+        DBAdmin dbAdmin = new DBAdmin();
+        dbAdmin.setId(admin.getId());
+        dbAdmin.setName(admin.getName());
+        Role byName = roleMapper.getByName(admin.getRoleName());
+        dbAdmin.setRoleId(byName.getId());
+        dbAdmin.setPhone(admin.getPhone());
+        dbAdmin.setWorkYear(admin.getWorkYear());
+        dbAdmin.setBirth(admin.getBirth());
+        dbAdmin.setSex(admin.getSex());
+        dbAdmin.setIntroduction(admin.getIntroduction());
+        Integer rows = adminMapper.changeOnePart(dbAdmin);
         if (rows > 0){
             return true;
         }

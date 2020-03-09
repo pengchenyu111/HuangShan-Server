@@ -109,6 +109,23 @@ public class AdminController {
     }
 
     /**
+     * 局部更新一个
+     * @param admin
+     * @return
+     */
+    @RequestMapping(value = "/part/{id}", method = RequestMethod.PUT)
+    public ResultObj changeOnePart(@RequestBody Admin admin, @PathVariable long id){
+        boolean isSuccess = adminService.changeOnePart(admin);
+        if (isSuccess){
+            Admin updatedAdmin = adminService.getOneById(id);
+            return ResponseUtil.success(updatedAdmin);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG,null);
+        }
+
+    }
+
+    /**
      * 更换头像
      * @param account 账号
      * @param map 接受头像url，这里为什么不在url里直接加呢？因为headIconUrl有该死的http://.... 这样会解析错误

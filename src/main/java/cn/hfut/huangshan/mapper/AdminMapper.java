@@ -38,6 +38,9 @@ public interface AdminMapper {
     //全更新一个
     Integer changeOne(DBAdmin dbAdmin);
 
+    //局部更新一个
+    Integer changeOnePart(DBAdmin dbAdmin);
+
     //更新头像
     Integer changeAdminHeadIcon(@Param("headIconUrl") String headIconUrl, @Param("account") String account);
 

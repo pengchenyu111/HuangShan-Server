@@ -46,8 +46,11 @@ public class ErrorCode {
     public static final int VERIFICATION_CODE_OUT_DATE = 812;
     public static final String VERIFICATION_CODE_OUT_DATE_MSG= "验证码已过期";
 
-    public static final int VERIFICATION_CODE_WRONG = 812;
+    public static final int VERIFICATION_CODE_WRONG = 813;
     public static final String VERIFICATION_CODE_WRONG_MSG= "验证码错误";
+
+    public static final int PHONE_HAS_REGISTERED = 814;
+    public static final String PHONE_HAS_REGISTERED_MSG= "该账号已经被注册";
 
 
 }

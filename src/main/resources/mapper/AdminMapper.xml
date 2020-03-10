@@ -116,4 +116,18 @@
         head_icon = #{headIcon}
         where id = #{id}
     </update>
+
+    <!-- 局部更新-->
+    <update id="changeOnePart" parameterType="cn.hfut.huangshan.pojo.DB.DBAdmin">
+        update huangshan.admin
+        set
+        name = #{name},
+        role_id = #{roleId},
+        phone = #{phone},
+        work_year = #{workYear},
+        birth = #{birth},
+        sex = #{sex},
+        introduction = #{introduction}
+        where id = #{id}
+    </update>
 </mapper>

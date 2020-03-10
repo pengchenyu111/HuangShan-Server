@@ -39,6 +39,11 @@
         select * from huangshan.v_tourist_basic_info where id = #{id}
     </select>
 
+    <!--根据手机号查询-->
+    <select id="getByPhone" parameterType="String" resultMap="touristMap">
+        select * from huangshan.v_tourist_basic_info where phone = #{phone}
+    </select>
+
     <!--增加一名-->
     <insert id="addOne" parameterType="cn.hfut.huangshan.pojo.DB.DBTourist">
         insert into

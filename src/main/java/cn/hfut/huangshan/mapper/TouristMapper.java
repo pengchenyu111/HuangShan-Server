@@ -22,6 +22,9 @@ public interface TouristMapper {
     //根据账号密码查询游客
     Tourist touristLogin(@Param("account") String account, @Param("password") String password);
 
+    //根据手机号查询游客
+    Tourist getByPhone(@Param("phone") String phone);
+
     //根据id查询
     Tourist getById(@Param("id") long id);
 

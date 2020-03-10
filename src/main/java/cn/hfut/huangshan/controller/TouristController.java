@@ -56,6 +56,7 @@ public class TouristController {
 
     /**
      * 注册一个
+     * 这里要发验证码，之前一定要先调用验证码接口
      * @param map
      * @return
      */
@@ -76,6 +77,9 @@ public class TouristController {
         }else if (tag.equals("2")){
             //验证码错误
             return ResponseUtil.error(ErrorCode.VERIFICATION_CODE_WRONG,ErrorCode.VERIFICATION_CODE_WRONG_MSG,null);
+        }else if (tag.equals("4")){
+            //该账号已注册
+            return ResponseUtil.error(ErrorCode.PHONE_HAS_REGISTERED,ErrorCode.PHONE_HAS_REGISTERED_MSG,null);
         }else {
             return ResponseUtil.error(ErrorCode.ADD_FAIL,ErrorCode.ADD_FAIL_MSG,null);
         }
@@ -83,6 +87,7 @@ public class TouristController {
 
     /**
      * 增加一个
+     * 这个不用发验证码，可用于管理员直接加一个游客
      * @param dbTourist
      * @return
      */

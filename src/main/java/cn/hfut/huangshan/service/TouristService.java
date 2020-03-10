@@ -70,6 +70,12 @@ public class TouristService {
      */
     @Transactional
     public boolean addOne(DBTourist dbTourist) {
+        //检查账号是否已注册
+        Tourist byPhone = touristMapper.getByPhone(dbTourist.getPhone());
+        if (byPhone != null ){
+            //账号已注册
+            return false;
+        }
         //设置账户
         dbTourist.setAccount(dbTourist.getPhone());
         //设置默认名字
@@ -183,7 +189,12 @@ public class TouristService {
      * @return
      */
     public String registerOne(long id, String phone, String password, String verificationCode) {
-        //先检查验证码有没有过期
+        //检查账号是否已注册
+        Tourist byPhone = touristMapper.getByPhone(phone);
+        if (byPhone != null ){
+            return "4";
+        }
+        //检查验证码有没有过期
         String key = "vercode:" + phone;
         Long ttl = redisUtil.ttl(key, 0);
         if (ttl <= 0){

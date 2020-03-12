@@ -56,7 +56,6 @@
         update huangshan.tourist
         set
         account = #{account},
-        password = #{password},
         name = #{name},
         role_id = #{roleId},
         phone = #{phone},

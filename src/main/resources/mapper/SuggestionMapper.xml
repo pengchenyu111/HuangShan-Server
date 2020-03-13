@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.SuggestionMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="suggestionMap" type="suggestion">
+        <id column="id" property="id"/>
+        <result column="suggestion" property="suggestion"/>
+        <result column="propounder" property="propounder"/>
+        <result column="feedback_time" property="feedbackTime"/>
+        <result column="contact_way" property="contactWay"/>
+    </resultMap>
+
+    <!--全查询-->
+    <select id="getAll" resultMap="suggestionMap">
+        select * from huangshan.suggestion
+    </select>
+
+    <!--根据id查询-->
+    <select id="getById" parameterType="long" resultMap="suggestionMap">
+        select * from huangshan.suggestion where id = #{id}
+    </select>
+
+    <!--增加一个-->
+    <insert id="addOne" parameterType="suggestion">
+        insert into
+        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
+        values(#{id},#{suggestion},#{propounder},#{feedbackTime},#{contactWay})
+    </insert>
+
+    <!--全更新一个-->
+    <update id="updateOne" parameterType="suggestion">
+        update huangshan.suggestion
+        set suggestion = #{suggestion},propounder = #{propounder},feedback_time = #{feedbackTime},contact_way = #{contactWay}
+        where id = #{id}
+    </update>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.suggestion
+        where id = #{id}
+    </delete>
+
+</mapper>

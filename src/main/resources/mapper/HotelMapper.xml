@@ -16,6 +16,7 @@
         <result column="hotel_name" property="hotelName"/>
         <result column="hotel_star" property="hotelStar"/>
         <result column="hotel_instruction" property="hotelInstruction"/>
+        <result column="hotel_location" property="hotelLocation"/>
         <result column="hotel_check_in" property="hotelCheckIn"/>
         <result column="hotel_leave" property="hotelLeave"/>
         <result column="hotel_phone" property="hotelPhone"/>
@@ -40,8 +41,8 @@
     <!--增加一个-->
     <insert id="addOne" parameterType="hotel">
         insert into
-        huangshan.hotel(id, hotel_name, hotel_star, hotel_instruction, hotel_check_in,hotel_leave,hotel_phone,breakfast_type,breakfast_price,is_take_pet,is_have_park,head_icon,album_url)
-        values(#{id},#{hotelName},#{hotelStar},#{hotelInstruction},#{hotelCheckIn},#{hotelLeave},#{hotelPhone},#{breakfastType},#{breakfastPrice},#{isTakePet},#{isHavePark},#{headIcon},#{albumUrl})
+        huangshan.hotel(id, hotel_name, hotel_star, hotel_instruction,hotel_location, hotel_check_in,hotel_leave,hotel_phone,breakfast_type,breakfast_price,is_take_pet,is_have_park,head_icon,album_url)
+        values(#{id},#{hotelName},#{hotelStar},#{hotelInstruction},#{hotelLocation},#{hotelCheckIn},#{hotelLeave},#{hotelPhone},#{breakfastType},#{breakfastPrice},#{isTakePet},#{isHavePark},#{headIcon},#{albumUrl})
     </insert>
 
     <!--全更新一个-->
@@ -51,6 +52,7 @@
         hotel_name = #{hotelName},
         hotel_star = #{hotelStar},
         hotel_instruction = #{hotelInstruction},
+        hotel_location = #{hotelLocation},
         hotel_check_in = #{hotelCheckIn},
         hotel_leave = #{hotelLeave},
         hotel_phone = #{hotelPhone},

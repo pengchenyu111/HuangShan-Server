@@ -1,761 +1,867 @@
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10022} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10022} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10022} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10022} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10021} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10004} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10003} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10002} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10001} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023,procId-4727} connected
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} pool-connect
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} setAutoCommit false
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20005} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20005} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20005} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20005} executed. 46.355 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20005, rs-50007} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20005, rs-50007} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20005, rs-50007} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20005} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} pool-connect
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} setAutoCommit false
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20006} created. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20006} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20006} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20006} executed. 46.7017 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20006, rs-50008} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20006, rs-50008} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20006, rs-50008} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10023, pstmt-20006, rs-50008} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10023, pstmt-20006} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10023} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024,procId-4730} connected
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024} pool-connect
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024} setAutoCommit false
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10024, pstmt-20007} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10024, pstmt-20007} Parameters : [2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10024, pstmt-20007} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10024, pstmt-20007} executed. 52.4329 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10024, pstmt-20007, rs-50009} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10024, pstmt-20007, rs-50009} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10024, pstmt-20007, rs-50009} Result: [1, 2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 白案, 业务管理员, 18224464498, 5, 1979-03-20, 40, 女, 我是一个尽职尽责的管理员！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10024, pstmt-20007, rs-50009} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10024, pstmt-20007} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10024} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025,procId-4731} connected
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} pool-connect
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} setAutoCommit false
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20008} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20008} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20008} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20008} executed. 49.2048 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20008, rs-50010} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20008, rs-50010} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20008, rs-50010} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20008} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} pool-connect
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} setAutoCommit false
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20009} created. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20009} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20009} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20009} executed. 46.4385 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50011} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50011} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50011} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50011} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10025, pstmt-20009} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10025} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10026,procId-4773} connected
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10026} pool-connect
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10026, pstmt-20010} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10026, pstmt-20010} Parameters : []
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10026, pstmt-20010} Types : []
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10026, pstmt-20010} executed. 45.1459 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235147055735767040, 2020-03-05 02:15:57.0, 张航, 您好, 优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠, 3, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235141637441585152, 2020-03-05 01:54:34.0, 张航, fantastic, 通知模块成功, 3, ]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235141409917370368, 2020-03-05 01:53:41.0, 张航, 新增编辑测试, 完美编辑, 3, ]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235137156012310528, 2020-03-05 01:36:44.0, 张航, 吼吼吼, 你好！, 1, 1]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235135916989743104, 2020-03-05 01:31:37.0, 彭陈宇, 新增成功, 由于新增成功，发放优惠！！！, 3, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235135571274235904, 2020-03-05 01:30:23.0, 彭陈宇, 测试测试传, 好了吧, 0, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} Result: [1235134786788392960, 2020-03-05 01:27:28.0, 张航, postman测eee, 你好, 3, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10026, pstmt-20010, rs-50012} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10026, pstmt-20010} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10026} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10026} closed
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10027,procId-4774} connected
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10027} pool-connect
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10027, pstmt-20011} created. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10027, pstmt-20011} Parameters : []
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10027, pstmt-20011} Types : []
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10027, pstmt-20011} executed. 51.4781 millis. SELECT * from huangshan.notification ORDER BY notification.send_time DESC LIMIT 7;
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} open
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Header: [id, send_time, send_admin_name, title, content, type, is_close]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235147055735767040, 2020-03-05 02:15:57.0, 张航, 您好, 优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠优惠, 3, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235141637441585152, 2020-03-05 01:54:34.0, 张航, fantastic, 通知模块成功, 3, ]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235141409917370368, 2020-03-05 01:53:41.0, 张航, 新增编辑测试, 完美编辑, 3, ]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235137156012310528, 2020-03-05 01:36:44.0, 张航, 吼吼吼, 你好！, 1, 1]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235135916989743104, 2020-03-05 01:31:37.0, 彭陈宇, 新增成功, 由于新增成功，发放优惠！！！, 3, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235135571274235904, 2020-03-05 01:30:23.0, 彭陈宇, 测试测试传, 好了吧, 0, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} Result: [1235134786788392960, 2020-03-05 01:27:28.0, 张航, postman测eee, 你好, 3, 0]
-[DEBUG][2020-03-11][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50013} closed
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10027, pstmt-20011} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10027} pool-recycle
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10028,procId-4799} connected
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10028} pool-connect
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10028} setAutoCommit false
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10028, pstmt-20012} created. update huangshan.tourist
-        set head_icon = ?
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20014} executed. 48.9924 millis. select * from huangshan.complaint order by complaint_time DESC
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1238832350406639616, 2020-03-15 06:20:24.0, 黄山大酒店, 黄山山脚, 餐饮, 菜太贵了！！！, http://101.37.173.73:8000/user/18224464804/complaint/IMG_20200118_120036.jpg, 彭陈宇, 18224464804, 0, null, null, null]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} open
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Header: [id, complaint_time, complaint_object, spot, complaint_type, complaint_reason, evidence_photo, complainant_name, complainant_phone, is_handle, handle_admin_name, handle_time, handle_message]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1235084092530229248, 2020-03-04 22:06:09.0, 逍遥饭店, 黄山, 餐饮, 这个饭店的菜贵的离谱！, http://101.37.173.73:8000/user/18224464804/complaint/IMG_20200118_120036.jpg, 彭陈宇, 18224464804, 0, null, null, null]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1238832350406639616, 2020-03-15 06:20:24.0, 黄山大酒店, 黄山山脚, 餐饮, 菜太贵了！！！, http://101.37.173.73:8000/user/18224464804/complaint/IMG_20200118_120036.jpg, 彭陈宇, 18224464804, 0, null, null, null]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1233751165867393024, 2020-03-01 05:49:34.0, 逍遥饭店, 黄山, 餐饮, 这个饭店的菜很难吃，收费还很贵，不管管？, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 0, null, null, null]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1235084092530229248, 2020-03-04 22:06:09.0, 逍遥饭店, 黄山, 餐饮, 这个饭店的菜贵的离谱！, http://101.37.173.73:8000/user/18224464804/complaint/IMG_20200118_120036.jpg, 彭陈宇, 18224464804, 0, null, null, null]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1233750726396608512, 2020-03-01 05:47:49.0, 张强, 黄山, 导游, 这个导游一直忽悠我们去他指定的店里消费，不去还骂我们！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-03-04 22:02:30.0, 已严肃处理该导游！感谢您的反馈！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1233751165867393024, 2020-03-01 05:49:34.0, 逍遥饭店, 黄山, 餐饮, 这个饭店的菜很难吃，收费还很贵，不管管？, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 0, null, null, null]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1233686350096498688, 2020-03-01 01:32:01.0, 黄山大酒店, 黄山山脚, 住宿, 这个酒店的收费贵的离谱，希望黄山管理委员会管管！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-03-04 21:51:15.0, 正在核实实际情况，感谢您的反馈！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1233750726396608512, 2020-03-01 05:47:49.0, 张强, 黄山, 导游, 这个导游一直忽悠我们去他指定的店里消费，不去还骂我们！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-03-04 22:02:30.0, 已严肃处理该导游！感谢您的反馈！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1233416116420739072, 2020-02-29 07:38:12.0, 飞龙瀑景点, 飞龙瀑, 景点, 路面太湿滑了，一点都不安全, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-03-02 07:37:51.0, 黄山景区已收到您的反馈，我们会实地考察并适当加装安全设施，感谢您的支持！！！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1233686350096498688, 2020-03-01 01:32:01.0, 黄山大酒店, 黄山山脚, 住宿, 这个酒店的收费贵的离谱，希望黄山管理委员会管管！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-03-04 21:51:15.0, 正在核实实际情况，感谢您的反馈！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} Result: [1233398804942684160, 2020-02-29 06:29:20.0, 黄山任我行旅行社, 黄山, 旅行社, 这个旅行社到处坑我们的钱，建议黄山封停他！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-02-29 07:26:47.0, 正在调查中，我们会尽快与您联系！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1233416116420739072, 2020-02-29 07:38:12.0, 飞龙瀑景点, 飞龙瀑, 景点, 路面太湿滑了，一点都不安全, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-03-02 07:37:51.0, 黄山景区已收到您的反馈，我们会实地考察并适当加装安全设施，感谢您的支持！！！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10026, pstmt-20015, rs-50016} closed
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10026, pstmt-20015} clearParameters. 
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10026} pool-recycle
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} Result: [1233398804942684160, 2020-02-29 06:29:20.0, 黄山任我行旅行社, 黄山, 旅行社, 这个旅行社到处坑我们的钱，建议黄山封停他！, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 彭陈宇, 18224464804, 1, 彭陈宇, 2020-02-29 07:26:47.0, 正在调查中，我们会尽快与您联系！]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20014, rs-50017} closed
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20014} clearParameters. 
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-recycle
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-connect
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} setAutoCommit false
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20016} created. SELECT
+        scenic_manage.id,
+        scenic_manage.admin_id,
+        admin.head_icon AS admin_head_icon,
+        admin.`name` AS admin_name,
+        admin.phone,
+        admin.sex,
+        TIMESTAMPDIFF(YEAR, admin.birth, CURDATE()) AS age,
+        admin.work_year,
+        admin.introduction,
+        scenic_manage.admin_work_day,
+        scenic_manage.admin_work_time,
+        scenic_manage.scenic_id,
+        scenic.`name` AS scenic_name,
+        scenic.head_icon AS scenic_head_icon,
+        scenic.is_close,
+        scenic.longitude,
+        scenic.latitude
+        FROM scenic_manage,scenic,admin
+        WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20016} Parameters : []
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20016} Types : []
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20016} executed. 90.5798 millis. SELECT
+        scenic_manage.id,
+        scenic_manage.admin_id,
+        admin.head_icon AS admin_head_icon,
+        admin.`name` AS admin_name,
+        admin.phone,
+        admin.sex,
+        TIMESTAMPDIFF(YEAR, admin.birth, CURDATE()) AS age,
+        admin.work_year,
+        admin.introduction,
+        scenic_manage.admin_work_day,
+        scenic_manage.admin_work_time,
+        scenic_manage.scenic_id,
+        scenic.`name` AS scenic_name,
+        scenic.head_icon AS scenic_head_icon,
+        scenic.is_close,
+        scenic.longitude,
+        scenic.latitude
+        FROM scenic_manage,scenic,admin
+        WHERE admin.id = scenic_manage.admin_id AND scenic.id = scenic_manage.scenic_id;
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} open
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Header: [id, admin_id, head_icon, name, phone, sex, age, work_year, introduction, admin_work_day, admin_work_time, scenic_id, name, head_icon, is_close, longitude, latitude]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [1, 1, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 白案, 18224464498, 女, 40, 5, 我是一个尽职尽责的管理员！, 周一至周日, 8:00~19:00, 1, 黄山翡翠谷景区, null, 0, 118.224689, 30.107727]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [2, 11, http://101.37.173.73:8000/user/default-headicon.png, 章邯, 17891544684, 男, 26, 2, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, 周一至周日, 8:00~19:00, 10, 黄山-书箱峰, null, 0, 118.164053, 30.163978]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [4, 3, http://101.37.173.73:8000/user/default-headicon.png, 苏丹, 13846487645, 女, 28, 2, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, 周一至周日, 8:00~13:00, 3, 黄山野生猴谷景区, null, 0, 118.157245, 30.071459]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [5, 4, http://101.37.173.73:8000/user/default-headicon.png, 张良, 13988865892, 男, 23, 1, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, 周一至周日, 13:00~19:00, 4, 黄山-接引松, null, 0, 118.174909, 30.141391]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [7, 6, http://101.37.173.73:8000/user/default-headicon.png, 黄辉冯, 15678945648, 男, 29, 6, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, 周一至周日, 8:00~19:00, 6, 黄山-人字瀑, null, 0, 118.172471, 30.102408]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [9, 8, http://101.37.173.73:8000/user/default-headicon.png, 李志峰, 15965464787, 男, 41, 2, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, 周四至周日, 8:00~19:00, 8, 黄山-扇子松, null, 0, 118.168981, 30.142666]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [10, 10, http://101.37.173.73:8000/user/default-headicon.png, 洛花, 17826564654, 女, 24, 3, 2015年-2017年，在黄山—天都峰任管理员，期间获得“黄山优秀管理员”称号；2018年—2019年任黄山—光明顶任管理员，期间获得“黄山优秀管理员”称号, 周一至周日, 8:00~19:00, 9, 黄山-梦笔生花, null, 0, 118.172257, 30.141731]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} Result: [11, 1, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200118_114109.jpg, 白案, 18224464498, 女, 40, 5, 我是一个尽职尽责的管理员！, 周一至周日, 8:00~19:00, 2, 黄山-飞龙瀑, null, 0, 118.149804, 30.192089]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20016, rs-50018} closed
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20016} clearParameters. 
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} commited
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} setAutoCommit true
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-recycle
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-connect
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} setAutoCommit false
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20008} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20008} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20008} executed. 50.5388 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20008, rs-50019} open
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20008, rs-50019} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20008, rs-50019} closed
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20008} clearParameters. 
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} commited
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} setAutoCommit true
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-recycle
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-connect
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} setAutoCommit false
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20009} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20009} Types : [VARCHAR, VARCHAR]
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20009} executed. 46.108 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50020} open
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50020} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50020} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1991-03-12, 29, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
+[DEBUG][2020-03-14][druid.sql.ResultSet]{conn-10025, pstmt-20009, rs-50020} closed
+[DEBUG][2020-03-14][druid.sql.Statement]{conn-10025, pstmt-20009} clearParameters. 
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} commited
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} setAutoCommit true
+[DEBUG][2020-03-14][druid.sql.Connection]{conn-10025} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-4982} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-4983} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-4984} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-4985} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-4986} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-4987} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-4988} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-4989} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-4990} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-4991} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-4992} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-4993} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-4994} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-4995} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-4996} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-4997} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-4998} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-4999} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5000} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5001} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 44.2551 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5004} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5005} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5006} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5007} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5008} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5009} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5010} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5011} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5012} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5013} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5014} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5015} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5016} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5017} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5018} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5019} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5020} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5021} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5022} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5023} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 45.771701 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5024} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5025} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5026} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5027} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5028} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5029} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5030} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5031} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5032} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5033} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5034} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5035} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5036} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5037} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5038} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5039} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5040} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5041} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5042} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5043} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 45.7312 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021,procId-5044} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} created. delete from huangshan.hotel
         where id = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10028, pstmt-20012} Parameters : [http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg, 1]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10028, pstmt-20012} Types : [VARCHAR, BIGINT]
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10028, pstmt-20012} executed. 93.7087 millis. update huangshan.tourist
-        set head_icon = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} executed. 93.515501 millis. delete from huangshan.hotel
         where id = ?
-[DEBUG][2020-03-11][druid.sql.Statement]{conn-10028, pstmt-20012} clearParameters. 
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10028} commited
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10028} setAutoCommit true
-[DEBUG][2020-03-11][druid.sql.Connection]{conn-10028} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10001,procId-4808} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10002,procId-4809} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10003,procId-4810} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10004,procId-4811} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10005,procId-4812} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10006,procId-4813} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10007,procId-4814} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10008,procId-4815} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10009,procId-4816} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10010,procId-4817} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10011,procId-4818} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10012,procId-4819} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10013,procId-4820} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10014,procId-4821} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10015,procId-4822} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10016,procId-4823} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10017,procId-4824} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10018,procId-4825} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10019,procId-4826} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020,procId-4827} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.v_tourist_basic_info where phone = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [18224456200]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 45.8338 millis. select * from huangshan.v_tourist_basic_info where phone = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20001} created. insert into
-        huangshan.tourist(id,account,password,name,role_id,phone,birth,sex,head_icon)
-        values (?,?,?,?,?,?,?,?,?)
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [1237972237584285696, 18224456200, d3d4a3f96d0df463baef8985fb19d1c1579ce5b7925408e2b11bf4da54b7a9bec9929341522ddc6580da91b75fbc62fa, 游客18224456200, 5, 18224456200, null, null, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, BIGINT, VARCHAR, OTHER, OTHER, VARCHAR]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 83.801 millis. insert into
-        huangshan.tourist(id,account,password,name,role_id,phone,birth,sex,head_icon)
-        values (?,?,?,?,?,?,?,?,?)
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20002} created. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20002} Parameters : [1237972237584285696]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20002} Types : [BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20002} executed. 41.5629 millis. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} Result: [1237972237584285696, 18224456200, d3d4a3f96d0df463baef8985fb19d1c1579ce5b7925408e2b11bf4da54b7a9bec9929341522ddc6580da91b75fbc62fa, 游客18224456200, 游客, 18224456200, null, null, null, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20002} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20003} created. select * from huangshan.v_tourist_basic_info
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20003} Parameters : []
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20003} Types : []
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20003} executed. 42.4811 millis. select * from huangshan.v_tourist_basic_info
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [2, 28734823789, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 张航, 游客, 28734823789, 1999-07-15, 20, 男, http://101.37.173.73:8000/user/15056911226/headicon/1565876478158.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [1237698671110266880, 10293847560, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 合工大, 游客, 10293847560, 1999-06-23, 20, 女, http://101.37.173.73:8000/user/10293847560/headicon/hfut.png]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [1237740918421856256, 13244564566, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 毛烨昊, 游客, 13244564566, 1999-06-15, 20, 男, http://101.37.173.73:8000/user/13244564566/headicon/555555.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [1237762620212125696, 82786462376, cc15087f139158f6870c174d7bca5b60ab7cf78ae445fc7e4b180c213a3d67203f1b1fada4c94dd3356f7f42708d6ca1, 游客82786462376, 游客, 82786462376, 2000-06-11, 19, 男, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [1237763163777146880, 87395827459, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 游客87395827459, 游客, 87395827459, 1996-03-14, 23, 女, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} Result: [1237972237584285696, 18224456200, d3d4a3f96d0df463baef8985fb19d1c1579ce5b7925408e2b11bf4da54b7a9bec9929341522ddc6580da91b75fbc62fa, 游客18224456200, 游客, 18224456200, null, null, null, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10020, pstmt-20003, rs-50002} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10020, pstmt-20003} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10001} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10002} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10003} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10004} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10005} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10006} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10007} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10008} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10009} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10010} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10001,procId-4828} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10002,procId-4829} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10003,procId-4830} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10004,procId-4831} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10005,procId-4832} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10006,procId-4833} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10007,procId-4834} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10008,procId-4835} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10009,procId-4836} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10010,procId-4837} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10011,procId-4838} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10012,procId-4839} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10013,procId-4840} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10014,procId-4841} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10015,procId-4842} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10016,procId-4843} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10017,procId-4844} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10018,procId-4845} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10019,procId-4846} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020,procId-4847} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10020} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10019} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10018} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10017} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10016} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10015} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10014} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10013} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10012} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10011} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10010} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021,procId-4848} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10009} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10008} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10007} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10006} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20000} created. update huangshan.tourist
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022,procId-5045} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10023,procId-5048} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10023} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10023, pstmt-20002} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10023, pstmt-20002} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10023, pstmt-20002} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10023, pstmt-20002} executed. 88.3456 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10023, pstmt-20002} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10023} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10024,procId-5049} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10024} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10024, pstmt-20003} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10024, pstmt-20003} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10024, pstmt-20003} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10024, pstmt-20003} executed. 43.416501 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10024, pstmt-20003, rs-50001} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10024, pstmt-20003, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10024, pstmt-20003, rs-50001} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10024, pstmt-20003} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10024} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5050} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5051} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5052} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5053} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5054} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5055} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5056} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5057} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5058} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5059} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5060} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5061} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5062} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5063} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5064} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5065} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5066} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5067} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5068} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5069} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 43.2906 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021,procId-5070} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} executed. 42.2892 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50001} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50001} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50001} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50001} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022,procId-5071} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5072} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5073} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5074} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5075} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5076} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5077} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5078} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5079} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5080} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5081} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5082} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5083} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5084} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5085} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5086} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5087} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5088} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5089} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5090} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5091} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 86.8547 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 40.995701 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021,procId-5092} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} executed. 40.9433 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20002, rs-50001} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20002, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20002, rs-50001} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20002, rs-50001} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10021, pstmt-20002, rs-50001} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022,procId-5093} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20003} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20003} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20003} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20003} executed. 40.5229 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20003, rs-50002} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20003, rs-50002} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20003, rs-50002} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20003, rs-50002} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20003} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20004} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20004} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20004} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20004} executed. 83.2672 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20004} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20005} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20005} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20005} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20005} executed. 42.0562 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20005, rs-50003} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20005, rs-50003} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20005, rs-50003} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10022, pstmt-20005, rs-50003} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10022, pstmt-20005} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5094} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5095} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5096} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5097} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5098} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5099} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5100} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5101} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5102} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5103} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5104} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5105} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5106} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5107} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5108} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5109} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5110} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5111} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5112} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5113} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 45.4609 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 42.0502 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20002} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20002} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20002} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20002} executed. 84.2552 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20002} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 42.0215 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5114} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5115} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5116} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5117} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5118} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5119} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5120} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5121} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5122} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5123} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5124} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5125} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5126} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5127} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5128} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5129} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5130} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5131} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5132} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5133} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 46.2354 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 43.9907 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [1, 1, 1, 1, 1, 1, 1, 1, 1.0, 1, 1, 1, 1]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5134} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5135} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5136} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5137} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5138} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5139} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5140} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5141} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5142} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5143} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5144} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5145} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5146} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5147} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5148} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5149} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5150} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5151} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5152} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5153} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 92.3362 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 40.3657 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Result: [2, 2, 2, 2, 2, 2, 2, 2, 2.0, 2, 2, 2, 2]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [1]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 81.2197 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021,procId-5156} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} Parameters : [2]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} executed. 94.611 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10021, pstmt-20002} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10021} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10022,procId-5157} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5158} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5159} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5160} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} Parameters : [2]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} executed. 48.3892 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5161} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5162} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} Parameters : [2]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} executed. 46.0678 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} Parameters : [2]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} executed. 42.8967 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50001} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20000, rs-50001} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20001} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20001} Parameters : [2]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20001} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20001} executed. 84.972 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20002} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20002} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20002} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20002} executed. 42.8439 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10002, pstmt-20002, rs-50002} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10002, pstmt-20002} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10001,procId-5169} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10002,procId-5170} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10003,procId-5171} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10004,procId-5172} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10005,procId-5173} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10006,procId-5174} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10007,procId-5175} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10008,procId-5176} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10009,procId-5177} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10010,procId-5178} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10011,procId-5179} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10012,procId-5180} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10013,procId-5181} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10014,procId-5182} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10015,procId-5183} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10016,procId-5184} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10017,procId-5185} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10018,procId-5186} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10019,procId-5187} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020,procId-5188} connected
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} created. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [BIGINT]
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 92.0073 millis. delete from huangshan.hotel
+        where id = ?
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} created. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} Types : []
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 44.7139 millis. select * from huangshan.hotel
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} open
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-17][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} closed
+[DEBUG][2020-03-17][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-17][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10001,procId-5195} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10002,procId-5196} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10003,procId-5197} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10004,procId-5198} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10005,procId-5199} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10006,procId-5200} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10007,procId-5201} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10008,procId-5202} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10009,procId-5203} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10010,procId-5204} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10011,procId-5205} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10012,procId-5206} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10013,procId-5207} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10014,procId-5208} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10015,procId-5209} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10016,procId-5210} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10017,procId-5211} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10018,procId-5212} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10019,procId-5213} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020,procId-5214} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} setAutoCommit false
+[DEBUG][2020-03-18][druid.sql.Connection]{conn 10020} rollback
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} setAutoCommit true
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10001,procId-5215} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10002,procId-5216} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10003,procId-5217} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10004,procId-5218} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10005,procId-5219} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10006,procId-5220} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10007,procId-5221} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10008,procId-5222} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10009,procId-5223} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10010,procId-5224} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10011,procId-5226} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10012,procId-5227} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10013,procId-5228} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10014,procId-5229} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10015,procId-5230} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10016,procId-5231} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10017,procId-5232} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10018,procId-5233} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10019,procId-5234} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020,procId-5235} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} setAutoCommit false
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20000} created. insert into
+        huangshan.hotel(id, hotel_name, hotel_star, hotel_instruction, hotel_check_in,hotel_leave,hotel_phone,breakfast_type,breakfast_price,is_take_pet,is_have_park,head_icon,album_url)
+        values(?,?,?,?,?,?,?,?,?,?,?,?,?)
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [1240119920558080000, asd, 3, afgsadgf, 14:00, 12:00, 1465432156, zsda, 60.0, 0, 0, http://101.37.173.73:8000/user/2017211241/headicon/coder.png, null]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [BIGINT, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, DOUBLE, VARCHAR, VARCHAR, VARCHAR, OTHER]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 82.6061 millis. insert into
+        huangshan.hotel(id, hotel_name, hotel_star, hotel_instruction, hotel_check_in,hotel_leave,hotel_phone,breakfast_type,breakfast_price,is_take_pet,is_have_park,head_icon,album_url)
+        values(?,?,?,?,?,?,?,?,?,?,?,?,?)
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20001} created. select * from huangshan.hotel
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : []
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20001} Types : []
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 40.0154 millis. select * from huangshan.hotel
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} open
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} Result: [1240119920558080000, asd, 3, afgsadgf, 14:00, 12:00, 1465432156, zsda, 60.0, 0, 0, http://101.37.173.73:8000/user/2017211241/headicon/coder.png, null]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50000} closed
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} commited
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} setAutoCommit true
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20002} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20002} Parameters : [1240119920558080000]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20002} Types : [BIGINT]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20002} executed. 39.4702 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} open
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} Result: [1240119920558080000, asd, 3, afgsadgf, 14:00, 12:00, 1465432156, zsda, 60.0, 0, 0, http://101.37.173.73:8000/user/2017211241/headicon/coder.png, null]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10020, pstmt-20002, rs-50001} closed
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10020, pstmt-20002} clearParameters. 
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10021,procId-5237} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10021} pool-connect
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10021} setAutoCommit false
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20003} created. update huangshan.hotel
         set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
+        hotel_name = ?,
+        hotel_star = ?,
+        hotel_instruction = ?,
+        hotel_check_in = ?,
+        hotel_leave = ?,
+        hotel_phone = ?,
+        breakfast_type = ?,
+        breakfast_price = ?,
+        is_take_pet = ?,
+        is_have_park = ?,
+        head_icon = ?,
+        album_url = ?
         where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20000} Parameters : [18224464804, 彭陈宇666, 5, 18224464804, 1999-03-21, 女, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg, 1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20000} Types : [VARCHAR, VARCHAR, BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20000} executed. 98.6232 millis. update huangshan.tourist
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20003} Parameters : [黄山大酒店, 3, 好好好, 14:00, 12:00, 1465432156, zsda, 60.0, 0, 0, http://101.37.173.73:8000/user/2017211241/headicon/coder.png, null, 1240119920558080000]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20003} Types : [VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, DOUBLE, VARCHAR, VARCHAR, VARCHAR, OTHER, BIGINT]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20003} executed. 88.9619 millis. update huangshan.hotel
         set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
+        hotel_name = ?,
+        hotel_star = ?,
+        hotel_instruction = ?,
+        hotel_check_in = ?,
+        hotel_leave = ?,
+        hotel_phone = ?,
+        breakfast_type = ?,
+        breakfast_price = ?,
+        is_take_pet = ?,
+        is_have_park = ?,
+        head_icon = ?,
+        album_url = ?
         where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20000} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10022,procId-4849} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} pool-connect
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20001} created. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20001} Parameters : [1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20001} Types : [BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20001} executed. 51.9869 millis. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50000} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50000} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50000} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇666, 游客, 18224464804, 1999-03-21, 20, 女, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10021, pstmt-20001, rs-50000} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10021, pstmt-20001} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10022} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10021} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10005} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10004} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10003} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10002} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10001} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023,procId-4850} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20002} created. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20002} Parameters : [18224464804, 彭陈宇, 5, 18224464804, 1999-03-21, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg, 1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20002} Types : [VARCHAR, VARCHAR, BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20002} executed. 92.972 millis. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20002} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} pool-connect
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20003} created. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20003} Parameters : [1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20003} Types : [BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20003} executed. 46.7115 millis. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10023, pstmt-20003, rs-50001} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10023, pstmt-20003, rs-50001} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10023, pstmt-20003, rs-50001} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1999-03-21, 20, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10023, pstmt-20003, rs-50001} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10023, pstmt-20003} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10023} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024,procId-4851} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20004} created. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20004} Parameters : [18224464804, 彭陈宇, 5, 18224464804, 1999-02-04, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg, 1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20004} Types : [VARCHAR, VARCHAR, BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20004} executed. 92.6477 millis. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20004} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} pool-connect
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20005} created. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20005} Parameters : [1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20005} Types : [BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20005} executed. 47.9533 millis. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10024, pstmt-20005, rs-50002} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10024, pstmt-20005, rs-50002} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10024, pstmt-20005, rs-50002} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1999-02-04, 21, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10024, pstmt-20005, rs-50002} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10024, pstmt-20005} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10024} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025,procId-4852} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20006} created. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20006} Parameters : [18224464804, 彭陈宇, 5, 18224464804, 2024-03-12, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg, 1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20006} Types : [VARCHAR, VARCHAR, BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20006} executed. 92.1883 millis. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20006} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} pool-connect
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20007} created. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20007} Parameters : [1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20007} Types : [BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20007} executed. 45.8474 millis. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10025, pstmt-20007, rs-50003} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10025, pstmt-20007, rs-50003} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10025, pstmt-20007, rs-50003} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 2024-03-12, -4, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10025, pstmt-20007, rs-50003} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10025, pstmt-20007} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10025} closed
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026,procId-4853} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20008} created. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20008} Parameters : [18224464804, 彭陈宇, 5, 18224464804, 1991-03-12, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg, 1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20008} Types : [VARCHAR, VARCHAR, BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20008} executed. 88.4666 millis. update huangshan.tourist
-        set
-        account = ?,
-        name = ?,
-        role_id = ?,
-        phone = ?,
-        birth = ?,
-        sex = ?,
-        head_icon = ?
-        where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20008} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} pool-connect
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20009} created. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20009} Parameters : [1]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20009} Types : [BIGINT]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20009} executed. 48.0994 millis. select * from huangshan.v_tourist_basic_info where id = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10026, pstmt-20009, rs-50004} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10026, pstmt-20009, rs-50004} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10026, pstmt-20009, rs-50004} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1991-03-12, 29, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10026, pstmt-20009, rs-50004} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10026, pstmt-20009} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10026} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027,procId-4854} connected
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20010} created. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20010} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20010} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20010} executed. 89.4448 millis. select * from huangshan.v_admin_basic_info where account = ? and password = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20010, rs-50005} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20010, rs-50005} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20010, rs-50005} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20010} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20011} created. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20011} Parameters : [18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20011} Types : [VARCHAR, VARCHAR]
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20011} executed. 79.2158 millis. select * from huangshan.v_tourist_basic_info where account = ? and password = ?
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50006} open
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50006} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50006} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, 彭陈宇, 游客, 18224464804, 1991-03-12, 29, 男, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-12][druid.sql.ResultSet]{conn-10027, pstmt-20011, rs-50006} closed
-[DEBUG][2020-03-12][druid.sql.Statement]{conn-10027, pstmt-20011} clearParameters. 
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-recycle
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-connect
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit false
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} commited
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} setAutoCommit true
-[DEBUG][2020-03-12][druid.sql.Connection]{conn-10027} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10001,procId-4861} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10002,procId-4862} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10003,procId-4863} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10004,procId-4864} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10005,procId-4865} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10006,procId-4866} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10007,procId-4867} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10008,procId-4868} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10009,procId-4869} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10010,procId-4870} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10011,procId-4871} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10012,procId-4872} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10013,procId-4873} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10014,procId-4874} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10015,procId-4875} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10016,procId-4876} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10017,procId-4877} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018,procId-4878} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019,procId-4879} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020,procId-4880} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10001,procId-4881} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10002,procId-4882} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10003,procId-4883} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10004,procId-4884} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10005,procId-4885} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10006,procId-4886} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10007,procId-4887} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10008,procId-4888} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10009,procId-4889} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10010,procId-4890} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10011,procId-4891} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10012,procId-4892} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10013,procId-4893} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10014,procId-4894} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10015,procId-4895} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10016,procId-4896} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10017,procId-4897} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018,procId-4898} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20000} created. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20000} Parameters : [1238386057255321600, hhahahahahah, 彭陈宇, 2020-03-13 16:34:11, 18224464804]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20000} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20000} executed. 84.2291 millis. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20000} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20001} created. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20001} Parameters : [1238386057255321600]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20001} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20001} executed. 40.826 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10018, pstmt-20001, rs-50000} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10018, pstmt-20001, rs-50000} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10018, pstmt-20001, rs-50000} Result: [1238386057255321600, hhahahahahah, 彭陈宇, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10018, pstmt-20001, rs-50000} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10018, pstmt-20001} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10018} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10017} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10016} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10015} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10014} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10013} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10012} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10011} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10010} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10009} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10008} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019,procId-4900} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10007} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10006} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10005} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10004} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20002} created. update huangshan.suggestion
-        set suggestion = ?,propounder = ?,feedback_time = ?,contact_way = ?
-        where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20002} Parameters : [hhahahahahah99999, 彭陈宇666, 2020-03-13 16:34:11, 18224464804, 1238386057255321600]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20002} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20002} executed. 89.2306 millis. update huangshan.suggestion
-        set suggestion = ?,propounder = ?,feedback_time = ?,contact_way = ?
-        where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20002} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20003} created. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20003} Parameters : [1238386057255321600]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20003} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20003} executed. 44.2098 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10019, pstmt-20003, rs-50001} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10019, pstmt-20003, rs-50001} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10019, pstmt-20003, rs-50001} Result: [1238386057255321600, hhahahahahah99999, 彭陈宇666, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10019, pstmt-20003, rs-50001} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10019, pstmt-20003} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10019} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020,procId-4901} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20004} created. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20004} Parameters : [1238387151373074432, hhahahahahah, 彭陈宇, 2020-03-13 16:34:11, 18224464804]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20004} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20004} executed. 84.9663 millis. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20004} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} created. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} Parameters : [1238387151373074432]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} executed. 41.2093 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50002} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50002} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50002} Result: [1238387151373074432, hhahahahahah, 彭陈宇, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50002} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} created. select * from huangshan.suggestion
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : []
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} Types : []
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 41.208 millis. select * from huangshan.suggestion
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50003} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50003} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50003} Result: [1238386057255321600, hhahahahahah99999, 彭陈宇666, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50003} Result: [1238387151373074432, hhahahahahah, 彭陈宇, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50003} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} Parameters : [1238386057255321600]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} executed. 40.7866 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50004} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50004} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50004} Result: [1238386057255321600, hhahahahahah99999, 彭陈宇666, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50004} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20005} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20007} created. delete from huangshan.suggestion
-        where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [1238386057255321600]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 81.8973 millis. delete from huangshan.suggestion
-        where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : []
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} Types : []
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 49.0137 millis. select * from huangshan.suggestion
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50005} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50005} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50005} Result: [1238387151373074432, hhahahahahah, 彭陈宇, 2020-03-14 00:34:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50005} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10020} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021,procId-4902} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20008} created. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20008} Parameters : [1238425391266267136, 18224464804, 彭陈宇, 2020-03-13 19:23:11, 18224464804]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20008} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20008} executed. 94.0089 millis. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20008} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20009} created. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20009} Parameters : [1238425391266267136]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20009} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20009} executed. 44.202499 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10021, pstmt-20009, rs-50006} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10021, pstmt-20009, rs-50006} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10021, pstmt-20009, rs-50006} Result: [1238425391266267136, 18224464804, 彭陈宇, 2020-03-14 03:23:11.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10021, pstmt-20009, rs-50006} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10021, pstmt-20009} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10021} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022,procId-4905} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20010} created. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20010} Parameters : [1238426187038982144, 这个APP牛逼！, 彭陈宇, 2020-03-13 19:26:21, 18224464804]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20010} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20010} executed. 89.6327 millis. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20010} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20011} created. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20011} Parameters : [1238426187038982144]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20011} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20011} executed. 42.833801 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10022, pstmt-20011, rs-50007} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10022, pstmt-20011, rs-50007} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10022, pstmt-20011, rs-50007} Result: [1238426187038982144, 这个APP牛逼！, 彭陈宇, 2020-03-14 03:26:21.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10022, pstmt-20011, rs-50007} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10022, pstmt-20011} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10022} closed
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023,procId-4906} connected
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} pool-connect
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} setAutoCommit false
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20012} created. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20012} Parameters : [1238426515062915072, v发繁星点点低调低调多大点事到宿舍三生三世是撒大多数三生三世三生三世, 彭陈宇, 2020-03-13 19:27:39, 18224464804]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20012} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20012} executed. 215.652 millis. insert into
-        huangshan.suggestion(id, suggestion, propounder, feedback_time, contact_way)
-        values(?,?,?,?,?)
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20012} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} commited
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} setAutoCommit true
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} pool-recycle
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} pool-connect
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20013} created. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20013} Parameters : [1238426515062915072]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20013} Types : [BIGINT]
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20013} executed. 203.397001 millis. select * from huangshan.suggestion where id = ?
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10023, pstmt-20013, rs-50008} open
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10023, pstmt-20013, rs-50008} Header: [id, suggestion, propounder, feedback_time, contact_way]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10023, pstmt-20013, rs-50008} Result: [1238426515062915072, v发繁星点点低调低调多大点事到宿舍三生三世是撒大多数三生三世三生三世, 彭陈宇, 2020-03-14 03:27:39.0, 18224464804]
-[DEBUG][2020-03-13][druid.sql.ResultSet]{conn-10023, pstmt-20013, rs-50008} closed
-[DEBUG][2020-03-13][druid.sql.Statement]{conn-10023, pstmt-20013} clearParameters. 
-[DEBUG][2020-03-13][druid.sql.Connection]{conn-10023} pool-recycle
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20003} clearParameters. 
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20004} created. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20004} Parameters : [1240119920558080000]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20004} Types : [BIGINT]
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20004} executed. 44.2042 millis. select * from huangshan.hotel where id = ?
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20004, rs-50002} open
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20004, rs-50002} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20004, rs-50002} Result: [1240119920558080000, 黄山大酒店, 3, 好好好, 14:00, 12:00, 1465432156, zsda, 60.0, 0, 0, http://101.37.173.73:8000/user/2017211241/headicon/coder.png, null]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20004, rs-50002} closed
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20004} clearParameters. 
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20005} created. select * from huangshan.hotel
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20005} Parameters : []
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20005} Types : []
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20005} executed. 44.1544 millis. select * from huangshan.hotel
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20005, rs-50003} open
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20005, rs-50003} Header: [id, hotel_name, hotel_star, hotel_instruction, hotel_check_in, hotel_leave, hotel_phone, breakfast_type, breakfast_price, is_take_pet, is_have_park, head_icon, album_url]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20005, rs-50003} Result: [1240119920558080000, 黄山大酒店, 3, 好好好, 14:00, 12:00, 1465432156, zsda, 60.0, 0, 0, http://101.37.173.73:8000/user/2017211241/headicon/coder.png, null]
+[DEBUG][2020-03-18][druid.sql.ResultSet]{conn-10021, pstmt-20005, rs-50003} closed
+[DEBUG][2020-03-18][druid.sql.Statement]{conn-10021, pstmt-20005} clearParameters. 
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10022,procId-5238} connected
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10021} commited
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10021} setAutoCommit true
+[DEBUG][2020-03-18][druid.sql.Connection]{conn-10021} pool-recycle

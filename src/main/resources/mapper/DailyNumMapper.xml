@@ -23,6 +23,7 @@
         <result column="weather_name" property="weatherName"/>
         <result column="module_name" property="moduleName"/>
         <result column="description" property="description"/>
+        <result column="is_holiday" property="isHoliday"/>
     </resultMap>
 
     <!--限制性全查询：降序前1000条-->

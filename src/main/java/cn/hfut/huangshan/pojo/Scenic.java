@@ -27,6 +27,7 @@ public class Scenic implements Serializable {
     private int isClose;
     private double longitude;
     private double latitude;
+    private String headIcon;
     private String photoUrl;
     private String videoUrl;
     private String audioUrl;

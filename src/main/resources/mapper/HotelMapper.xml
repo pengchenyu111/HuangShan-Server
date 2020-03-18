@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.HotelMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="hotelMap" type="hotel">
+        <id column="id" property="id"/>
+        <result column="hotel_name" property="hotelName"/>
+        <result column="hotel_star" property="hotelStar"/>
+        <result column="hotel_instruction" property="hotelInstruction"/>
+        <result column="hotel_check_in" property="hotelCheckIn"/>
+        <result column="hotel_leave" property="hotelLeave"/>
+        <result column="hotel_phone" property="hotelPhone"/>
+        <result column="breakfast_type" property="breakfastType"/>
+        <result column="breakfast_price" property="breakfastPrice"/>
+        <result column="is_take_pet" property="isTakePet"/>
+        <result column="is_have_park" property="isHavePark"/>
+        <result column="head_icon" property="headIcon"/>
+        <result column="album_url" property="albumUrl"/>
+    </resultMap>
+
+    <!--全查询-->
+    <select id="getAll" resultMap="hotelMap">
+        select * from huangshan.hotel
+    </select>
+
+    <!--根据id查询-->
+    <select id="getById" parameterType="long" resultMap="hotelMap">
+        select * from huangshan.hotel where id = #{id}
+    </select>
+
+    <!--增加一个-->
+    <insert id="addOne" parameterType="hotel">
+        insert into
+        huangshan.hotel(id, hotel_name, hotel_star, hotel_instruction, hotel_check_in,hotel_leave,hotel_phone,breakfast_type,breakfast_price,is_take_pet,is_have_park,head_icon,album_url)
+        values(#{id},#{hotelName},#{hotelStar},#{hotelInstruction},#{hotelCheckIn},#{hotelLeave},#{hotelPhone},#{breakfastType},#{breakfastPrice},#{isTakePet},#{isHavePark},#{headIcon},#{albumUrl})
+    </insert>
+
+    <!--全更新一个-->
+    <update id="updateOne" parameterType="hotel">
+        update huangshan.hotel
+        set
+        hotel_name = #{hotelName},
+        hotel_star = #{hotelStar},
+        hotel_instruction = #{hotelInstruction},
+        hotel_check_in = #{hotelCheckIn},
+        hotel_leave = #{hotelLeave},
+        hotel_phone = #{hotelPhone},
+        breakfast_type = #{breakfastType},
+        breakfast_price = #{breakfastPrice},
+        is_take_pet = #{isTakePet},
+        is_have_park = #{isHavePark},
+        head_icon = #{headIcon},
+        album_url = #{albumUrl}
+        where id = #{id}
+    </update>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.hotel
+        where id = #{id}
+    </delete>
+
+</mapper>

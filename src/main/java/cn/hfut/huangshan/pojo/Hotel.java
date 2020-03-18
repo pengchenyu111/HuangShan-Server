@@ -23,6 +23,7 @@ public class Hotel implements Serializable {
     private String hotelName;
     private int hotelStar;
     private String hotelInstruction;
+    private String hotelLocation;
     private String hotelCheckIn;
     private String hotelLeave;
     private String hotelPhone;

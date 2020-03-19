@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.hfut.huangshan.mapper.ScenicHotMapper">
+
+    <!--开启二级缓存-->
+    <cache eviction="FIFO"
+           flushInterval="60000"
+           size="512"
+           readOnly="true"/>
+
+    <!--映射-->
+    <resultMap id="scenicHotMap" type="scenicHot">
+        <id column="id" property="id"/>
+        <result column="latitude" property="latitude"/>
+        <result column="longitude" property="longitude"/>
+        <result column="hot_num" property="hotNum"/>
+    </resultMap>
+
+    <!--全查询-->
+    <select id="getAll" resultMap="scenicHotMap">
+        select * from huangshan.scenic_hot
+    </select>
+
+    <!--按景点id查询-->
+    <select id="getByScenicId" parameterType="long" resultMap="scenicHotMap">
+        select * from huangshan.scenic_hot where id = #{id}
+    </select>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="long">
+        delete from huangshan.scenic_hot
+        where id = #{id}
+    </delete>
+
+    <!--增加一个-->
+    <insert id="addOne" parameterType="scenicHot">
+        insert into huangshan.scenic_hot(id,latitude,longitude,hot_num)
+        values (#{id},#{latitude},#{longitude},#{hotNum})
+    </insert>
+    
+    <!--更新一个-->
+    <update id="updateOne" parameterType="scenicHot">
+        update huangshan.scenic_hot
+        set latitude = #{latitude},longitude = #{longitude},hot_num = #{hotNum}
+        where id = #{id}
+    </update>
+
+</mapper>

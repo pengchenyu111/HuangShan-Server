@@ -26,4 +26,6 @@ public class DailyNum implements Serializable {
     private String moduleName;
     private String description;
     private String isHoliday;
+    private String holidayName;
+    private int holidayOrder;
 }

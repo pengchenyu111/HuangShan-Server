@@ -24,6 +24,8 @@
         <result column="module_name" property="moduleName"/>
         <result column="description" property="description"/>
         <result column="is_holiday" property="isHoliday"/>
+        <result column="holiday_name" property="holidayName"/>
+        <result column="holiday_order" property="holidayOrder"/>
     </resultMap>
 
     <!--限制性全查询：降序前1000条-->

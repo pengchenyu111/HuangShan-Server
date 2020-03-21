@@ -27,40 +27,16 @@ public class DateCalculateUtil {
     /**
      * 给出任意一个年月日得到该天是星期几
      */
-    public static String getWeek(String date) {
+    public static int getWeek(String date) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Calendar c = Calendar.getInstance();
         try {
             Date d = dateFormat.parse(date);
             c.setTime(d);
-        } catch (Exception e) {
+        } catch (ParseException e) {
             e.printStackTrace();
         }
-        int weekDay = c.get(Calendar.DAY_OF_WEEK)-1;
-        String weekDayName = "";
-        switch(weekDay){
-            case 0 :
-                weekDayName = "星期日";
-                break;
-            case 1 :
-                weekDayName = "星期一";
-                break;
-            case 2 :
-                weekDayName = "星期二";
-                break;
-            case 3 :
-                weekDayName = "星期三";
-                break;
-            case 4 :
-                weekDayName = "星期四";
-                break;
-            case 5 :
-                weekDayName = "星期五";
-                break;
-            case 6 :
-                weekDayName = "星期六";
-        }
-        return weekDayName;
+        return c.get(Calendar.DAY_OF_WEEK)-1;
     }
 
     /**
@@ -80,6 +56,12 @@ public class DateCalculateUtil {
         return dateFormat.format(c.getTime());
     }
 
+    /**
+     * 规范时间字符串转日历对象
+     * @param formatDate
+     * @return
+     */
+
     public static Calendar buildCalendar(String formatDate){
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         try {
@@ -93,7 +75,28 @@ public class DateCalculateUtil {
         return Calendar.getInstance();
     }
 
-//    public static int getMonth(String formatDate){
-//
-//    }
+    /**
+     * 年月日生成日历对象
+     * @param year
+     * @param month
+     * @param date
+     * @return
+     */
+
+    public static Calendar buildCalendarFromYMD(int year, int month, int date){
+        Calendar c = Calendar.getInstance();
+        c.set(year, month - 1, date);
+        return c;
+    }
+
+    /**
+     * 日历类转时间字符串
+     * @param calendar
+     * @return
+     */
+    public static String getFormatTime(Calendar calendar){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String formatTime = sdf.format(calendar.getTime());
+        return formatTime;
+    }
 }

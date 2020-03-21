@@ -75,6 +75,34 @@ public class DateCalculateUtilTest {
 
     @Test
     public void testDailyNumPredict() {
-        System.out.print(DailyNumPredictUtil.dailyNumPredict("2000-01-01", "大雨", null, null));
+        System.out.print(dailyNumService.dailyNumPredict("2000-01-01", "大雨", null, 0));
+    }
+
+    @Test
+    public void testYesterdayDate(){
+        System.out.print(dailyNumService.normalNumPredict("2019-03-20", "雷阵雨"));
+    }
+
+    @Test
+    public void getHolidayDailyNumTest(){
+        DailyNum dailyNum = new DailyNum();
+        dailyNum.setHolidayName("国庆节");
+        dailyNum.setHolidayOrder(1);
+        List<DailyNum> dailyNums = dailyNumService.getHolidayDailyNum(dailyNum);
+        for (DailyNum num : dailyNums) {
+            System.out.println(num.toString());
+        }
+    }
+
+    @Test
+    public void getHolidayPredictTest(){
+        System.out.println("2019-10-01 " + dailyNumService.dailyNumPredict("2019-10-01", "小雨", "国庆节", 1));
+        System.out.println("2019-10-02 " + dailyNumService.dailyNumPredict("2019-10-02", "多云", "国庆节", 2));
+        System.out.println("2019-10-03 " + dailyNumService.dailyNumPredict("2019-10-03", "晴", "国庆节", 3));
+        System.out.println("2019-10-04 " + dailyNumService.dailyNumPredict("2019-10-04", "晴", "国庆节", 4));
+        System.out.println("2019-10-05 " + dailyNumService.dailyNumPredict("2019-10-05", "阴", "国庆节", 5));
+        System.out.println("2019-10-06 " + dailyNumService.dailyNumPredict("2019-10-06", "多云", "国庆节", 6));
+        System.out.println("2019-10-07 " + dailyNumService.dailyNumPredict("2019-10-07", "阴", "国庆节", 7));
+        System.out.println("2019-10-08 " + dailyNumService.dailyNumPredict("2019-10-08", "多云", null, 7));
     }
 }

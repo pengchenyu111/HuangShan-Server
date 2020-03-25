@@ -1,0 +1,587 @@
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [2018-10-01, 星期一, 17144, 4257, 7231, 15887, -0.079121, 多云, 3065, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [2017-10-01, 星期日, 13296, 3484, 5495, 10630, -0.250800, 多云, 4840, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-01]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 39.907266 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Result: [2019-10-01, 星期二, 14743, 3134, 5515, 10451, -0.410678, 小雨, 1001, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 37.644424 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Result: [2019-10-02, 星期三, 34796, 10696, 15577, 29744, -0.169849, 多云, 3735, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Result: [2018-10-02, 星期二, 42812, 12717, 18217, 44710, 0.042451, 多云, 12284, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Result: [2017-10-02, 星期一, 34818, 11606, 17256, 32257, -0.079394, 阵雨, 1074, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-02]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 36.472036 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} Result: [2019-10-02, 星期三, 34796, 10696, 15577, 29744, -0.169849, 多云, 3735, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 37.090891 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Result: [2019-10-03, 星期四, 38259, 11101, 16618, 35878, -0.066364, 晴, 4612, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Result: [2018-10-03, 星期三, 39719, 10080, 15399, 40028, 0.007720, 晴, 8956, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Result: [2017-10-03, 星期二, 35868, 11956, 17071, 37033, 0.031458, 阴, 16226, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-03]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 39.613886 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} Result: [2019-10-03, 星期四, 38259, 11101, 16618, 35878, -0.066364, 晴, 4612, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 38.307079 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Result: [2019-10-04, 星期五, 29254, 10879, 15536, 31317, 0.065875, 晴, 4978, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Result: [2018-10-04, 星期四, 29664, 11155, 16299, 31447, 0.056699, 多云, 7769, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Result: [2017-10-04, 星期三, 29235, 10745, 15449, 25807, -0.132832, 小雨, 8092, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-04]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 40.986392 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} Result: [2019-10-04, 星期五, 29254, 10879, 15536, 31317, 0.065875, 晴, 4978, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 36.918714 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Result: [2019-10-05, 星期六, 21728, 9609, 13248, 20453, -0.062338, 阴, 2761, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Result: [2018-10-05, 星期五, 23508, 9299, 12911, 22030, -0.067090, 多云, 5322, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Result: [2017-10-05, 星期四, 24605, 8397, 12643, 21080, -0.167220, 小雨, 6508, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-05]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 38.833804 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} Result: [2019-10-05, 星期六, 21728, 9609, 13248, 20453, -0.062338, 阴, 2761, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 38.470949 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Result: [2019-10-06, 星期日, 10478, 3162, 5969, 9515, -0.101209, 多云, 1208, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Result: [2018-10-06, 星期六, 21030, 4967, 7676, 12477, -0.685501, 晴, 3784, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Result: [2017-10-06, 星期五, 24028, 9231, 14586, 27957, 0.140537, 多云, 8969, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-06]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 37.756189 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} Result: [2019-10-06, 星期日, 10478, 3162, 5969, 9515, -0.101209, 多云, 1208, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 37.178868 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Result: [2019-10-07, 星期一, 7502, 3162, 5969, 3665, -1.046930, 阴, null, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Result: [2018-10-07, 星期日, 6885, 1830, 3215, 5468, -0.259144, 晴, 1789, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Result: [2017-10-07, 星期六, 17275, 5732, 9324, 15369, -0.124016, 阴, 4752, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-07]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 39.648623 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} Result: [2019-10-07, 星期一, 7502, 3162, 5969, 3665, -1.046930, 阴, null, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10001,procId-5854} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10002,procId-5855} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10003,procId-5856} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10004,procId-5857} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10005,procId-5858} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10006,procId-5859} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10007,procId-5860} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10008,procId-5861} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10009,procId-5862} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10010,procId-5863} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10011,procId-5864} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10012,procId-5865} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10013,procId-5866} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10014,procId-5867} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10015,procId-5868} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10016,procId-5869} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10017,procId-5870} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10018,procId-5871} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10019,procId-5872} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020,procId-5873} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-09-30]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 48.895953 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [2019-09-30, 星期一, 8515, 2585, 4713, 8355, -0.019150, 晴, 1332, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} created. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 38.564589 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [2019-10-01, 星期二, 14743, 3134, 5515, 10451, -0.410678, 小雨, 1001, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [2018-10-01, 星期一, 17144, 4257, 7231, 15887, -0.079121, 多云, 3065, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} Result: [2017-10-01, 星期日, 13296, 3484, 5495, 10630, -0.250800, 多云, 4840, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50001} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-01]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 36.218302 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Result: [2019-10-01, 星期二, 14743, 3134, 5515, 10451, -0.410678, 小雨, 1001, SVM模型, null, 1, 国庆节, 1]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 38.332 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Result: [2019-10-02, 星期三, 34796, 10696, 15577, 29744, -0.169849, 多云, 3735, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Result: [2018-10-02, 星期二, 42812, 12717, 18217, 44710, 0.042451, 多云, 12284, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} Result: [2017-10-02, 星期一, 34818, 11606, 17256, 32257, -0.079394, 阵雨, 1074, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50003} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-02]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 36.265122 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} Result: [2019-10-02, 星期三, 34796, 10696, 15577, 29744, -0.169849, 多云, 3735, SVM模型, null, 1, 国庆节, 2]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 36.894926 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Result: [2019-10-03, 星期四, 38259, 11101, 16618, 35878, -0.066364, 晴, 4612, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Result: [2018-10-03, 星期三, 39719, 10080, 15399, 40028, 0.007720, 晴, 8956, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} Result: [2017-10-03, 星期二, 35868, 11956, 17071, 37033, 0.031458, 阴, 16226, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50005} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-03]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 37.023682 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} Result: [2019-10-03, 星期四, 38259, 11101, 16618, 35878, -0.066364, 晴, 4612, SVM模型, null, 1, 国庆节, 3]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 36.437676 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Result: [2019-10-04, 星期五, 29254, 10879, 15536, 31317, 0.065875, 晴, 4978, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Result: [2018-10-04, 星期四, 29664, 11155, 16299, 31447, 0.056699, 多云, 7769, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} Result: [2017-10-04, 星期三, 29235, 10745, 15449, 25807, -0.132832, 小雨, 8092, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50007} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-04]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 36.337995 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} Result: [2019-10-04, 星期五, 29254, 10879, 15536, 31317, 0.065875, 晴, 4978, SVM模型, null, 1, 国庆节, 4]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 36.282869 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Result: [2019-10-05, 星期六, 21728, 9609, 13248, 20453, -0.062338, 阴, 2761, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Result: [2018-10-05, 星期五, 23508, 9299, 12911, 22030, -0.067090, 多云, 5322, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} Result: [2017-10-05, 星期四, 24605, 8397, 12643, 21080, -0.167220, 小雨, 6508, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50009} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-05]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 35.929453 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} Result: [2019-10-05, 星期六, 21728, 9609, 13248, 20453, -0.062338, 阴, 2761, SVM模型, null, 1, 国庆节, 5]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 36.250774 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Result: [2019-10-06, 星期日, 10478, 3162, 5969, 9515, -0.101209, 多云, 1208, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Result: [2018-10-06, 星期六, 21030, 4967, 7676, 12477, -0.685501, 晴, 3784, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} Result: [2017-10-06, 星期五, 24028, 9231, 14586, 27957, 0.140537, 多云, 8969, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50011} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-06]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 37.854737 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} Result: [2019-10-06, 星期日, 10478, 3162, 5969, 9515, -0.101209, 多云, 1208, SVM模型, null, 1, 国庆节, 6]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Parameters : [国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} executed. 37.771669 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Result: [2019-10-07, 星期一, 7502, 3162, 5969, 3665, -1.046930, 阴, null, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Result: [2018-10-07, 星期日, 6885, 1830, 3215, 5468, -0.259144, 晴, 1789, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} Result: [2017-10-07, 星期六, 17275, 5732, 9324, 15369, -0.124016, 阴, 4752, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20001, rs-50013} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-10-07]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 37.456767 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} Result: [2019-10-07, 星期一, 7502, 3162, 5969, 3665, -1.046930, 阴, null, SVM模型, null, 1, 国庆节, 7]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50014} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-09-24]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 36.711801 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50015} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50015} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50015} Result: [2019-09-24, 星期二, 4862, 1212, 2907, 6624, 0.266002, 多云, 2453, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50015} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20001} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10001,procId-5874} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10002,procId-5875} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10003,procId-5876} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10004,procId-5877} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10005,procId-5878} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10006,procId-5879} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10007,procId-5880} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10008,procId-5881} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10009,procId-5882} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10010,procId-5883} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10011,procId-5884} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10012,procId-5885} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10013,procId-5886} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10014,procId-5887} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10015,procId-5888} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10016,procId-5889} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10017,procId-5890} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10018,procId-5891} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10019,procId-5892} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020,procId-5893} connected
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} created. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-14]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 47.774917 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} Result: [2019-07-14, 星期日, 9015, 2232, 4972, 9718, 0.072340, 雷阵雨, 551, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50000} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-08]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 35.255471 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50001} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50001} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50001} Result: [2019-07-08, 星期一, 5774, 1106, 2481, 5259, -0.097927, 大雨, 545, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50001} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-15]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.834846 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} Result: [2019-07-15, 星期一, 9037, 2232, 4972, 6343, -0.424720, 多云, null, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50002} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-09]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.37231 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50003} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50003} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50003} Result: [2019-07-09, 星期二, 6017, 1106, 2481, 4248, -0.416431, 中雨, null, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50003} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-16]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 35.264533 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} Result: [2019-07-16, 星期二, 7612, 1904, 4101, 7730, 0.015265, 雷阵雨, 2336, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50004} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-10]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 36.008367 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50005} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50005} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50005} Result: [2019-07-10, 星期三, 6327, 1383, 4238, 7868, 0.195857, 雷阵雨, 2362, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50005} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-17]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.644923 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} Result: [2019-07-17, 星期三, 7703, 1904, 4101, 7692, -0.001430, 中雨, null, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50006} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-11]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.299436 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50007} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50007} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50007} Result: [2019-07-11, 星期四, 7542, 1557, 3899, 7557, 0.001985, 多云, 1909, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50007} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-18]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.097808 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} Result: [2019-07-18, 星期四, 8756, 1916, 4620, 8793, 0.004208, 多云, 2491, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50008} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-12]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.695141 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50009} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50009} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50009} Result: [2019-07-12, 星期五, 7107, 1557, 3899, 4550, -0.561978, 暴雨, null, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50009} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-19]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 35.762185 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} Result: [2019-07-19, 星期五, 7676, 1916, 4620, 8878, 0.135391, 多云, null, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50010} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-13]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 35.837323 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50011} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50011} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50011} Result: [2019-07-13, 星期六, 8075, 1040, 2518, 6787, -0.189775, 暴雨, null, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50011} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Parameters : [2019-07-20]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} Types : [VARCHAR]
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} executed. 34.885819 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} open
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} Result: [2019-07-20, 星期六, 12330, 3259, 6718, 13296, 0.072653, 多云, 5385, SVM模型, null, 0, null, null]
+[DEBUG][2020-03-21][druid.sql.ResultSet]{conn-10020, pstmt-20000, rs-50012} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} clearParameters. 
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-03-21][druid.sql.Statement]{conn-10020, pstmt-20000} closed
+[DEBUG][2020-03-21][druid.sql.Connection]{conn-10020} closed

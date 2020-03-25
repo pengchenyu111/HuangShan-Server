@@ -20,4 +20,7 @@ public interface DailyNumMapper {
 
     //根据日期查询某一天的
     DailyNum getOneByDate(@Param("date") String date);
+
+    //查询同一假期相对同一天
+    List<DailyNum> getHolidayDailyNum(DailyNum dailyNum);
 }

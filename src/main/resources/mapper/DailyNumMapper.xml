@@ -43,4 +43,11 @@
         select * from huangshan.dailynum where date_name = #{date};
     </select>
 
+    <!--查询同一假期相对同一天-->
+    <select id="getHolidayDailyNum" parameterType="cn.hfut.huangshan.pojo.DailyNum" resultMap="dailyNumMap">
+        select *
+        from huangshan.dailynum
+        where holiday_name = #{holidayName} and holiday_order = #{holidayOrder}
+    </select>
+
 </mapper>

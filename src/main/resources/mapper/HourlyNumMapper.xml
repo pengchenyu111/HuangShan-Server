@@ -31,4 +31,47 @@
     <select id="getOneDayNum" parameterType="String" resultMap="hourlyNumMap">
         select * from  huangshan.hourlynum where date_name = #{date}
     </select>
+
+    <!--按日期+时间查询-->
+    <select id="getOneByDateHour" parameterType="String" resultMap="hourlyNumMap">
+        select * from huangshan.hourlynum where date_name = #{date} and hour = #{hour}
+    </select>
+
+    <!--增加一个-->
+    <insert id="addOne" parameterType="hourlyNum">
+        insert into huangshan.hourlynum(date_name, hour, hour_num)
+        values (#{dateName},#{hour},#{hourNum})
+    </insert>
+
+    <!--批量增加-->
+    <insert id="addMany" parameterType="java.util.List">
+        insert into huangshan.hourlynum(date_name, hour, hour_num)
+        values
+        <foreach collection="hourlyNums" item="hourlyNum" index="index" separator=",">
+            (
+                #{hourlyNum.dateName},
+                #{hourlyNum.hour},
+                #{hourlyNum.hourNum}
+            )
+        </foreach>
+    </insert>
+
+    <!--更新一个-->
+    <update id="updateOne" parameterType="hourlyNum">
+        update huangshan.hourlynum
+        set hour_num = #{hourNum}
+        where date_name = #{dateName} and hour = #{hour}
+    </update>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="String">
+        delete from huangshan.hourlynum
+        where date_name = #{date} and hour = #{hour}
+    </delete>
+
+    <!--删除一天中的全部-->
+    <delete id="deleteOneDayAll" parameterType="String">
+        delete from huangshan.hourlynum
+        where date_name = #{date}
+    </delete>
 </mapper>

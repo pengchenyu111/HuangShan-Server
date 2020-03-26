@@ -68,4 +68,72 @@ public class DailyNumController {
             return ResponseUtil.error(ErrorCode.QUERY_FAIL,ErrorCode.QUERY_FAIL_MSG,null);
         }
     }
+
+    /**
+     * 获取今日预测
+     * @return
+     */
+    @RequestMapping(value = "/predict", method = RequestMethod.POST)
+    public ResultObj getPredictNum(@RequestBody Map<String, Object> map){
+        String formatDate = map.get("formatDate").toString();
+        String weatherName = map.get("weatherName").toString();
+        String holidayName = map.get("holidayName").toString();
+        int holidayOrder = (int)map.get("holidayOrder");
+        if (holidayName.equals("")){
+            holidayName = null;
+        }
+        int predict = dailyNumService.dailyNumPredict(formatDate, weatherName, holidayName, holidayOrder);
+        if (predict > 0){
+            return ResponseUtil.success(predict);
+        }else {
+            return ResponseUtil.error(ErrorCode.QUERY_FAIL, ErrorCode.QUERY_FAIL_MSG, null);
+        }
+    }
+
+    /**
+     * 插入一条记录
+     * @param dailyNum
+     * @return
+     */
+    @RequestMapping(method = RequestMethod.POST)
+    public ResultObj addOneDayNum(@RequestBody DailyNum dailyNum){
+        boolean isSuccess = dailyNumService.addOneDayNum(dailyNum);
+        if (isSuccess){
+            DailyNum insertedData = dailyNumService.getOneByDate(dailyNum.getDateName());
+            return ResponseUtil.success(insertedData);
+        }else {
+            return ResponseUtil.error(ErrorCode.ADD_FAIL,ErrorCode.ADD_FAIL_MSG, null);
+        }
+    }
+
+    /**
+     * 更新一个
+     * @param dailyNum
+     * @return
+     */
+    @RequestMapping(value = "/{date}", method = RequestMethod.PUT)
+    public ResultObj updateOne(@PathVariable("date") String date,@RequestBody DailyNum dailyNum){
+        boolean isSuccess = dailyNumService.updateOne(dailyNum);
+        if (isSuccess){
+            DailyNum insertedData = dailyNumService.getOneByDate(date);
+            return ResponseUtil.success(insertedData);
+        }else {
+            return ResponseUtil.error(ErrorCode.UPDATE_FAIL,ErrorCode.UPDATE_FAIL_MSG, null);
+        }
+    }
+
+    /**
+     * 删除一个
+     * @param date
+     * @return
+     */
+    @RequestMapping(value = "/{date}", method = RequestMethod.DELETE)
+    public ResultObj deleteOne(@PathVariable("date") String date){
+        boolean isSuccess = dailyNumService.deleteOne(date);
+        if (isSuccess){
+            return ResponseUtil.success(null);
+        }else {
+            return ResponseUtil.error(ErrorCode.DELETE_FAIL,ErrorCode.DELETE_FAIL_MSG, null);
+        }
+    }
 }

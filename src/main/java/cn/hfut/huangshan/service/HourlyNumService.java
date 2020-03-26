@@ -69,4 +69,85 @@ public class HourlyNumService {
         List<HourlyNum> hourlyNums = hourlyNumMapper.getOneDayNum(formatDate);
         return hourlyNums;
     }
+
+    /**
+     *
+     * @param date
+     * @param hour
+     * @return
+     */
+    public HourlyNum getOneByDateHour(String date, String hour) {
+        HourlyNum hourlyNum = hourlyNumMapper.getOneByDateHour(date,hour);
+        return hourlyNum;
+    }
+
+    /**
+     * 增加一个
+     * @param hourlyNum
+     * @return
+     */
+    @Transactional
+    public boolean addOne(HourlyNum hourlyNum) {
+        Integer rows = hourlyNumMapper.addOne(hourlyNum);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 批量增加
+     * @param hourlyNums
+     * @return
+     */
+    @Transactional
+    public boolean addMany(List<HourlyNum> hourlyNums) {
+        Integer rows = hourlyNumMapper.addMany(hourlyNums);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 更新一个
+     * @param hourlyNum
+     * @return
+     */
+    @Transactional
+    public boolean updateOne(HourlyNum hourlyNum) {
+        Integer rows = hourlyNumMapper.updateOne(hourlyNum);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 删除一个
+     * @param date
+     * @param hour
+     * @return
+     */
+    @Transactional
+    public boolean deleteOne(String date, String hour) {
+        Integer rows = hourlyNumMapper.deleteOne(date, hour);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 删除一天二点全部
+     * @param date
+     * @return
+     */
+    public boolean deleteOneDayAll(String date) {
+        Integer rows = hourlyNumMapper.deleteOneDayAll(date);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
 }

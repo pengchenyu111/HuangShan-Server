@@ -23,4 +23,13 @@ public interface DailyNumMapper {
 
     //查询同一假期相对同一天
     List<DailyNum> getHolidayDailyNum(DailyNum dailyNum);
+
+    //插入一个
+    Integer addOneDayNum(DailyNum dailyNum);
+
+    //更新一个
+    Integer updateOne(DailyNum dailyNum);
+
+    //删除一个
+    Integer deleteOne(@Param("date") String date);
 }

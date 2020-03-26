@@ -50,4 +50,34 @@
         where holiday_name = #{holidayName} and holiday_order = #{holidayOrder}
     </select>
 
+    <!--插入一个-->
+    <insert id="addOneDayNum" parameterType="dailyNum">
+        insert into huangshan.dailynum(date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order)
+        values (#{dateName},#{dateWeek},#{predictNum},#{todayEightNum},#{todayNineNum},#{todayTotalNum},#{deviationRate},#{weatherName},#{orderNum},#{moduleName},#{description},#{isHoliday},#{holidayName},#{holidayOrder})
+    </insert>
+
+    <!--更新一个-->
+    <update id="updateOne" parameterType="dailyNum">
+        update huangshan.dailynum
+        set
+        date_week = #{dateWeek},
+        predict_num = #{predictNum},
+        today_eight_num = #{todayEightNum},
+        today_nine_num = #{todayNineNum},
+        today_total_num = #{todayTotalNum},
+        deviation_rate = #{deviationRate},
+        order_num = #{orderNum},
+        weather_name = #{weatherName},
+        module_name = #{moduleName},
+        description = #{description},
+        is_holiday = #{isHoliday},
+        holiday_name = #{holidayName},
+        holiday_order = #{holidayOrder}
+        where date_name = #{dateName}
+    </update>
+
+    <!--删除一个-->
+    <delete id="deleteOne" parameterType="String">
+        delete from huangshan.dailynum where date_name = #{date}
+    </delete>
 </mapper>

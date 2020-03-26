@@ -4,6 +4,8 @@ import cn.hfut.huangshan.mapper.DailyNumMapper;
 import cn.hfut.huangshan.pojo.DailyNum;
 import cn.hfut.huangshan.utils.DailyNumPredictUtil;
 import cn.hfut.huangshan.utils.DateCalculateUtil;
+import cn.hfut.huangshan.utils.DateFormatUtil;
+import org.omg.CORBA.INTERNAL;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -178,4 +180,59 @@ public class DailyNumService {
         return dailyNumMapper.getOneByDate(indexDate);
     }
 
+    /**
+     * 插入一个
+     * 参数均由前端传入
+     * @param dailyNum
+     * @return
+     */
+    @Transactional
+    public boolean addOneDayNum(DailyNum dailyNum) {
+        //日期格式化
+        String date = DateFormatUtil.toDate(dailyNum.getDateName());
+        dailyNum.setDateName(date);
+        //写入预测
+        int predict = dailyNumPredict(date, dailyNum.getWeatherName(), dailyNum.getHolidayName(), dailyNum.getHolidayOrder());
+        dailyNum.setPredictNum(predict);
+        //计算偏差
+        double rate = (double)(dailyNum.getTodayTotalNum() - predict) / dailyNum.getTodayTotalNum();
+        dailyNum.setDeviationRate(rate);
+
+        Integer rows = dailyNumMapper.addOneDayNum(dailyNum);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 更新一个
+     * @param dailyNum
+     * @return
+     */
+    @Transactional
+    public boolean updateOne(DailyNum dailyNum) {
+        //日期格式化
+        String date = DateFormatUtil.toDate(dailyNum.getDateName());
+        dailyNum.setDateName(date);
+        Integer rows = dailyNumMapper.updateOne(dailyNum);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * 删除一个
+     * @param date
+     * @return
+     */
+    @Transactional
+    public boolean deleteOne(String date) {
+        Integer rows = dailyNumMapper.deleteOne(date);
+        if (rows > 0){
+            return true;
+        }
+        return false;
+    }
 }

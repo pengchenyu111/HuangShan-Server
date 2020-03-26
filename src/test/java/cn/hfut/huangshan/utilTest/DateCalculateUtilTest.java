@@ -103,7 +103,7 @@ public class DateCalculateUtilTest {
         System.out.println("2019-10-05 " + dailyNumService.dailyNumPredict("2019-10-05", "阴", "国庆节", 5));
         System.out.println("2019-10-06 " + dailyNumService.dailyNumPredict("2019-10-06", "多云", "国庆节", 6));
         System.out.println("2019-10-07 " + dailyNumService.dailyNumPredict("2019-10-07", "阴", "国庆节", 7));
-        System.out.println("2019-10-08 " + dailyNumService.dailyNumPredict("2019-10-08", "多云", null, 7));
+        System.out.println("2019-10-08 " + dailyNumService.dailyNumPredict("2019-04-20", "雷阵雨", null, 1));
     }
 
     @Test

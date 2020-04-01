@@ -215,6 +215,8 @@ public class DailyNumService {
         //日期格式化
         String date = DateFormatUtil.toDate(dailyNum.getDateName());
         dailyNum.setDateName(date);
+        double rate = (double)(dailyNum.getTodayTotalNum() - dailyNum.getPredictNum()) / dailyNum.getTodayTotalNum();
+        dailyNum.setDeviationRate(rate);
         Integer rows = dailyNumMapper.updateOne(dailyNum);
         if (rows > 0){
             return true;

@@ -1,345 +1,562 @@
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-09, æ˜ŸæœŸå…­, 7114, 316, 2052, 6499, -0.094630, æ™´, 1452, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-08, æ˜ŸæœŸäº”, 3409, 199, 1214, 3037, -0.122489, å¤šäº‘, 1209, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-07, æ˜ŸæœŸå››, 2644, 172, 890, 2463, -0.073488, å¤šäº‘, 830, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-06, æ˜ŸæœŸä¸‰, 2710, 157, 945, 2583, -0.049168, å¤šäº‘, 566, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-05, æ˜ŸæœŸäºŒ, 2934, 215, 1268, 2763, -0.061889, æ™´, 793, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-04, æ˜ŸæœŸä¸€, 2607, 209, 980, 2314, -0.126621, å¤šäº‘, 743, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-03, æ˜ŸæœŸæ—¥, 6080, 475, 2275, 4455, -0.364759, é˜´, 1492, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-02, æ˜ŸæœŸå…­, 7724, 503, 2349, 6318, -0.222539, å¤šäº‘, 1401, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-12-01, æ˜ŸæœŸäº”, 3831, 160, 1391, 3651, -0.049302, é˜´, 867, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-30, æ˜ŸæœŸå››, 2987, 118, 909, 1860, -0.605914, å°é›¨, 613, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-29, æ˜ŸæœŸä¸‰, 2374, 347, 960, 2198, -0.080073, ä¸­é›¨, 778, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-28, æ˜ŸæœŸäºŒ, 2713, 292, 1019, 2458, -0.103743, å°é›¨, 1057, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-27, æ˜ŸæœŸä¸€, 3456, 482, 1438, 3041, -0.136468, å¤šäº‘, 1109, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-26, æ˜ŸæœŸæ—¥, 5699, 815, 2621, 5059, -0.126507, æ™´, 1776, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-25, æ˜ŸæœŸå…­, 8576, 1091, 3356, 7603, -0.127976, é˜´, 2155, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-24, æ˜ŸæœŸäº”, 4122, 447, 1590, 3677, -0.121023, å¤šäº‘, 1062, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-23, æ˜ŸæœŸå››, 4927, 588, 1987, 4718, -0.044298, å¤šäº‘, 1177, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-22, æ˜ŸæœŸä¸‰, 4046, 443, 1856, 3819, -0.059440, å¤šäº‘, 1273, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-21, æ˜ŸæœŸäºŒ, 3680, 303, 1339, 3857, 0.045891, å°é›¨, 983, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-20, æ˜ŸæœŸä¸€, 4918, 579, 1981, 5300, 0.072075, é˜´, 1945, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-19, æ˜ŸæœŸæ—¥, 12639, 1353, 4813, 12708, 0.005430, å¤šäº‘, 5784, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-18, æ˜ŸæœŸå…­, 14597, 1696, 4421, 14813, 0.014582, å¤šäº‘, 5489, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-17, æ˜ŸæœŸäº”, 4820, 307, 1527, 3650, -0.320548, å°é›¨, 1326, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-16, æ˜ŸæœŸå››, 4948, 509, 1565, 4890, -0.011861, å°é›¨, 1867, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-15, æ˜ŸæœŸä¸‰, 6547, 929, 2937, 6916, 0.053355, é˜´, 2354, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-14, æ˜ŸæœŸäºŒ, 6286, 530, 3221, 6186, -0.016166, å°é›¨, 2243, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-13, æ˜ŸæœŸä¸€, 5803, 915, 2871, 6237, 0.069585, å°é›¨, 1716, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-12, æ˜ŸæœŸæ—¥, 18757, 1181, 7510, 14200, -0.320915, å¤šäº‘, 2033, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-11, æ˜ŸæœŸå…­, 19674, 2324, 6846, 16872, -0.166074, é˜´, 4068, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-10, æ˜ŸæœŸäº”, 8651, 1060, 3477, 7137, -0.212134, å°é›¨, 2138, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-09, æ˜ŸæœŸå››, 13104, 1109, 4754, 8903, -0.471863, å¤šäº‘, 1919, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-08, æ˜ŸæœŸä¸‰, 9085, 1499, 4136, 9501, 0.043785, å¤šäº‘, 2691, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-07, æ˜ŸæœŸäºŒ, 11767, 1293, 6181, 12409, 0.051737, å¤šäº‘, 1786, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-06, æ˜ŸæœŸä¸€, 11002, 1086, 5478, 11467, 0.040551, å¤šäº‘, 2003, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-05, æ˜ŸæœŸæ—¥, 19467, 3088, 8679, 26811, 0.273917, æ™´, 3133, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-04, æ˜ŸæœŸå…­, 23975, 3372, 8917, 28818, 0.168055, æ™´, 4335, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-03, æ˜ŸæœŸäº”, 11895, 1048, 5114, 11737, -0.013462, å¤šäº‘, 1797, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-02, æ˜ŸæœŸå››, 10809, 1983, 5836, 10958, 0.013597, å¤šäº‘, 1800, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-11-01, æ˜ŸæœŸä¸‰, 8013, 1551, 4307, 8086, 0.009028, æ™´, 1542, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-31, æ˜ŸæœŸäºŒ, 5175, 727, 2408, 6131, 0.155929, æ™´, 1460, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-30, æ˜ŸæœŸä¸€, 5168, 1272, 3423, 6487, 0.203330, æ™´, 2228, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-29, æ˜ŸæœŸæ—¥, 9020, 2393, 4726, 10498, 0.140789, å¤šäº‘, 3903, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-28, æ˜ŸæœŸå…­, 5353, 439, 4469, 15921, 0.663777, æ™´, 5513, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-27, æ˜ŸæœŸäº”, 7324, 1380, 3911, 7882, 0.070794, å¤šäº‘, 1750, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-26, æ˜ŸæœŸå››, 7079, 1203, 3234, 7400, 0.043378, å¤šäº‘, 1742, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-25, æ˜ŸæœŸä¸‰, 7855, 1372, 3826, 7809, -0.005891, å¤šäº‘, 2717, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-24, æ˜ŸæœŸäºŒ, 6880, 1430, 1551, 8064, 0.146825, æ™´, 1763, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-23, æ˜ŸæœŸä¸€, 7093, 1427, 3556, 7536, 0.058785, å¤šäº‘, 2222, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-22, æ˜ŸæœŸæ—¥, 10874, 2850, 5364, 11189, 0.028153, å¤šäº‘, 5377, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-21, æ˜ŸæœŸå…­, 14112, 3685, 6562, 15979, 0.116841, å¤šäº‘, 6725, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-20, æ˜ŸæœŸäº”, 6900, 1475, 4760, 10272, 0.328271, é˜´, 3192, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-19, æ˜ŸæœŸå››, 9282, 1871, 4625, 9242, -0.004328, é˜´, 2967, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-18, æ˜ŸæœŸä¸‰, 7766, 1284, 3999, 7891, 0.015841, å¤šäº‘, 1636, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-17, æ˜ŸæœŸäºŒ, 5320, 701, 2312, 5157, -0.031608, å°é›¨, 1031, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-16, æ˜ŸæœŸä¸€, 4310, 399, 1730, 4213, -0.023024, ä¸­é›¨, 935, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-15, æ˜ŸæœŸæ—¥, 3937, 1478, 3462, 6676, 0.410276, ä¸­é›¨, 1916, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-14, æ˜ŸæœŸå…­, 8978, 2172, 4917, 9815, 0.085278, é˜´, 2567, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-13, æ˜ŸæœŸäº”, 4807, 822, 2709, 6153, 0.218755, å°é›¨, 1745, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-12, æ˜ŸæœŸå››, 4819, 631, 2146, 4672, -0.031464, å°é›¨, 1249, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-11, æ˜ŸæœŸä¸‰, 5415, 1185, 2589, 5053, -0.071641, é˜µé›¨, 1925, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-10, æ˜ŸæœŸäºŒ, 5523, 1311, 3056, 5405, -0.021832, é˜´, 1235, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-09, æ˜ŸæœŸä¸€, 5847, 1360, 2615, 5432, -0.076399, æ™´, 1041, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-08, æ˜ŸæœŸæ—¥, 3544, 1995, 3660, 6387, 0.445123, æ™´, 1705, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 8]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-07, æ˜ŸæœŸå…­, 17275, 5732, 9324, 15369, -0.124016, é˜´, 4752, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 7]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-06, æ˜ŸæœŸäº”, 24028, 9231, 14586, 27957, 0.140537, å¤šäº‘, 8969, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 6]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-05, æ˜ŸæœŸå››, 24605, 8397, 12643, 21080, -0.167220, å°é›¨, 6508, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 5]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-04, æ˜ŸæœŸä¸‰, 29235, 10745, 15449, 25807, -0.132832, å°é›¨, 8092, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 4]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-03, æ˜ŸæœŸäºŒ, 35868, 11956, 17071, 37033, 0.031458, é˜´, 16226, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 3]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-02, æ˜ŸæœŸä¸€, 34818, 11606, 17256, 32257, -0.079394, é˜µé›¨, 1074, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 2]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-10-01, æ˜ŸæœŸæ—¥, 13296, 3484, 5495, 10630, -0.250800, å¤šäº‘, 4840, SVMæ¨¡å‹, null, 1, å›½åº†èŠ‚, 1]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-30, æ˜ŸæœŸå…­, 7640, 957, 2341, 5886, -0.297995, å°é›¨, 1300, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-29, æ˜ŸæœŸäº”, 5945, 1225, 2657, 5626, -0.056701, å°é›¨, 1854, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-28, æ˜ŸæœŸå››, 3779, 544, 1352, 3767, -0.003186, å°é›¨, 564, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-27, æ˜ŸæœŸä¸‰, 4144, 1011, 2098, 3810, -0.087664, é˜µé›¨, 1304, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-26, æ˜ŸæœŸäºŒ, 5084, 1166, 2370, 4387, -0.158879, é˜µé›¨, 1395, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-25, æ˜ŸæœŸä¸€, 6175, 1202, 2730, 5602, -0.102285, é˜´, 1384, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-24, æ˜ŸæœŸæ—¥, 6890, 2319, 4227, 8318, 0.171676, é›·é˜µé›¨, 2825, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-23, æ˜ŸæœŸå…­, 9806, 2102, 4962, 10907, 0.100944, é˜µé›¨, 3789, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-22, æ˜ŸæœŸäº”, 7560, 1352, 3465, 7116, -0.062395, å°é›¨, 2646, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-21, æ˜ŸæœŸå››, 5835, 1187, 3035, 6039, 0.033780, é›·é˜µé›¨, 1735, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-20, æ˜ŸæœŸä¸‰, 4919, 795, 1905, 4041, -0.217273, å¤§é›¨, 1418, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-19, æ˜ŸæœŸäºŒ, 6997, 1982, 3407, 6751, -0.036439, ä¸­é›¨, 2741, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-18, æ˜ŸæœŸä¸€, 6269, 1736, 3518, 6673, 0.060542, å¤šäº‘, 2408, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-17, æ˜ŸæœŸæ—¥, 18438, 6820, 11408, 18690, 0.013483, æ™´, 10029, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-16, æ˜ŸæœŸå…­, 19144, 6614, 11512, 29723, 0.355920, é˜´, 12741, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-15, æ˜ŸæœŸäº”, 12492, 3782, 6721, 12250, -0.019755, å°é›¨, 6443, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-14, æ˜ŸæœŸå››, 11286, 3370, 5684, 10665, -0.058228, å¤šäº‘, 4736, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-13, æ˜ŸæœŸä¸‰, 12215, 4608, 7912, 13112, 0.068411, å¤šäº‘, 6738, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-12, æ˜ŸæœŸäºŒ, 8334, 3087, 5245, 9115, 0.085683, å¤šäº‘, 382, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-11, æ˜ŸæœŸä¸€, 9265, 2640, 4374, 6966, -0.330032, å°é›¨, 2938, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-10, æ˜ŸæœŸæ—¥, 16795, 6162, 9636, 13914, -0.207058, å°é›¨, 7679, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-09, æ˜ŸæœŸå…­, 19342, 5247, 10190, 20718, 0.066416, ä¸­é›¨, 8381, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-08, æ˜ŸæœŸäº”, 6174, 1223, 2559, 5562, -0.110032, å°é›¨, 2082, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-07, æ˜ŸæœŸå››, 5531, 1172, 2615, 5303, -0.042995, é˜´, 1844, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-06, æ˜ŸæœŸä¸‰, 5497, 1396, 2494, 4261, -0.290073, ä¸­é›¨, 1901, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-05, æ˜ŸæœŸäºŒ, 4091, 1121, 2575, 4778, 0.143784, é›·é˜µé›¨, 1713, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-04, æ˜ŸæœŸä¸€, 6080, 1334, 2786, 5299, -0.147386, å°é›¨, 2101, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-03, æ˜ŸæœŸæ—¥, 7732, 2109, 4252, 7670, -0.008083, å¤šäº‘, 2749, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-02, æ˜ŸæœŸå…­, 7905, 2146, 4531, 8906, 0.112396, é˜´, 3353, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-09-01, æ˜ŸæœŸäº”, 6083, 977, 2323, 4358, -0.395824, å°é›¨, 1697, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-31, æ˜ŸæœŸå››, 6901, 1158, 2199, 4465, -0.545577, é›·é˜µé›¨, 1395, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-30, æ˜ŸæœŸä¸‰, 7781, 1851, 3371, 6086, -0.278508, é›·é˜µé›¨, 2431, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-29, æ˜ŸæœŸäºŒ, 8899, 1946, 3826, 6643, -0.339606, é›·é˜µé›¨, 2548, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-28, æ˜ŸæœŸä¸€, 8341, 2294, 5001, 9561, 0.127602, å¤šäº‘, 3622, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-27, æ˜ŸæœŸæ—¥, 13353, 3947, 7323, 15358, 0.130551, å¤šäº‘, 6442, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-26, æ˜ŸæœŸå…­, 19061, 5461, 9760, 19616, 0.028293, é›·é˜µé›¨, 10668, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-25, æ˜ŸæœŸäº”, 10035, 2474, 5254, 10992, 0.087063, é›·é˜µé›¨, 5852, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-24, æ˜ŸæœŸå››, 11225, 2975, 6423, 13881, 0.191341, é˜´, 5542, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-23, æ˜ŸæœŸä¸‰, 14718, 4280, 8076, 16492, 0.107567, å¤šäº‘, 7953, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-22, æ˜ŸæœŸäºŒ, 12564, 2641, 5946, 13502, 0.069471, å¤šäº‘, 6000, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-21, æ˜ŸæœŸä¸€, 12884, 2839, 5827, 11897, -0.082962, é›·é˜µé›¨, 8000, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-20, æ˜ŸæœŸæ—¥, 16685, 4033, 7454, 15346, -0.087254, ä¸­é›¨, 8832, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-19, æ˜ŸæœŸå…­, 20879, 6126, 10599, 22730, 0.081434, é›·é˜µé›¨, 14053, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-18, æ˜ŸæœŸäº”, 11821, 2814, 6445, 13250, 0.107849, é›·é˜µé›¨, 5419, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-17, æ˜ŸæœŸå››, 11285, 2673, 6043, 13246, 0.148045, é›·é˜µé›¨, 5058, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-16, æ˜ŸæœŸä¸‰, 12599, 3462, 6827, 13724, 0.081973, é›·é˜µé›¨, 6322, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-15, æ˜ŸæœŸäºŒ, 10065, 2299, 5700, 12641, 0.203781, é›·é˜µé›¨, 4745, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-14, æ˜ŸæœŸä¸€, 10641, 2242, 5661, 12611, 0.156213, ä¸­é›¨, 4582, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-13, æ˜ŸæœŸæ—¥, 12686, 3484, 6666, 15728, 0.193413, é›·é˜µé›¨, 6125, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-12, æ˜ŸæœŸå…­, 16152, 4537, 7837, 19311, 0.163586, å¤§é›¨, 9928, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-11, æ˜ŸæœŸäº”, 10655, 2765, 6039, 12650, 0.157708, å¤šäº‘, 6929, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-10, æ˜ŸæœŸå››, 10511, 2546, 5939, 13747, 0.235397, å¤šäº‘, 7612, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-09, æ˜ŸæœŸä¸‰, 8902, 2217, 4232, 10010, 0.110689, ä¸­é›¨, 6328, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-08, æ˜ŸæœŸäºŒ, 9979, 2254, 5000, 11023, 0.094711, é›·é˜µé›¨, 5688, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-07, æ˜ŸæœŸä¸€, 10547, 2418, 5852, 11924, 0.115481, é›·é˜µé›¨, 5076, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-06, æ˜ŸæœŸæ—¥, 13451, 3867, 7316, 14676, 0.083470, é›·é˜µé›¨, 6946, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-05, æ˜ŸæœŸå…­, 16249, 4527, 8047, 17195, 0.055016, é›·é˜µé›¨, 8584, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-04, æ˜ŸæœŸäº”, 11343, 2711, 6034, 11345, 0.000176, é›·é˜µé›¨, 4734, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-03, æ˜ŸæœŸå››, 9212, 1922, 4486, 10519, 0.124251, é›·é˜µé›¨, 3989, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-02, æ˜ŸæœŸä¸‰, 10222, 1372, 3577, 9298, -0.099376, é›·é˜µé›¨, 537, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-08-01, æ˜ŸæœŸäºŒ, 8251, 1685, 3626, 7132, -0.156898, é›·é˜µé›¨, 2569, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-31, æ˜ŸæœŸä¸€, 8917, 2230, 4334, 9120, 0.022259, ä¸­é›¨, 3085, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-30, æ˜ŸæœŸæ—¥, 11886, 3351, 6184, 11025, -0.078095, é›·é˜µé›¨, 5010, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-29, æ˜ŸæœŸå…­, 13880, 3587, 7068, 12773, -0.086667, å¤šäº‘, 5709, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-28, æ˜ŸæœŸäº”, 9320, 2320, 4919, 8063, -0.155897, æ™´, 3490, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-27, æ˜ŸæœŸå››, 9015, 2245, 4229, 8495, -0.061212, æ™´, 3394, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-26, æ˜ŸæœŸä¸‰, 9308, 2314, 4942, 8665, -0.074207, å¤šäº‘, 3779, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-25, æ˜ŸæœŸäºŒ, 9170, 2135, 4350, 7881, -0.163558, æ™´, 3138, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-24, æ˜ŸæœŸä¸€, 9019, 2010, 4487, 7707, -0.170235, å¤šäº‘, 3082, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-23, æ˜ŸæœŸæ—¥, 12283, 3461, 6363, 10920, -0.124817, å¤šäº‘, 4545, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-22, æ˜ŸæœŸå…­, 15055, 4100, 7518, 13733, -0.096264, å¤šäº‘, 6503, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-21, æ˜ŸæœŸäº”, 8878, 2266, 4595, 8192, -0.083740, å¤šäº‘, 3561, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-20, æ˜ŸæœŸå››, 8963, 1891, 4336, 8322, -0.077025, å¤šäº‘, 3429, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-19, æ˜ŸæœŸä¸‰, 9717, 2506, 5207, 9011, -0.078349, å¤šäº‘, 4362, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-18, æ˜ŸæœŸäºŒ, 8749, 1948, 4153, 8710, -0.004478, å¤šäº‘, 4437, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-17, æ˜ŸæœŸä¸€, 8453, 2104, 4669, 8490, 0.004358, é›·é˜µé›¨, 2744, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-16, æ˜ŸæœŸæ—¥, 12322, 3604, 6843, 11544, -0.067394, é›·é˜µé›¨, 5213, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-15, æ˜ŸæœŸå…­, 15765, 4383, 7860, 14131, -0.115632, å¤šäº‘, 6505, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-14, æ˜ŸæœŸäº”, 8720, 1675, 4360, 8172, -0.067058, å¤šäº‘, 4345, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-13, æ˜ŸæœŸå››, 9876, 2427, 4916, 9645, -0.023950, å¤šäº‘, 4894, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-12, æ˜ŸæœŸä¸‰, 8434, 2321, 4936, 9022, 0.065174, é›·é˜µé›¨, 4130, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-11, æ˜ŸæœŸäºŒ, 6985, 1544, 3712, 7140, 0.021709, é›·é˜µé›¨, 2452, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-10, æ˜ŸæœŸä¸€, 5974, 1032, 2568, 5536, -0.079118, å°é›¨, 1811, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-09, æ˜ŸæœŸæ—¥, 10540, 2966, 5564, 11472, 0.081241, é›·é˜µé›¨, 4842, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-08, æ˜ŸæœŸå…­, 14173, 4222, 7843, 16022, 0.115404, é›·é˜µé›¨, 7476, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-07, æ˜ŸæœŸäº”, 8255, 1929, 4573, 8740, 0.055492, é˜´, 3386, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-06, æ˜ŸæœŸå››, 8210, 1834, 3756, 8640, 0.049769, å¤šäº‘, 2962, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-05, æ˜ŸæœŸä¸‰, 9132, 2291, 4326, 7881, -0.158736, é˜´, 3353, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-04, æ˜ŸæœŸäºŒ, 7467, 1536, 3159, 5749, -0.298835, é›·é˜µé›¨, 2069, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-03, æ˜ŸæœŸä¸€, 6832, 1451, 3319, 6120, -0.116340, ä¸­é›¨, 2049, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-02, æ˜ŸæœŸæ—¥, 9600, 2444, 4489, 8933, -0.074667, ä¸­é›¨, 3522, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-07-01, æ˜ŸæœŸå…­, 10394, 2292, 5123, 10330, -0.006196, ä¸­é›¨, 3781, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-30, æ˜ŸæœŸäº”, 5624, 1068, 2653, 5286, -0.063942, é›·é˜µé›¨, 1603, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-29, æ˜ŸæœŸå››, 4545, 990, 2357, 5029, 0.096242, ä¸­é›¨, 1772, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-28, æ˜ŸæœŸä¸‰, 5540, 976, 3977, 9323, 0.405771, é›·é˜µé›¨, 2193, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-27, æ˜ŸæœŸäºŒ, 9773, 2616, 3863, 8953, -0.091589, é›·é˜µé›¨, 1509, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-26, æ˜ŸæœŸä¸€, 6338, 790, 2671, 6128, -0.034269, é›·é˜µé›¨, 1242, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-25, æ˜ŸæœŸæ—¥, 10987, 3432, 6186, 12259, 0.103761, å¤§é›¨, 1687, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-24, æ˜ŸæœŸå…­, 6232, 612, 3388, 10374, 0.399267, æš´é›¨, 1706, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-23, æ˜ŸæœŸäº”, 8255, 2604, 3619, 7200, -0.146528, å¤§é›¨, 1378, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-22, æ˜ŸæœŸå››, 8939, 2190, 3413, 5266, -0.697493, é›·é˜µé›¨, null, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-21, æ˜ŸæœŸä¸‰, 8114, 2190, 3413, 7679, -0.056648, é›·é˜µé›¨, 1937, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-20, æ˜ŸæœŸäºŒ, 6815, 2480, 3926, 8732, 0.219537, å°é›¨, 2029, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-19, æ˜ŸæœŸä¸€, 7604, 1512, 3506, 6926, -0.097892, é›·é˜µé›¨, 1508, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-18, æ˜ŸæœŸæ—¥, 8908, 1969, 10069, 18704, 0.523738, å¤šäº‘, 4059, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-17, æ˜ŸæœŸå…­, 10316, 2103, 7163, 21565, 0.521632, å¤šäº‘, 4840, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-16, æ˜ŸæœŸäº”, 8327, 2047, 4036, 9139, 0.088850, å¤šäº‘, 2495, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-15, æ˜ŸæœŸå››, 9023, 2446, 4113, 11275, 0.199734, é˜´, 2598, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-14, æ˜ŸæœŸä¸‰, 7218, 2085, 3581, 9065, 0.203751, é˜´, 1512, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-13, æ˜ŸæœŸäºŒ, 3817, 597, 1699, 5026, 0.240549, ä¸­é›¨, 651, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-12, æ˜ŸæœŸä¸€, 4828, 627, 1616, 3953, -0.221351, é›·é˜µé›¨, 1037, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-11, æ˜ŸæœŸæ—¥, 5685, 1600, 3554, 7546, 0.246621, ä¸­é›¨, 1812, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-10, æ˜ŸæœŸå…­, 9000, 2628, 4093, 10755, 0.163180, ä¸­é›¨, 2301, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-09, æ˜ŸæœŸäº”, 4330, 841, 2326, 5286, 0.180855, ä¸­é›¨, 1742, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-08, æ˜ŸæœŸå››, 6186, 1600, 3147, 7591, 0.185088, å¤šäº‘, 1901, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-07, æ˜ŸæœŸä¸‰, 7110, 2503, 4426, 9270, 0.233010, å¤šäº‘, 2290, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-06, æ˜ŸæœŸäºŒ, 5689, 1569, 3215, 6788, 0.161903, å°é›¨, 1255, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-05, æ˜ŸæœŸä¸€, 3613, 701, 1395, 4140, 0.127295, ä¸­é›¨, 889, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-04, æ˜ŸæœŸæ—¥, 10286, 1644, 7825, 12521, 0.178500, å¤šäº‘, 2949, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-03, æ˜ŸæœŸå…­, 12574, 4457, 4534, 14102, 0.108353, å¤šäº‘, 2419, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-02, æ˜ŸæœŸäº”, 6307, 1586, 1645, 6586, 0.042363, å¤šäº‘, 1281, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-06-01, æ˜ŸæœŸå››, 4422, 495, 1526, 4259, -0.038272, é›·é˜µé›¨, 1952, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-31, æ˜ŸæœŸä¸‰, 4252, 978, 985, 3444, -0.234611, é›·é˜µé›¨, 642, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-30, æ˜ŸæœŸäºŒ, 7367, 2147, 2181, 5989, -0.230088, å¤šäº‘, 1810, SVMæ¨¡å‹, null, 1, ç«¯åˆèŠ‚, 3]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-29, æ˜ŸæœŸä¸€, 21504, 6645, 6804, 19619, -0.096080, æ™´, 5147, SVMæ¨¡å‹, null, 1, ç«¯åˆèŠ‚, 2]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-28, æ˜ŸæœŸæ—¥, 14180, 3176, 6093, 13572, -0.044798, æ™´, 3376, SVMæ¨¡å‹, null, 1, ç«¯åˆèŠ‚, 1]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-27, æ˜ŸæœŸå…­, 10635, 2412, 2440, 9106, -0.167911, æ™´, 1878, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-26, æ˜ŸæœŸäº”, 4859, 1668, 1733, 5435, 0.105980, æ™´, 1071, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-25, æ˜ŸæœŸå››, 8325, 2217, 4403, 8021, -0.037901, å¤šäº‘, 4163, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-24, æ˜ŸæœŸä¸‰, 6994, 1932, 1988, 7808, 0.104252, å¤šäº‘, 1991, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-23, æ˜ŸæœŸäºŒ, 3340, 397, 413, 3331, -0.002702, å¤§é›¨, 698, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-22, æ˜ŸæœŸä¸€, 5234, 1299, 2536, 5023, -0.042007, é›·é˜µé›¨, 2730, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-21, æ˜ŸæœŸæ—¥, 16337, 7664, 7752, 14247, -0.146698, é›·é˜µé›¨, 2866, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-20, æ˜ŸæœŸå…­, 21275, 7909, 8062, 20825, -0.021609, é›·é˜µé›¨, 5095, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-19, æ˜ŸæœŸäº”, 11628, 4871, 4961, 10326, -0.126089, å¤šäº‘, 2269, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-18, æ˜ŸæœŸå››, 7874, 2079, 2180, 7308, -0.077449, å¤šäº‘, 1608, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-17, æ˜ŸæœŸä¸‰, 8779, 2588, 2701, 8901, 0.013706, å¤šäº‘, 2046, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-16, æ˜ŸæœŸäºŒ, 5612, 1293, 1335, 6111, 0.081656, é›·é˜µé›¨, 1348, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-15, æ˜ŸæœŸä¸€, 6031, 1562, 2733, 5881, -0.025506, é›·é˜µé›¨, 3645, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-14, æ˜ŸæœŸæ—¥, 14859, 5544, 5726, 12138, -0.224172, å¤šäº‘, 4721, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-13, æ˜ŸæœŸå…­, 19451, 5881, 9998, 20381, 0.045631, æ™´, 11584, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-12, æ˜ŸæœŸäº”, 8307, 1908, 1957, 6997, -0.187223, é›·é˜µé›¨, 1729, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-11, æ˜ŸæœŸå››, 8310, 2582, 2689, 7207, -0.153046, é›·é˜µé›¨, 1550, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-10, æ˜ŸæœŸä¸‰, 9517, 2708, 4276, 8592, -0.107658, æ™´, 3038, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-09, æ˜ŸæœŸäºŒ, 8703, 2454, 5090, 10341, 0.158399, æ™´, 5058, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-08, æ˜ŸæœŸä¸€, 1842, 285, null, 2637, 0.301479, ä¸­é›¨, 2209, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-07, æ˜ŸæœŸæ—¥, 9346, 2910, null, 8030, -0.163885, å°é›¨, 4444, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-06, æ˜ŸæœŸå…­, 16523, 4463, null, 14306, -0.154970, å¤šäº‘, 7849, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-05, æ˜ŸæœŸäº”, 7212, 2042, null, 8294, 0.130456, å¤šäº‘, 3958, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-04, æ˜ŸæœŸå››, 3654, 865, null, 4779, 0.235405, å°é›¨, 2187, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-03, æ˜ŸæœŸä¸‰, 4862, 1439, null, 5579, 0.128518, é›·é˜µé›¨, 2314, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-02, æ˜ŸæœŸäºŒ, 3878, 977, null, 5196, 0.253657, é›·é˜µé›¨, 663, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-05-01, æ˜ŸæœŸä¸€, 9026, 4031, null, 10078, 0.104386, é›·é˜µé›¨, 2822, SVMæ¨¡å‹, null, 1, åŠ³åŠ¨èŠ‚, 3]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-30, æ˜ŸæœŸæ—¥, 28381, 9329, null, 31739, 0.105800, å¤šäº‘, 8435, SVMæ¨¡å‹, null, 1, åŠ³åŠ¨èŠ‚, 2]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-29, æ˜ŸæœŸå…­, 16232, 4652, null, 16922, 0.040775, æ™´, null, SVMæ¨¡å‹, null, 1, åŠ³åŠ¨èŠ‚, 1]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-28, æ˜ŸæœŸäº”, 11130, 2766, 5540, 10784, -0.032085, æ™´, 2029, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-27, æ˜ŸæœŸå››, 11287, 2511, null, 10709, -0.053973, å¤šäº‘, 2008, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-26, æ˜ŸæœŸä¸‰, 7011, 1757, null, 6885, -0.018301, å°é›¨, null, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-25, æ˜ŸæœŸäºŒ, 9419, 2865, null, 7546, -0.248211, é›·é˜µé›¨, 2241, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-24, æ˜ŸæœŸä¸€, 11193, 2636, null, 9735, -0.149769, å¤šäº‘, 2103, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-23, æ˜ŸæœŸæ—¥, 20959, 6427, null, 17740, -0.181454, å¤šäº‘, 6115, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-22, æ˜ŸæœŸå…­, 24902, 7043, null, 25928, 0.039571, å¤šäº‘, 6778, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-21, æ˜ŸæœŸäº”, 9288, 1976, null, 11101, 0.163319, é˜´, 1843, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-20, æ˜ŸæœŸå››, 10190, 1911, null, 8874, -0.148298, é˜´, 2047, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-19, æ˜ŸæœŸä¸‰, 10278, 3006, null, 9805, -0.048241, é›·é˜µé›¨, 2668, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-18, æ˜ŸæœŸäºŒ, 8956, 2204, null, 11262, 0.204759, å¤šäº‘, 2906, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-17, æ˜ŸæœŸä¸€, 5468, 1189, null, 6015, 0.090939, å°é›¨, 2946, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-16, æ˜ŸæœŸæ—¥, 12404, 3908, null, 10098, -0.228362, é›·é˜µé›¨, 5621, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-15, æ˜ŸæœŸå…­, 17946, 4517, null, 20359, 0.118523, å¤šäº‘, 9693, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-14, æ˜ŸæœŸäº”, 10681, 2649, null, 11486, 0.070085, å¤šäº‘, 5498, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-13, æ˜ŸæœŸå››, 10566, 2276, null, 10696, 0.012154, å¤šäº‘, 4619, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-12, æ˜ŸæœŸä¸‰, 10609, 2384, null, 10110, -0.049357, å¤šäº‘, 4359, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-11, æ˜ŸæœŸäºŒ, 7447, 1891, null, 8478, 0.121609, é˜´, 4151, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-10, æ˜ŸæœŸä¸€, 5027, 911, null, 4316, -0.164736, å°é›¨, 1936, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-09, æ˜ŸæœŸæ—¥, 8269, 2157, null, 7342, -0.126260, å°é›¨, 3768, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-08, æ˜ŸæœŸå…­, 13710, 3118, null, 11966, -0.145746, å°é›¨, 5844, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-07, æ˜ŸæœŸäº”, 6568, 1047, null, 5556, -0.182145, å°é›¨, 2137, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-06, æ˜ŸæœŸå››, 7516, 1024, null, 4423, -0.699299, ä¸­é›¨, 1641, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-05, æ˜ŸæœŸä¸‰, 6441, 1247, null, 5175, -0.244638, å°é›¨, 1488, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-04, æ˜ŸæœŸäºŒ, 14427, 4790, null, 11294, -0.277404, é˜´, 4754, SVMæ¨¡å‹, null, 1, æ¸…æ˜èŠ‚, 3]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-03, æ˜ŸæœŸä¸€, 28346, 9059, null, 35564, 0.202958, å¤šäº‘, 13837, SVMæ¨¡å‹, null, 1, æ¸…æ˜èŠ‚, 2]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-02, æ˜ŸæœŸæ—¥, 14509, 4352, null, 19770, 0.266110, æ™´, 5779, SVMæ¨¡å‹, null, 1, æ¸…æ˜èŠ‚, 1]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-04-01, æ˜ŸæœŸå…­, 8776, 1436, null, 10485, 0.162995, å¤šäº‘, 3472, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-31, æ˜ŸæœŸäº”, 5983, 769, null, 6211, 0.036709, å¤šäº‘, 2131, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-30, æ˜ŸæœŸå››, 4652, 783, null, 5077, 0.083711, ä¸­é›¨, 2851, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-29, æ˜ŸæœŸä¸‰, 5042, 932, null, 5593, 0.098516, å°é›¨, 2437, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-28, æ˜ŸæœŸäºŒ, 6945, 1204, null, 7588, 0.084739, é˜´, 3690, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-27, æ˜ŸæœŸä¸€, 6895, 1194, null, 7239, 0.047520, å¤šäº‘, 3098, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-26, æ˜ŸæœŸæ—¥, 14562, 2831, null, 18764, 0.223939, æ™´, 3551, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-25, æ˜ŸæœŸå…­, 13081, 1773, null, 21688, 0.396855, å¤šäº‘, 5186, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-24, æ˜ŸæœŸäº”, 5694, 732, null, 6307, 0.097194, ä¸­é›¨, 2461, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-23, æ˜ŸæœŸå››, 6040, 679, null, 8421, 0.282746, é˜´, 3063, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-22, æ˜ŸæœŸä¸‰, 3847, 500, null, 4311, 0.107632, ä¸­é›¨, 1409, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-21, æ˜ŸæœŸäºŒ, 3403, 800, null, 8558, 0.602360, é›¨å¤¹é›ª, 2834, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-20, æ˜ŸæœŸä¸€, 4211, 501, null, 4323, 0.025908, å°é›¨, 1607, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-19, æ˜ŸæœŸæ—¥, 4471, 1055, null, 6456, 0.307466, å°é›¨, 2792, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-18, æ˜ŸæœŸå…­, 13140, 2152, null, 13495, 0.026306, å°é›¨, 5564, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-17, æ˜ŸæœŸäº”, 4358, 460, null, 4978, 0.124548, å°é›¨, 2041, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-16, æ˜ŸæœŸå››, 3345, 483, null, 4165, 0.196879, é›¨å¤¹é›ª, 1775, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-15, æ˜ŸæœŸä¸‰, 1782, 337, null, 3274, 0.455712, é›¨å¤¹é›ª, 1466, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-14, æ˜ŸæœŸäºŒ, 4743, 944, null, 5642, 0.159341, æ™´, 2570, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-13, æ˜ŸæœŸä¸€, 2124, 94, null, 2444, 0.130933, å°é›¨, 1257, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-12, æ˜ŸæœŸæ—¥, 3241, 542, null, 2152, -0.506041, å°é›¨, 1180, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-11, æ˜ŸæœŸå…­, 10326, 1207, null, 7817, -0.320967, å°é›¨, 3755, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-10, æ˜ŸæœŸäº”, 4683, 672, null, 4268, -0.097235, é˜´, 1643, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-09, æ˜ŸæœŸå››, 4666, 610, null, 4455, -0.047363, å¤šäº‘, 1961, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-08, æ˜ŸæœŸä¸‰, 4117, 1051, null, 4839, 0.149204, æ™´, 2195, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-07, æ˜ŸæœŸäºŒ, 3559, 470, null, 3776, 0.057468, å¤šäº‘, 1581, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-06, æ˜ŸæœŸä¸€, 2933, 211, null, 2547, -0.151551, å¤šäº‘, 1011, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-05, æ˜ŸæœŸæ—¥, 4063, 534, null, 3104, -0.308956, å°é›¨, 1402, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-04, æ˜ŸæœŸå…­, 8475, 869, null, 5239, -0.617675, å°é›¨, 2081, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-03, æ˜ŸæœŸäº”, 3805, 410, null, 3489, -0.090570, å¤šäº‘, 1471, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-02, æ˜ŸæœŸå››, 4058, 266, null, 3193, -0.270905, æ™´, 1232, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-03-01, æ˜ŸæœŸä¸‰, 3328, 340, null, 2292, -0.452007, æ™´, 859, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-02-28, æ˜ŸæœŸäºŒ, 4159, 603, null, 3951, -0.052645, å¤šäº‘, 1627, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} Result: [2017-02-27, æ˜ŸæœŸä¸€, 4959, 314, null, 3001, -0.652449, æ™´, 1117, SVMæ¨¡å‹, null, 0, null, null]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20058, rs-50095} closed
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20058} clearParameters. 
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} commited
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit true
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-recycle
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-connect
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit false
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} commited
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit true
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-recycle
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-connect
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit false
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20059} created. select * from huangshan.v_admin_basic_info
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20059} Parameters : []
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20059} Types : []
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20059} executed. 38.933922 millis. select * from huangshan.v_admin_basic_info
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} open
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Header: [id, account, password, name, role_name, phone, work_year, birth, age, sex, introduction, head_icon]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [9, 2017211238, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­ç‰å›½, ç³»ç»Ÿç®¡ç†å‘˜, 15982295274, 5, 1977-03-21, 43, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [12, 2017211241, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, ç³»ç»Ÿç®¡ç†å‘˜, 18224464804, 3, 1999-03-21, 21, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [666, 2017214830, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å¼ èˆª, ç³»ç»Ÿç®¡ç†å‘˜, 15056911226, 1, 1999-07-05, 20, ç”·, No painsï¼Œ no gains., http://101.37.173.73:8000/user/2017211241/headicon/coder.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [1237038678396633088, 2020211245, d096748f9a944515473d05636f3276cb36f5a02394c315b04fcc9d4cfa33321b20ef80cbf2c747ce4f3eaa2616095380, ç‹ç’, ç³»ç»Ÿç®¡ç†å‘˜, 12345678900, 2, 1999-07-29, 20, å¥³, å¾ˆä¼˜ç§€, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [14, 2017211243,  228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, æç«‹, åŸºç¡€æ•°æ®ç®¡ç†å‘˜, 18246587634, 2, 1999-10-21, 20, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [1, 2017211230, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ç™½æ¡ˆ, ä¸šåŠ¡ç®¡ç†å‘˜, 18224464498, 5, 1979-03-20, 41, å¥³, æˆ‘æ˜¯ä¸€ä¸ªå°½èŒå°½è´£çš„ç®¡ç†å‘˜ï¼, http://101.37.173.73:8000/user/2017211230/headicon/IMG_20200119_122604.jpg]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [3, 2017211232, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, è‹ä¸¹, ä¸šåŠ¡ç®¡ç†å‘˜, 13846487645, 2, 1991-03-21, 29, å¥³, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [4, 2017211233, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å¼ è‰¯, ä¸šåŠ¡ç®¡ç†å‘˜, 13988865892, 1, 1996-03-21, 24, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [6, 2017211235, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, é»„è¾‰å†¯, ä¸šåŠ¡ç®¡ç†å‘˜, 15678945648, 6, 1990-03-21, 30, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [8, 2017211237, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, æå¿—å³°, ä¸šåŠ¡ç®¡ç†å‘˜, 15965464787, 2, 1978-03-21, 42, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [10, 2017211239, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, æ´›èŠ±, ä¸šåŠ¡ç®¡ç†å‘˜, 17826564654, 3, 1995-03-21, 25, å¥³, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [11, 2017211240, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, ç« é‚¯, ä¸šåŠ¡ç®¡ç†å‘˜, 17891544684, 2, 1993-03-21, 27, ç”·, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [13, 2017211242, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, èµµæ¬¢, ä¸šåŠ¡ç®¡ç†å‘˜, 18284516546, 3, 1984-03-21, 36, å¥³, 2015å¹´-2017å¹´ï¼Œåœ¨é»„å±±â€”å¤©éƒ½å³°ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·ï¼›2018å¹´â€”2019å¹´ä»»é»„å±±â€”å…‰æ˜é¡¶ä»»ç®¡ç†å‘˜ï¼ŒæœŸé—´è·å¾—â€œé»„å±±ä¼˜ç§€ç®¡ç†å‘˜â€ç§°å·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} Result: [1234759018208034816, 2020211244, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, åˆ˜çƒ¨, ä¸šåŠ¡ç®¡ç†å‘˜, 18224464222, 1, 2020-02-23, 0, ç”·, å¤©é“é…¬å‹¤, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20059, rs-50096} closed
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20059} clearParameters. 
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} commited
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit true
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-recycle
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-connect
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit false
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20060} created. select * from huangshan.v_tourist_basic_info
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20060} Parameters : []
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20060} Types : []
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20060} executed. 64.936815 millis. select * from huangshan.v_tourist_basic_info
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} open
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Header: [id, account, password, name, role_name, phone, birth, age, sex, head_icon]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1, 18224464804, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å½­é™ˆå®‡, æ¸¸å®¢, 18224464804, 1991-03-12, 29, ç”·, http://101.37.173.73:8000/user/18224464804/headicon/IMG_20200118_120036.jpg]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [2, 28734823789, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, å¼ èˆª, æ¸¸å®¢, 28734823789, 1999-07-15, 20, ç”·, http://101.37.173.73:8000/user/15056911226/headicon/1565876478158.jpg]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1237698671110266880, 10293847560, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, åˆå·¥å¤§, æ¸¸å®¢, 10293847560, 1999-06-23, 20, å¥³, http://101.37.173.73:8000/user/10293847560/headicon/hfut.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1237740918421856256, 13244564566, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, æ¯›çƒ¨æ˜Š, æ¸¸å®¢, 13244564566, 1999-06-15, 20, ç”·, http://101.37.173.73:8000/user/13244564566/headicon/555555.jpg]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1237762620212125696, 82786462376, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, è½»èˆŸå·²è¿‡ä¸‡é‡å±±, æ¸¸å®¢, 82786462376, 2000-06-11, 19, ç”·, http://101.37.173.73:8000/user/82786462376/headicon/5d688a043db71.jpg]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1237763163777146880, 87395827459, 49d93702f30ff6ca2eed0b58cf4ba9d1c297ecce87039eb4107490b64098dc6823b64da28ebfaf95c448af9fbab7892e, æ¸¸å®¢87395827459, æ¸¸å®¢, 87395827459, 1996-03-14, 24, å¥³, http://101.37.173.73:8000/user/87395827459/headicon/1560941519929.jpg]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1237972237584285696, 18224456200, d3d4a3f96d0df463baef8985fb19d1c1579ce5b7925408e2b11bf4da54b7a9bec9929341522ddc6580da91b75fbc62fa, æ¸¸å®¢18224456200, æ¸¸å®¢, 18224456200, 1998-06-17, 21, ç”·, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1240560679262416896, 12387690845, 49d93702f30ff6ca2eed0b58cf4ba9d1c297ecce87039eb4107490b64098dc6823b64da28ebfaf95c448af9fbab7892e, æ¸¸å®¢12387690845, æ¸¸å®¢, 12387690845, 2004-12-14, 15, å¥³, http://101.37.173.73:8000/user/12387690845/headicon/code-wallpaper-18.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} Result: [1243189727398588416, 18256510879, 228f08e6052545acaaf3c1c7f292d1f5b89a9dc620ca1fe0486491da81291256e377d4dfeaa12ac865f6cbd5505dfb65, æ¸¸å®¢18256510879, æ¸¸å®¢, null, null, null, null, http://101.37.173.73:8000/user/default-headicon.png]
-[DEBUG][2020-03-31][druid.sql.ResultSet]{conn-10045, pstmt-20060, rs-50097} closed
-[DEBUG][2020-03-31][druid.sql.Statement]{conn-10045, pstmt-20060} clearParameters. 
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} commited
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} setAutoCommit true
-[DEBUG][2020-03-31][druid.sql.Connection]{conn-10045} pool-recycle
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-21, ĞÇÆÚÎå, 9288, 1976, null, 11101, 0.163319, Òõ, 1843, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-20, ĞÇÆÚËÄ, 10190, 1911, null, 8874, -0.148298, Òõ, 2047, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-19, ĞÇÆÚÈı, 10278, 3006, null, 9805, -0.048241, À×ÕóÓê, 2668, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-18, ĞÇÆÚ¶ş, 8956, 2204, null, 11262, 0.204759, ¶àÔÆ, 2906, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-17, ĞÇÆÚÒ», 5468, 1189, null, 6015, 0.090939, Ğ¡Óê, 2946, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-16, ĞÇÆÚÈÕ, 12404, 3908, null, 10098, -0.228362, À×ÕóÓê, 5621, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-15, ĞÇÆÚÁù, 17946, 4517, null, 20359, 0.118523, ¶àÔÆ, 9693, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-14, ĞÇÆÚÎå, 10681, 2649, null, 11486, 0.070085, ¶àÔÆ, 5498, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-13, ĞÇÆÚËÄ, 10566, 2276, null, 10696, 0.012154, ¶àÔÆ, 4619, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-12, ĞÇÆÚÈı, 10609, 2384, null, 10110, -0.049357, ¶àÔÆ, 4359, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-11, ĞÇÆÚ¶ş, 7447, 1891, null, 8478, 0.121609, Òõ, 4151, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-10, ĞÇÆÚÒ», 5027, 911, null, 4316, -0.164736, Ğ¡Óê, 1936, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-09, ĞÇÆÚÈÕ, 8269, 2157, null, 7342, -0.126260, Ğ¡Óê, 3768, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-08, ĞÇÆÚÁù, 13710, 3118, null, 11966, -0.145746, Ğ¡Óê, 5844, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-07, ĞÇÆÚÎå, 6568, 1047, null, 5556, -0.182145, Ğ¡Óê, 2137, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-06, ĞÇÆÚËÄ, 7516, 1024, null, 4423, -0.699299, ÖĞÓê, 1641, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-05, ĞÇÆÚÈı, 6441, 1247, null, 5175, -0.244638, Ğ¡Óê, 1488, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-04, ĞÇÆÚ¶ş, 14427, 4790, null, 11294, -0.277404, Òõ, 4754, SVMÄ£ĞÍ, null, 1, ÇåÃ÷½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-03, ĞÇÆÚÒ», 28346, 9059, null, 35564, 0.202958, ¶àÔÆ, 13837, SVMÄ£ĞÍ, null, 1, ÇåÃ÷½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-02, ĞÇÆÚÈÕ, 14509, 4352, null, 19770, 0.266110, Çç, 5779, SVMÄ£ĞÍ, null, 1, ÇåÃ÷½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-04-01, ĞÇÆÚÁù, 8776, 1436, null, 10485, 0.162995, ¶àÔÆ, 3472, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-31, ĞÇÆÚÎå, 5983, 769, null, 6211, 0.036709, ¶àÔÆ, 2131, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-30, ĞÇÆÚËÄ, 4652, 783, null, 5077, 0.083711, ÖĞÓê, 2851, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-29, ĞÇÆÚÈı, 5042, 932, null, 5593, 0.098516, Ğ¡Óê, 2437, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-28, ĞÇÆÚ¶ş, 6945, 1204, null, 7588, 0.084739, Òõ, 3690, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-27, ĞÇÆÚÒ», 6895, 1194, null, 7239, 0.047520, ¶àÔÆ, 3098, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-26, ĞÇÆÚÈÕ, 14562, 2831, null, 18764, 0.223939, Çç, 3551, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-25, ĞÇÆÚÁù, 13081, 1773, null, 21688, 0.396855, ¶àÔÆ, 5186, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-24, ĞÇÆÚÎå, 5694, 732, null, 6307, 0.097194, ÖĞÓê, 2461, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-23, ĞÇÆÚËÄ, 6040, 679, null, 8421, 0.282746, Òõ, 3063, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-22, ĞÇÆÚÈı, 3847, 500, null, 4311, 0.107632, ÖĞÓê, 1409, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-21, ĞÇÆÚ¶ş, 3403, 800, null, 8558, 0.602360, Óê¼ĞÑ©, 2834, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-20, ĞÇÆÚÒ», 4211, 501, null, 4323, 0.025908, Ğ¡Óê, 1607, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-19, ĞÇÆÚÈÕ, 4471, 1055, null, 6456, 0.307466, Ğ¡Óê, 2792, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-18, ĞÇÆÚÁù, 13140, 2152, null, 13495, 0.026306, Ğ¡Óê, 5564, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-17, ĞÇÆÚÎå, 4358, 460, null, 4978, 0.124548, Ğ¡Óê, 2041, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-16, ĞÇÆÚËÄ, 3345, 483, null, 4165, 0.196879, Óê¼ĞÑ©, 1775, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-15, ĞÇÆÚÈı, 1782, 337, null, 3274, 0.455712, Óê¼ĞÑ©, 1466, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-14, ĞÇÆÚ¶ş, 4743, 944, null, 5642, 0.159341, Çç, 2570, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-13, ĞÇÆÚÒ», 2124, 94, null, 2444, 0.130933, Ğ¡Óê, 1257, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-12, ĞÇÆÚÈÕ, 3241, 542, null, 2152, -0.506041, Ğ¡Óê, 1180, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-11, ĞÇÆÚÁù, 10326, 1207, null, 7817, -0.320967, Ğ¡Óê, 3755, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-10, ĞÇÆÚÎå, 4683, 672, null, 4268, -0.097235, Òõ, 1643, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-09, ĞÇÆÚËÄ, 4666, 610, null, 4455, -0.047363, ¶àÔÆ, 1961, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-08, ĞÇÆÚÈı, 4117, 1051, null, 4839, 0.149204, Çç, 2195, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-07, ĞÇÆÚ¶ş, 3559, 470, null, 3776, 0.057468, ¶àÔÆ, 1581, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-06, ĞÇÆÚÒ», 2933, 211, null, 2547, -0.151551, ¶àÔÆ, 1011, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-05, ĞÇÆÚÈÕ, 4063, 534, null, 3104, -0.308956, Ğ¡Óê, 1402, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-04, ĞÇÆÚÁù, 8475, 869, null, 5239, -0.617675, Ğ¡Óê, 2081, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-03, ĞÇÆÚÎå, 3805, 410, null, 3489, -0.090570, ¶àÔÆ, 1471, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-02, ĞÇÆÚËÄ, 4058, 266, null, 3193, -0.270905, Çç, 1232, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-03-01, ĞÇÆÚÈı, 3328, 340, null, 2292, -0.452007, Çç, 859, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-28, ĞÇÆÚ¶ş, 4159, 603, null, 3951, -0.052645, ¶àÔÆ, 1627, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-27, ĞÇÆÚÒ», 4959, 314, null, 3001, -0.652449, Çç, 1117, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-26, ĞÇÆÚÈÕ, 6883, 1334, null, 6092, -0.129842, ¶àÔÆ, 2671, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-25, ĞÇÆÚÁù, 6615, 909, null, 8210, 0.194275, Çç, 2549, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-24, ĞÇÆÚÎå, 3404, 298, null, 3241, -0.050293, ¶àÔÆ, 909, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-23, ĞÇÆÚËÄ, 1655, 138, null, 2272, 0.271567, Óê¼ĞÑ©, 665, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-22, ĞÇÆÚÈı, 1929, 49, null, 1807, -0.067515, ÖĞÓê, 667, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-21, ĞÇÆÚ¶ş, 2474, 195, null, 2225, -0.111910, Òõ, 713, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-20, ĞÇÆÚÒ», 3015, 171, null, 1849, -0.630611, Ğ¡Óê, 673, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-19, ĞÇÆÚÈÕ, 5313, 834, null, 5195, -0.022714, ¶àÔÆ, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-18, ĞÇÆÚÁù, 6500, 892, null, 7015, 0.073414, ¶àÔÆ, 2264, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-17, ĞÇÆÚÎå, 3493, 371, null, 3461, -0.009246, Ğ¡Óê, 1314, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-16, ĞÇÆÚËÄ, 4700, 959, null, 4066, -0.155927, Ğ¡Óê, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-15, ĞÇÆÚÈı, 4500, 486, null, 4112, -0.094358, Çç, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-14, ĞÇÆÚ¶ş, 4111, 325, null, 3878, -0.060083, Çç, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-13, ĞÇÆÚÒ», 3500, 426, null, 3351, -0.044464, Çç, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-12, ĞÇÆÚÈÕ, 6500, 751, null, 5846, -0.111871, Çç, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-11, ĞÇÆÚÁù, 12000, 941, null, 11499, -0.043569, Çç, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-10, ĞÇÆÚÎå, 15000, 2444, null, 13366, -0.122250, ¶àÔÆ, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-09, ĞÇÆÚËÄ, 12000, 1656, null, 11027, -0.088238, ¶àÔÆ, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-08, ĞÇÆÚÈı, 7000, 974, null, 6798, -0.029715, Ğ¡Ñ©, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-07, ĞÇÆÚ¶ş, 19351, 4015, null, 17261, -0.121082, Ğ¡Óê, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-06, ĞÇÆÚÒ», 20000, 4105, null, 19584, -0.021242, Çç, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-05, ĞÇÆÚÈÕ, 24000, 3290, null, 19693, -0.218707, ¶àÔÆ, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-04, ĞÇÆÚÁù, 9000, 1221, null, 8793, -0.023541, Ğ¡Óê, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-03, ĞÇÆÚÎå, 17172, 2530, null, 16126, -0.064864, Ğ¡Óê, 2198, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-02, ĞÇÆÚËÄ, 30675, 6045, 11313, 24674, -0.243211, ¶àÔÆ, 9212, SVMÄ£ĞÍ, null, 1, ´º½Ú, 7]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-02-01, ĞÇÆÚÈı, 45855, 10084, 16041, 33162, -0.382757, Òõ, 14694, SVMÄ£ĞÍ, null, 1, ´º½Ú, 6]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-31, ĞÇÆÚ¶ş, 40089, 9107, 15013, 41091, 0.024385, Òõ, 16775, SVMÄ£ĞÍ, null, 1, ´º½Ú, 5]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-30, ĞÇÆÚÒ», 31628, 6339, 11684, 40538, 0.219794, Çç, 14771, SVMÄ£ĞÍ, null, 1, ´º½Ú, 4]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-29, ĞÇÆÚÈÕ, 31231, 5674, 10116, 26284, -0.188213, Ğ¡Óê, 7717, SVMÄ£ĞÍ, null, 1, ´º½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-28, ĞÇÆÚÁù, 6779, 723, 2496, 7792, 0.130005, ¶àÔÆ, 1548, SVMÄ£ĞÍ, null, 1, ´º½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-27, ĞÇÆÚÎå, 3164, 142, 697, 2153, -0.469577, ¶àÔÆ, 220, SVMÄ£ĞÍ, null, 1, ´º½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-26, ĞÇÆÚËÄ, 6180, 207, null, 3206, -0.927636, Çç, 510, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-25, ĞÇÆÚÈı, 4601, 271, null, 4428, -0.039070, ¶àÔÆ, 512, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-24, ĞÇÆÚ¶ş, 3892, 327, null, 5371, 0.275368, Òõ, 511, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-23, ĞÇÆÚÒ», 4391, 252, null, 5333, 0.176636, ¶àÔÆ, 186, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-22, ĞÇÆÚÈÕ, 4151, 333, null, 5745, 0.277459, ¶àÔÆ, 231, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-21, ĞÇÆÚÁù, 4655, 239, null, 4825, 0.035233, Çç, 611, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-20, ĞÇÆÚÎå, 5250, 190, null, 3639, -0.442704, Çç, 521, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-19, ĞÇÆÚËÄ, 1366, 66, null, 2817, 0.515087, Ğ¡Ñ©, 222, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-18, ĞÇÆÚÈı, 2488, 52, null, 2130, -0.168075, Ğ¡Óê, 211, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-17, ĞÇÆÚ¶ş, 2155, 113, null, 2980, 0.276846, Òõ, 390, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-16, ĞÇÆÚÒ», 3118, 152, null, 3127, 0.002878, ¶àÔÆ, 247, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-15, ĞÇÆÚÈÕ, 4074, 255, null, 4223, 0.035283, ¶àÔÆ, 500, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-14, ĞÇÆÚÁù, 6395, 264, null, 5739, -0.114306, ¶àÔÆ, 682, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-13, ĞÇÆÚÎå, 3331, 90, null, 2597, -0.282634, ¶àÔÆ, 249, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-12, ĞÇÆÚËÄ, 1864, 32, null, 1886, 0.011665, Ğ¡Óê, 206, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-11, ĞÇÆÚÈı, 1986, 39, null, 1230, -0.614634, Óê¼ĞÑ©, 107, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-10, ĞÇÆÚ¶ş, 1458, 60, null, 1498, 0.026702, Òõ, 123, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-09, ĞÇÆÚÒ», 2327, 131, null, 2198, -0.058690, ¶àÔÆ, 275, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-08, ĞÇÆÚÈÕ, 3178, 144, null, 2629, -0.208825, Òõ, 239, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-07, ĞÇÆÚÁù, 3226, 115, null, 2253, -0.431869, ÖĞÓê, 122, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-06, ĞÇÆÚÎå, 1603, 23, null, 895, -0.791061, Ğ¡Óê, 144, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-05, ĞÇÆÚËÄ, 2657, 153, null, 1147, -1.316478, ÖĞÓê, 145, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-04, ĞÇÆÚÈı, 2769, 203, null, 1490, -0.858389, Ğ¡Óê, 364, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-03, ĞÇÆÚ¶ş, 1700, 195, null, 1616, -0.051980, Çç¼ä¶àÔÆ, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-02, ĞÇÆÚÒ», 3775, 382, null, 3621, -0.042530, Òõ, null, SVMÄ£ĞÍ, null, 1, Ôªµ©, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2017-01-01, ĞÇÆÚÈÕ, 12000, 1915, null, 13346, 0.100854, Çç, null, SVMÄ£ĞÍ, null, 1, Ôªµ©, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-31, ĞÇÆÚÁù, 4002, 612, null, 8575, 0.533294, Çç, null, SVMÄ£ĞÍ, null, 1, Ôªµ©, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-30, ĞÇÆÚÎå, 3620, 145, null, 3708, 0.023732, ¶àÔÆ, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-29, ĞÇÆÚËÄ, 2650, 143, null, 3039, 0.128003, ¶àÔÆ, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-28, ĞÇÆÚÈı, 2351, 170, null, 2620, 0.102672, ¶àÔÆ, 83, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-27, ĞÇÆÚ¶ş, 2126, 35, null, 1928, -0.102697, ¶àÔÆ, 1465, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-26, ĞÇÆÚÒ», 1650, 15, null, 1701, 0.029982, Ğ¡Óê, 1466, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-25, ĞÇÆÚÈÕ, 2468, 260, null, 2675, 0.077383, Ğ¡Óê, 107, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-24, ĞÇÆÚÁù, 8111, 318, null, 5778, -0.403773, ¶àÔÆ, 13, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-23, ĞÇÆÚÎå, 2858, 140, null, 2596, -0.100924, ¶àÔÆ, 5, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-22, ĞÇÆÚËÄ, 2510, 53, null, 2196, -0.142987, ¶àÔÆ, 1469, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-21, ĞÇÆÚÈı, 1469, 86, null, 1108, -0.325812, ÖĞÓê, 1469, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-20, ĞÇÆÚ¶ş, 6355, 537, null, 6646, 0.043786, Ğ¡Óê, 1470, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-19, ĞÇÆÚÒ», 6139, 4569, null, 16852, 0.635711, À×ÕóÓê, 24, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-18, ĞÇÆÚÈÕ, 5097, 6550, null, 34414, 0.851892, ¶àÔÆ, 15, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-17, ĞÇÆÚÁù, 9115, 3468, null, 35087, 0.740217, ¶àÔÆ, 42, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-16, ĞÇÆÚÎå, 4453, 791, null, 11718, 0.619986, Çç, 10, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-15, ĞÇÆÚËÄ, 3214, 161, null, 8988, 0.642412, Çç, 1473, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-14, ĞÇÆÚÈı, 3456, 466, null, 6042, 0.428004, ¶àÔÆ, 38, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-13, ĞÇÆÚ¶ş, 1553, 93, null, 1107, -0.402891, Ğ¡Óê, 27, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-12, ĞÇÆÚÒ», 2696, 161, null, 2052, -0.313840, Òõ, 7, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-11, ĞÇÆÚÈÕ, 6150, 835, null, 4518, -0.361222, ¶àÔÆ, 43, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-10, ĞÇÆÚÁù, 6336, 547, null, 6449, 0.017522, ¶àÔÆ, 38, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-09, ĞÇÆÚÎå, 2231, 235, null, 2992, 0.254345, Çç, 1478, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-08, ĞÇÆÚËÄ, 1738, 254, null, 2614, 0.335119, Çç, 1479, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-07, ĞÇÆÚÈı, 3176, 212, null, 2556, -0.242567, ¶àÔÆ, 21, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-06, ĞÇÆÚ¶ş, 3089, 249, null, 2253, -0.371061, ¶àÔÆ, 38, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-05, ĞÇÆÚÒ», 3285, 203, null, 2447, -0.342460, ¶àÔÆ, 46, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-04, ĞÇÆÚÈÕ, 5425, 495, null, 4138, -0.311020, ¶àÔÆ, 144, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-03, ĞÇÆÚÁù, 6340, 613, null, 8277, 0.234022, Çç, 159, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-02, ĞÇÆÚÎå, 2591, 217, null, 3520, 0.263920, Çç, 1483, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-12-01, ĞÇÆÚËÄ, 4264, 252, null, 3228, -0.320942, ¶àÔÆ, 64, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-30, ĞÇÆÚÈı, 2950, 494, null, 3733, 0.209751, Òõ, 407, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-29, ĞÇÆÚ¶ş, 2451, 461, null, 3051, 0.196657, ¶àÔÆ, 295, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-28, ĞÇÆÚÒ», 3591, 623, null, 3255, -0.103226, Çç, 632, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-27, ĞÇÆÚÈÕ, 5801, 1954, null, 8705, 0.333601, Çç, 1630, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-26, ĞÇÆÚÁù, 6872, 982, null, 8275, 0.169547, Ğ¡Óê, 974, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-25, ĞÇÆÚÎå, 4202, 445, null, 3874, -0.084667, Òõ, 297, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-24, ĞÇÆÚËÄ, 3402, 298, null, 4828, 0.295360, ¶àÔÆ, 453, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-23, ĞÇÆÚÈı, 2140, 88, null, 1978, -0.081901, ÖĞÑ©, 137, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-22, ĞÇÆÚ¶ş, 2778, 180, null, 2073, -0.340087, Ğ¡Óê, 241, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-21, ĞÇÆÚÒ», 2824, 258, null, 2107, -0.340294, Ğ¡Óê, 308, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-20, ĞÇÆÚÈÕ, 5005, 725, null, 4412, -0.134406, Ğ¡Óê, 875, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-19, ĞÇÆÚÁù, 9073, 1012, null, 6472, -0.401885, Òõ, 965, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-18, ĞÇÆÚÎå, 5299, 401, null, 3879, -0.366074, Òõ, 436, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-17, ĞÇÆÚËÄ, 2964, 252, null, 3499, 0.152901, ÖĞÓê, 462, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-16, ĞÇÆÚÈı, 3615, 397, null, 2792, -0.294771, Ğ¡Óê, 553, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-15, ĞÇÆÚ¶ş, 3355, 689, null, 3648, 0.080318, Ğ¡Óê, 937, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-14, ĞÇÆÚÒ», 4142, 1359, null, 3030, -0.366997, Ğ¡Óê, 511, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-13, ĞÇÆÚÈÕ, 6382, 1359, null, 5717, -0.116320, Ğ¡Óê, 981, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-12, ĞÇÆÚÁù, 11634, 1732, null, 13960, 0.166619, Òõ, 1500, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-11, ĞÇÆÚÎå, 5581, 771, null, 5203, -0.072650, ¶àÔÆ, 756, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-10, ĞÇÆÚËÄ, 4747, 550, null, 5423, 0.124654, ¶àÔÆ, 612, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-09, ĞÇÆÚÈı, 3727, 555, null, 4330, 0.139261, Óê¼ĞÑ©, 958, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-08, ĞÇÆÚ¶ş, 3291, 138, null, 3143, -0.047089, Ğ¡Óê, 182, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-07, ĞÇÆÚÒ», 3243, 508, null, 3752, 0.135661, ÖĞÓê, 982, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-06, ĞÇÆÚÈÕ, 8909, 2756, null, 9424, 0.054648, Çç, 2034, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-05, ĞÇÆÚÁù, 10532, 2233, null, 14161, 0.256267, Çç, 1786, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-04, ĞÇÆÚÎå, 5931, 1087, null, 8320, 0.287139, Çç, 1233, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-03, ĞÇÆÚËÄ, 6101, 1231, null, 6104, 0.000491, Çç, 2540, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-02, ĞÇÆÚÈı, 4888, 671, null, 5377, 0.090943, ¶àÔÆ, 2126, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-11-01, ĞÇÆÚ¶ş, 4865, 813, null, 4230, -0.150118, ¶àÔÆ, 1755, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-31, ĞÇÆÚÒ», 4459, 316, null, 3224, -0.383065, Ğ¡Óê, 1505, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-30, ĞÇÆÚÈÕ, 7297, 1526, null, 7666, 0.048135, Ğ¡Óê, 1713, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-29, ĞÇÆÚÁù, 8911, 1532, null, 8295, -0.074262, Ğ¡Óê, 1737, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-28, ĞÇÆÚÎå, 5315, 761, null, 5389, 0.013732, Ğ¡Óê, 832, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-27, ĞÇÆÚËÄ, 6033, 760, null, 5631, -0.071391, ¶àÔÆ, 587, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-26, ĞÇÆÚÈı, 6375, 1036, null, 6298, -0.012226, ÖĞÓê, 1899, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-25, ĞÇÆÚ¶ş, 6406, 829, null, 5789, -0.106581, Ğ¡Óê, 2767, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-24, ĞÇÆÚÒ», 6381, 1310, null, 5805, -0.099225, Ğ¡Óê, 2431, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-23, ĞÇÆÚÈÕ, 9545, 1377, null, 6859, -0.391602, Ğ¡Óê, 3859, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-19, ĞÇÆÚÈı, 8028, 1687, null, 9732, 0.175092, Ğ¡Óê, 1553, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-18, ĞÇÆÚ¶ş, 7352, 1663, null, 8547, 0.139815, Òõ, 1851, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-17, ĞÇÆÚÒ», 8367, 1699, null, 7808, -0.071593, Òõ, 3440, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-16, ĞÇÆÚÈÕ, 10896, 3419, null, 11431, 0.046803, Ğ¡Óê, 3161, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-10-15, ĞÇÆÚÁù, 13182, 3006, null, 15254, 0.135833, Ğ¡Óê, 3668, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} Result: [2016-08-23, ĞÇÆÚ¶ş, 8738, 2644, null, 7485, -0.167401, ¶àÔÆ, 1554, SVMÄ£ĞÍ, 1, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20005, rs-50006} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20005} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} commited
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} setAutoCommit true
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} created. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-03-19]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.4127 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50007} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50007} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50007} Result: [2019-03-19, ĞÇÆÚ¶ş, 6437, 945, 3386, 7818, 0.176644, ¶àÔÆ, 476, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50007} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-03-13]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.2276 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50008} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50008} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50008} Result: [2019-03-13, ĞÇÆÚÈı, 5351, 708, 2546, 5203, -0.028445, ¶àÔÆ, 612, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50008} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-09-30]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 44.9986 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50009} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50009} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50009} Result: [2019-09-30, ĞÇÆÚÒ», 8515, 2585, 4713, 8355, -0.019150, Çç, 1332, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50009} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} created. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 46.1369 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50010} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50010} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50010} Result: [2019-10-01, ĞÇÆÚ¶ş, 14743, 3134, 5515, 10451, -0.410678, Ğ¡Óê, 1001, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50010} Result: [2018-10-01, ĞÇÆÚÒ», 17144, 4257, 7231, 15887, -0.079121, ¶àÔÆ, 3065, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50010} Result: [2017-10-01, ĞÇÆÚÈÕ, 13296, 3484, 5495, 10630, -0.250800, ¶àÔÆ, 4840, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50010} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-10-01]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.0358 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50011} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50011} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50011} Result: [2019-10-01, ĞÇÆÚ¶ş, 14743, 3134, 5515, 10451, -0.410678, Ğ¡Óê, 1001, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 1]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50011} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 44.9417 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50012} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50012} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50012} Result: [2019-10-02, ĞÇÆÚÈı, 34796, 10696, 15577, 29744, -0.169849, ¶àÔÆ, 3735, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50012} Result: [2018-10-02, ĞÇÆÚ¶ş, 42812, 12717, 18217, 44710, 0.042451, ¶àÔÆ, 12284, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50012} Result: [2017-10-02, ĞÇÆÚÒ», 34818, 11606, 17256, 32257, -0.079394, ÕóÓê, 1074, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50012} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-10-02]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.592 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50013} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50013} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50013} Result: [2019-10-02, ĞÇÆÚÈı, 34796, 10696, 15577, 29744, -0.169849, ¶àÔÆ, 3735, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 2]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50013} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 45.052 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50014} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50014} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50014} Result: [2019-10-03, ĞÇÆÚËÄ, 38259, 11101, 16618, 35878, -0.066364, Çç, 4612, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50014} Result: [2018-10-03, ĞÇÆÚÈı, 39719, 10080, 15399, 40028, 0.007720, Çç, 8956, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50014} Result: [2017-10-03, ĞÇÆÚ¶ş, 35868, 11956, 17071, 37033, 0.031458, Òõ, 16226, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50014} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-10-03]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.5443 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50015} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50015} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50015} Result: [2019-10-03, ĞÇÆÚËÄ, 38259, 11101, 16618, 35878, -0.066364, Çç, 4612, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 3]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50015} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 4]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 45.2699 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50016} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50016} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50016} Result: [2019-10-04, ĞÇÆÚÎå, 29254, 10879, 15536, 31317, 0.065875, Çç, 4978, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 4]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50016} Result: [2018-10-04, ĞÇÆÚËÄ, 29664, 11155, 16299, 31447, 0.056699, ¶àÔÆ, 7769, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 4]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50016} Result: [2017-10-04, ĞÇÆÚÈı, 29235, 10745, 15449, 25807, -0.132832, Ğ¡Óê, 8092, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 4]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50016} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-10-04]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.465 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50017} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50017} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50017} Result: [2019-10-04, ĞÇÆÚÎå, 29254, 10879, 15536, 31317, 0.065875, Çç, 4978, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 4]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50017} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 5]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 45.2397 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50018} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50018} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50018} Result: [2019-10-05, ĞÇÆÚÁù, 21728, 9609, 13248, 20453, -0.062338, Òõ, 2761, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 5]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50018} Result: [2018-10-05, ĞÇÆÚÎå, 23508, 9299, 12911, 22030, -0.067090, ¶àÔÆ, 5322, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 5]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50018} Result: [2017-10-05, ĞÇÆÚËÄ, 24605, 8397, 12643, 21080, -0.167220, Ğ¡Óê, 6508, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 5]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50018} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-10-05]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 44.7794 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50019} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50019} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50019} Result: [2019-10-05, ĞÇÆÚÁù, 21728, 9609, 13248, 20453, -0.062338, Òõ, 2761, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 5]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50019} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 6]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 45.1228 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50020} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50020} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50020} Result: [2019-10-06, ĞÇÆÚÈÕ, 10478, 3162, 5969, 9515, -0.101209, ¶àÔÆ, 1208, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 6]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50020} Result: [2018-10-06, ĞÇÆÚÁù, 21030, 4967, 7676, 12477, -0.685501, Çç, 3784, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 6]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50020} Result: [2017-10-06, ĞÇÆÚÎå, 24028, 9231, 14586, 27957, 0.140537, ¶àÔÆ, 8969, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 6]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50020} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-10-06]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.6557 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50021} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50021} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50021} Result: [2019-10-06, ĞÇÆÚÈÕ, 10478, 3162, 5969, 9515, -0.101209, ¶àÔÆ, 1208, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 6]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50021} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Parameters : [¹úÇì½Ú, 7]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} Types : [VARCHAR, INTEGER]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} executed. 46.5177 millis. select *
+        from huangshan.dailynum
+        where holiday_name = ? and holiday_order = ?
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50022} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50022} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50022} Result: [2019-10-07, ĞÇÆÚÒ», 7502, 3162, 5969, 3665, -1.046930, Òõ, null, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 7]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50022} Result: [2018-10-07, ĞÇÆÚÈÕ, 6885, 1830, 3215, 5468, -0.259144, Çç, 1789, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 7]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50022} Result: [2017-10-07, ĞÇÆÚÁù, 17275, 5732, 9324, 15369, -0.124016, Òõ, 4752, SVMÄ£ĞÍ, null, 1, ¹úÇì½Ú, 7]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20007, rs-50022} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-04-19]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 47.0407 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50023} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50023} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50023} Result: [2019-04-19, ĞÇÆÚÎå, 11850, 3037, 6151, 11506, -0.029897, Çç, 432, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50023} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-04-13]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.3865 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50024} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50024} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50024} Result: [2019-04-13, ĞÇÆÚÁù, 17343, 4619, 8655, 20102, 0.137250, Òõ, 411, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50024} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-14]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.5908 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50025} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50025} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50025} Result: [2019-07-14, ĞÇÆÚÈÕ, 9015, 2232, 4972, 9718, 0.072340, À×ÕóÓê, 551, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50025} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-08]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 44.8669 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50026} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50026} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50026} Result: [2019-07-08, ĞÇÆÚÒ», 5774, 1106, 2481, 5259, -0.097927, ´óÓê, 545, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50026} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-15]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 49.4602 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50027} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50027} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50027} Result: [2019-07-15, ĞÇÆÚÒ», 9037, 2232, 4972, 6343, -0.424720, ¶àÔÆ, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50027} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-09]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.319 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50028} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50028} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50028} Result: [2019-07-09, ĞÇÆÚ¶ş, 6017, 1106, 2481, 4248, -0.416431, ÖĞÓê, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50028} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-16]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.7508 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50029} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50029} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50029} Result: [2019-07-16, ĞÇÆÚ¶ş, 7612, 1904, 4101, 7730, 0.015265, À×ÕóÓê, 2336, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50029} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-10]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.9329 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50030} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50030} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50030} Result: [2019-07-10, ĞÇÆÚÈı, 6327, 1383, 4238, 7868, 0.195857, À×ÕóÓê, 2362, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50030} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-17]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.5218 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50031} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50031} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50031} Result: [2019-07-17, ĞÇÆÚÈı, 7703, 1904, 4101, 7692, -0.001430, ÖĞÓê, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50031} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-11]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.9719 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50032} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50032} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50032} Result: [2019-07-11, ĞÇÆÚËÄ, 7542, 1557, 3899, 7557, 0.001985, ¶àÔÆ, 1909, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50032} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-18]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.4858 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50033} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50033} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50033} Result: [2019-07-18, ĞÇÆÚËÄ, 8756, 1916, 4620, 8793, 0.004208, ¶àÔÆ, 2491, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50033} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-12]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.2091 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50034} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50034} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50034} Result: [2019-07-12, ĞÇÆÚÎå, 7107, 1557, 3899, 4550, -0.561978, ±©Óê, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50034} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-19]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 44.6388 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50035} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50035} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50035} Result: [2019-07-19, ĞÇÆÚÎå, 7676, 1916, 4620, 8878, 0.135391, ¶àÔÆ, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50035} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-13]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.1353 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50036} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50036} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50036} Result: [2019-07-13, ĞÇÆÚÁù, 8075, 1040, 2518, 6787, -0.189775, ±©Óê, null, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50036} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-connect
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Parameters : [2019-07-20]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} Types : [VARCHAR]
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} executed. 45.1607 millis. select * from huangshan.dailynum where date_name = ?;
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50037} open
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50037} Header: [date_name, date_week, predict_num, today_eight_num, today_nine_num, today_total_num, deviation_rate, weather_name, order_num, module_name, description, is_holiday, holiday_name, holiday_order]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50037} Result: [2019-07-20, ĞÇÆÚÁù, 12330, 3259, 6718, 13296, 0.072653, ¶àÔÆ, 5385, SVMÄ£ĞÍ, null, 0, null, null]
+[DEBUG][2020-04-03][druid.sql.ResultSet]{conn-10020, pstmt-20006, rs-50037} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} clearParameters. 
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} pool-recycle
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10001} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10002} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10003} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10004} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10005} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10006} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10007} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10008} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10009} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10010} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10011} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10012} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10013} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10014} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10015} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10016} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10017} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10018} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10019} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20000} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20001} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20002} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20003} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20004} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20005} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20007} closed
+[DEBUG][2020-04-03][druid.sql.Statement]{conn-10020, pstmt-20006} closed
+[DEBUG][2020-04-03][druid.sql.Connection]{conn-10020} closed

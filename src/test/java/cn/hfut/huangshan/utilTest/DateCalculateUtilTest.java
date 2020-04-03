@@ -73,10 +73,10 @@ public class DateCalculateUtilTest {
         System.out.print(predictCalendar.get(Calendar.YEAR) + ":" + ( predictCalendar.get(Calendar.MONTH) + 1 ) + ":" + predictCalendar.get(Calendar.DATE));
     }
 
-    @Test
-    public void testDailyNumPredict() {
-        System.out.print(dailyNumService.dailyNumPredict("2000-01-01", "大雨", null, 0));
-    }
+//    @Test
+//    public void testDailyNumPredict() {
+//        System.out.print(dailyNumService.dailyNumPredict("2000-01-01", "大雨", null, 0));
+//    }
 
     @Test
     public void testYesterdayDate(){

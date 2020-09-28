@@ -1,6 +1,5 @@
-package cn.hfut.huangshan.utilTest;
+package cn.hfut.huangshan.utils;
 
-import cn.hfut.huangshan.utils.AliyunMessageUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

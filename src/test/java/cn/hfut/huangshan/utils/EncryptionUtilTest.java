@@ -1,7 +1,6 @@
-package cn.hfut.huangshan.utilTest;
+package cn.hfut.huangshan.utils;
 
 import cn.hfut.huangshan.constants.DefaultSetting;
-import cn.hfut.huangshan.utils.EncryptionUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
